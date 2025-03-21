@@ -162,7 +162,10 @@
     padding-bottom: 95px;
     align-items: center;
     justify-self: center;
-    color: #554c34;
+    font-family: "Sen", sans-serif;
+    font-weight: 750;
+    font-style: normal;
+    color: #978556;
   }
 
   .hero .body {
