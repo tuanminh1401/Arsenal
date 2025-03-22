@@ -25,7 +25,7 @@
   }
   
   .heading-lv2 {
-    color: #171100;
+    color: #978556;
     font-family: var(--font-heading);
     font-size: 38px;
     font-weight: 700;
@@ -64,19 +64,20 @@
     margin-right: auto;
   }
   
-  .line-clamp {
+  /* .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
-  }
+  } */
   
-  .line-clamp.line-2 {
+  /* .line-clamp.line-2 {
     --line-clamp: 2;
-  }
+  } */
   
   .break-all {
-    word-break: break-all;
+    /* word-break: break-all; */
+    overflow-wrap: break-word;
   }
   
   /* =============header============= */
@@ -153,8 +154,9 @@
   
   /* ====================hero=================== */
   .hero {
+    display: block;
     padding: 56px 0 65px;
-    background: black;
+    background: rgb(0, 0, 0);
   }
   
   .hero .main-content .top:first-child {
@@ -255,7 +257,7 @@
   
   /* ==================hero-right==================== */
   .hero {
-    padding: 56px 0 135px;
+    padding: 56px 0 0px;
   }
 
   .hero .content-block {
@@ -350,10 +352,23 @@
     margin-left: 40px;
   }
   
+  /* ====================logo-bottom================ */
+  
+  .logo-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-bottom-mini {
+    width: 160px;
+    object-fit: cover;
+  }
+
   /* ===================popular================= */
   .popular {
-    padding: 65px 0;
-    margin-top: 135px;
+    padding: 0px 0 284.02px;
+    margin-top: 0px;
     background: black;
   }
   
@@ -366,7 +381,7 @@
   .popular-top .desc {
     margin-top: 16px;
     width: 458px;
-    color: #5f5b53;
+    color: #bdbdbd;
     font-size: 18px;
     font-weight: 400;
     line-height: 40px;
@@ -404,8 +419,8 @@
   .popular .course-item {
     flex: 1;
     border-radius: 12px;
-    border: 1px solid #e2dfda;
-    background: #fff;
+    border: 1px solid #554c34;
+    background: #000000;
   }
   
   .popular .course-item:hover {
@@ -417,25 +432,29 @@
   
   .popular .course-item .thumb {
     width: 100%;
-    height: 278px;
+    height: 515px;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
   }
   
   .popular .course-item .info {
-    padding: 16px 22px 22px;
+    padding: 16px 22px 13px;
   }
   
+  .popular .course-item .info p {
+    text-align: center;
+  }
+
   .popular .course-item .foot,
-  .popular .course-item .rating, 
+  /* .popular .course-item .rating,  */
   .popular .course-item .head {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
-  
+
   .popular .course-item .title a{
-    color: #171100;
+    color: #554c34;
     font-size: 18px;;
     font-weight: 600;
     line-height: 30px;
