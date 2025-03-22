@@ -367,7 +367,7 @@
 
   /* ===================popular================= */
   .popular {
-    padding: 0px 0 284.02px;
+    padding: 0px 0 0px;
     margin-top: 0px;
     background: black;
   }
@@ -426,21 +426,24 @@
   .popular .course-item:hover {
     border: 1px solid transparent;
     border-radius: 12px;
-    background: #fff;
+    background: #000000;
     box-shadow: 0px 18px 38px 0px rgba(0, 0, 0, 0.05);
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
   }
   
   .popular .course-item .thumb {
     width: 100%;
     height: 515px;
     object-fit: cover;
+    /* margin-top: -10px; */
     border-radius: 12px 12px 0px 0px;
   }
   
   .popular .course-item .info {
-    padding: 16px 22px 13px;
+    padding: -1px 22px 13px;
   }
-  
+
   .popular .course-item .info p {
     text-align: center;
   }
@@ -457,7 +460,7 @@
     color: #554c34;
     font-size: 18px;;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 68px;
   }
   
   .popular .rating .value {
@@ -468,7 +471,7 @@
   }
   
   .popular .course-item .desc {
-    margin-top: 6px;
+    margin: -14px 0px 15px;
     color: #5f5b53;
     font-size: 14px;
     line-height: 26px;
@@ -493,6 +496,57 @@
     background: var(--primary-color);
   }
   
+  .course-item, .flip-card {
+    height: 720px; /* Hoặc sử dụng height: 400px; */
+}
+
+
+  .flip-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .course-item.flipped .flip-card {
+    transform: rotateY(180deg);
+  }
+
+  .flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #3b3b3b;
+    border-radius: 12px;
+  }
+
+  .flip-front {
+    background-color: #000000;
+  }
+
+  .flip-front:hover {
+    background-color: #fff;
+  }
+
+  .flip-back {
+    background-color: #3498db;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
   /* ====================feedback================ */
   .feedback {
     margin-top: 135px;
@@ -846,4 +900,6 @@
     font-weight: 400;
     line-height: 26px;
   }
+
+  
   
