@@ -535,9 +535,38 @@
     background-color: #fff;
   }
 
+  /* =================flip-back=============== */
+
+  .image {
+    position: relative;
+    /* display: flex; */
+    width: 376.33px;
+    height: 257px;
+    align-items: center;
+    margin-top: -75px;
+  }
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-top: -229px;
+    object-fit: cover;
+  }
+
+  .foreground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    margin-top: -229px;
+    object-fit: cover;
+  }
+
   .flip-back {
-    background-color: #3498db;
-    color: rgb(255, 255, 255);
+    background-color: #fff;
+    /* color: rgb(255, 255, 255); */
     font-size: 24px;
     transform: rotateY(180deg);
     display: flex;
@@ -545,11 +574,68 @@
     align-items: center;
   }
 
+  .mini-content {
+    position: absolute;
+    display: flex;
+    margin-top: 0;
+    z-index: 3;
+  }
 
+  .henry-minipic {
+    max-width: 10rem;
+    margin-top: -157px;
+    margin-left: 22px;
+    border-radius: 50%;
+    z-index: 3;
+  }
+
+  .mini-content p {
+    width: 50px;
+    margin-left: 33px;
+    margin-top: -96px;
+    letter-spacing: 1.4px;
+    line-height: 31px;
+    font-weight: 600;
+  }
+
+  .mini-content strong {
+    font-weight: 700;
+  }
+  
+  .flip-back-content .thongtin {
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    border: 1px solid #f5f2f5;
+  }
+
+  .information .box1 p{
+    margin-top: -197px;
+  }
+
+  .nation {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nation-left {
+    display: flex;
+    gap: 10px;
+  }
+
+  .thongtin {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .box2,.box3,.box4 {
+    display: flex;
+    justify-content: space-between;
+  }
 
   /* ====================feedback================ */
   .feedback {
-    margin-top: 135px;
+    margin-top: 0px;
     padding: 96px 0;
     background: #2e2100;
   }
@@ -625,8 +711,9 @@
   /* ===================feature 1================= */
   
   .feature {
-    margin-top: 135px;
-    padding: 65px 0;
+    margin-top: 0px;
+    padding: 200px 0 0px;
+    background-color: black;
   }
   
   .feature .body {
@@ -646,8 +733,13 @@
     border-radius: 16px;
   }
   
+  .feature .images img:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+  }
+
   .feature .lower {
-    margin-top: 34px;
+    margin-top: 70px;
   }
   
   .feature .content {
@@ -657,6 +749,11 @@
     justify-content: center;
   }
   
+  .feature .content .line-ngang {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
   .feature .desc {
     margin-top: 13px;
     color: #5f5b53;
@@ -691,6 +788,8 @@
     width: 49%;
   }
   
+  
+
   /* ======================Blogs================= */
   
   .blogs {
