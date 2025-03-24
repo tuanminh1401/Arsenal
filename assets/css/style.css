@@ -24,6 +24,10 @@
     font-family: "Poppins", sans-serif;
   }
   
+  div::-webkit-scrollbar {
+    width: 0;
+  }
+
   .heading-lv2 {
     color: #978556;
     font-family: var(--font-heading);
@@ -111,8 +115,8 @@
   }
   
   .header .body .Logo {
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
     margin-bottom: -3px;
     margin-top: 0;
@@ -536,14 +540,15 @@
   }
 
   /* =================flip-back=============== */
-
-  .image {
+  /* ================henry================= */
+  .image{
     position: relative;
-    /* display: flex; */
+    display: flex;
     width: 376.33px;
     height: 257px;
     align-items: center;
-    margin-top: -75px;
+    /* justify-content: center; */
+    margin-top: 688px;
   }
 
   .background {
@@ -572,32 +577,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
   }
 
   .mini-content {
     position: absolute;
     display: flex;
-    margin-top: 0;
+    margin-top: -18px;
     z-index: 3;
   }
 
   .henry-minipic {
     max-width: 10rem;
-    margin-top: -157px;
-    margin-left: 22px;
+    margin-top: -160px;
+    margin-left: 27px;
     border-radius: 50%;
     z-index: 3;
   }
 
-  .mini-content p {
+  .mini-content .henry {
     width: 50px;
-    margin-left: 33px;
-    margin-top: -96px;
+    margin-left: 46px;
+    margin-top: -106px;
     letter-spacing: 1.4px;
     line-height: 31px;
     font-weight: 600;
+    color: #fff;
   }
-
+  
   .mini-content strong {
     font-weight: 700;
   }
@@ -605,7 +612,10 @@
   .flip-back-content .thongtin {
     padding: 0.8rem;
     border-radius: 0.8rem;
-    border: 1px solid #f5f2f5;
+    border: 1px solid #8d848d;
+    margin-top: -103px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .information .box1 p{
@@ -622,15 +632,130 @@
     gap: 10px;
   }
 
+  .golden-boot {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+    /* margin-top: 14px;
+    margin-bottom: -14px; */
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: .6rem 0 -1.3rem 0;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .pots {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+    /* margin-top: 14px;
+    margin-bottom: -14px; */
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: -1.1rem 0 -1.3rem 0;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .champion {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+    /* margin-top: 14px;
+    margin-bottom: -14px; */
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: -1.1rem 0 -1.3rem 0;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .potm {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+    /* margin-top: 14px;
+    margin-bottom: -14px; */
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: -1.1rem 0 -1.3rem 0;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+  }
+
   .thongtin {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
 
+  .thongtin p {
+    font-size: 1.1rem;
+  }
+
+  .thongtin .box1 .personal-detail{
+    font-weight: 700;
+    margin-bottom: 9px;
+    line-height: 3rem;
+    font-size: 1.34rem;
+  }
+
+  .inhoa {
+    font-weight: 700;
+  }
+
   .box2,.box3,.box4 {
     display: flex;
     justify-content: space-between;
+  }
+
+  .flip-back .second {
+    margin-top: 10px;
+  }
+
+  /* =========bergkamp=========== */
+
+  .image-bergkamp{
+    position: relative;
+    display: flex;
+    width: 376.33px;
+    height: 257px;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 449px;
+  }
+
+  .mini-content .bergkamp {
+    width: 50px;
+    margin-left: 29px;
+    margin-top: -106px;
+    letter-spacing: 1.4px;
+    line-height: 31px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  /* =================pires================ */
+
+  .image-pires{
+    position: relative;
+    display: flex;
+    width: 376.33px;
+    height: 257px;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 294px;
+  }
+
+  .mini-content .pires {
+    width: 50px;
+    margin-left: 45px;
+    margin-top: -106px;
+    letter-spacing: 1.4px;
+    line-height: 31px;
+    font-weight: 600;
+    color: #fff;
   }
 
   /* ====================feedback================ */
