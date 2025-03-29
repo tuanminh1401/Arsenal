@@ -837,7 +837,7 @@
   
   .feature {
     margin-top: 0px;
-    padding: 200px 0 0px;
+    padding: 200px 0 78px;
     background-color: black;
   }
   
@@ -880,7 +880,7 @@
   }
 
   .feature .desc {
-    margin-top: 13px;
+    margin-top: 6px;
     color: #5f5b53;
     font-size: 16px;
     line-height: 28px;
@@ -892,11 +892,12 @@
     width: 137px;
     height: 50px;
   }
-  
+
   /* ===================feature 2================= */
   
   .feature-2nd {
-    margin-top: 70px;
+    margin-top: -225px;
+    padding-bottom: 1px;
   }
   
   .feature-2nd .body {
@@ -905,7 +906,7 @@
   
   .feature-2nd .images img {
     width: 470px;
-    height: 440px;
+    height: 780px;
     object-fit: cover;
   }
   
@@ -913,12 +914,26 @@
     width: 49%;
   }
   
-  
+  .feature-2nd hr {
+    width: 100%;
+    height: 1px;
+  }
+
+  .feature-2nd .desc {
+    margin-top: -19px;
+    color: #5f5b53;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .feature-2nd .content .desc:first-of-type {
+    margin-top: 20px;
+  }
 
   /* ======================Blogs================= */
   
   .blogs {
-    margin-top: 135px;
+    margin-top: 0px;
     padding: 96px 0;
     background: #fffcf4;
   }
@@ -1058,10 +1073,24 @@
     width: 21.6%;
   }
   
+  .footer .column strong {
+    color: white;
+    font-weight: 700;
+  }
+
   .footer .row .column:first-child {
     width: 35%;
+    margin-top: 9px;
   }
   
+  .footer .Logo {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    margin-bottom: -3px;
+    margin-top: 0;
+  }
+
   .footer .desc {
     margin-top: 18px;
     max-width: 267px;
