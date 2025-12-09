@@ -1255,6 +1255,30 @@ footer {
     height: auto;
   }
 
+  /* Fix text overflow in Popular section */
+  .popular-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .popular-top .infor {
+    width: 100%;
+  }
+
+  .popular-top .desc {
+    width: 100%;
+    margin-top: 10px;
+    line-height: 28px;
+  }
+
+  .popular-top .control {
+    margin-top: 20px;
+    align-self: flex-end;
+    /* Or hide if not needed on mobile */
+    display: none;
+    /* Hide control buttons on mobile as they are likely for slider */
+  }
+
   .feature .images img {
     width: 48%;
     /* 2 images side by side */
