@@ -1,95 +1,135 @@
-// DOM Elements
+// DOM Elements for Auth
 const modal = document.getElementById("auth-modal");
 const openModalBtns = document.querySelectorAll(".btn-sign-up");
 const closeModalBtn = document.querySelector(".close-modal");
 const overlay = document.querySelector(".modal-overlay");
+
+// DOM Elements for Mobile Menu
+const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+const mobileNav = document.querySelector(".nav");
+const closeMenuBtn = document.querySelector(".close-menu-btn");
+const body = document.body;
+
+// Create Menu Overlay
+const menuOverlay = document.createElement("div");
+menuOverlay.classList.add("menu-overlay");
+document.body.appendChild(menuOverlay);
 
 // Views
 const viewSelection = document.getElementById("auth-selection");
 const viewLogin = document.getElementById("login-form");
 const viewRegister = document.getElementById("register-form");
 
-// View Switching Buttons
-const btnShowLogin = document.getElementById("btn-show-login");
-const btnShowRegister = document.getElementById("btn-show-register");
-const linkToRegister = document.getElementById("link-to-register");
-const linkToLogin = document.getElementById("link-to-login");
+// --- Mobile Menu Functions ---
+function openMenu() {
+    mobileNav.classList.add("active");
+    menuOverlay.classList.add("active");
+    body.style.overflow = "hidden"; // Prevent scrolling
+}
 
-// Register Logic
-const btnSendCode = document.getElementById("btn-send-code");
-const groupVerify = document.getElementById("group-verify-code");
+function closeMenu() {
+    mobileNav.classList.remove("active");
+    menuOverlay.classList.remove("active");
+    body.style.overflow = "";
+}
 
-// --- MODAL FUNCTIONALITY ---
+if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener("click", openMenu);
+}
 
-const openModal = (e) => {
-    e.preventDefault();
-    modal.classList.remove("hidden");
-    // Reset to selection view
-    switchView(viewSelection);
-};
+if (closeMenuBtn) {
+    closeMenuBtn.addEventListener("click", closeMenu);
+}
 
-const closeModal = () => {
-    modal.classList.add("hidden");
-};
+// Close menu when clicking overlay
+menuOverlay.addEventListener("click", closeMenu);
 
-// Add Event Listeners to all "Sign Up" buttons
-openModalBtns.forEach((btn) => {
-    btn.addEventListener("click", openModal);
+// Close menu when clicking a link
+const navLinks = mobileNav.querySelectorAll("a");
+navLinks.forEach(link => {
+    link.addEventListener("click", closeMenu);
 });
+
+
+// --- Auth Functions --- //
+
+// Open Modal
+openModalBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        modal.classList.remove("hidden");
+    });
+});
+
+// Close Modal
+function closeModal() {
+    modal.classList.add("hidden");
+    // Reset view to selection after closing (optional)
+    setTimeout(() => {
+        switchView("selection");
+    }, 300);
+}
 
 closeModalBtn.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
-// --- VIEW SWITCHING ---
+// Close on Escape key
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+        closeModal();
+    }
+});
 
-const switchView = (targetView) => {
-    // Hide all
+// Switch Views
+function switchView(viewName) {
+    // Hide all views
     viewSelection.classList.add("hidden");
     viewLogin.classList.add("hidden");
     viewRegister.classList.add("hidden");
 
-    // Show target
-    targetView.classList.remove("hidden");
-};
-
-// From Selection to Forms
-btnShowLogin.addEventListener("click", () => switchView(viewLogin));
-btnShowRegister.addEventListener("click", () => switchView(viewRegister));
-
-// Between Forms
-linkToRegister.addEventListener("click", (e) => {
-    e.preventDefault();
-    switchView(viewRegister);
-});
-
-linkToLogin.addEventListener("click", (e) => {
-    e.preventDefault();
-    switchView(viewLogin);
-});
-
-// --- REGISTER LOGIC ---
-
-btnSendCode.addEventListener("click", () => {
-    const emailInput = document.getElementById("reg-email");
-    if (!emailInput.value) {
-        alert("Please enter an email address first.");
-        return;
+    // Show selected view
+    if (viewName === "selection") {
+        viewSelection.classList.remove("hidden");
+    } else if (viewName === "login") {
+        viewLogin.classList.remove("hidden");
+    } else if (viewName === "register") {
+        viewRegister.classList.remove("hidden");
     }
+}
 
-    // Validate email format simply
-    if (!emailInput.value.includes("@")) {
-        alert("Please enter a valid email.");
-        return;
-    }
+// Expose switchView to global scope for inline onclicks (if any)
+window.switchView = switchView;
 
-    // Mock sending code
-    btnSendCode.textContent = "Sending...";
-    btnSendCode.disabled = true;
+// Simulate Sending Code
+function sendCode() {
+    const btn = document.querySelector(".input-with-btn .btn-small");
+    const codeGroup = document.getElementById("group-verify-code");
 
+    // Change button state
+    btn.textContent = "Sending...";
+    btn.disabled = true;
+    btn.style.opacity = "0.7";
+
+    // Simulate API delay
     setTimeout(() => {
-        btnSendCode.textContent = "Sent!";
-        groupVerify.classList.remove("hidden");
-        alert(`Verification code sent to ${emailInput.value} (Check your console/mock)`);
-        console.log("Mock Verification Code: 123456");
+        btn.textContent = "Code Sent!";
+        btn.style.background = "#28a745"; // Green color
+
+        // Show code input
+        codeGroup.classList.remove("hidden");
+
+        // Log demo code
+        console.log("DEMO CODE: 123456");
+
+        // Reset button after a while
+        setTimeout(() => {
+            btn.disabled = false;
+            btn.textContent = "Resend";
+            btn.style.background = "#333";
+            btn.style.opacity = "1";
+        }, 30000);
     }, 1500);
-});
+}
+
+// Expose sendCode
+window.sendCode = sendCode;
