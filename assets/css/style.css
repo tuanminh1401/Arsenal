@@ -1173,6 +1173,21 @@ footer {
     padding: 10px 0;
   }
 
+  /* Disable sticky header on mobile to prevent view obstruction */
+  .header.fixed {
+    position: relative;
+    top: auto;
+  }
+
+  /* Prevent horizontal overflow */
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
   .nav {
     /* display: none; Remove this, let's stack them */
     width: 100%;
