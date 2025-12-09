@@ -157,11 +157,14 @@ div::-webkit-scrollbar {
   background: #171100;
 }
 
-/* Desktop: Hide Mobile Elements */
-.mobile-menu-btn,
-.nav-header,
-.menu-overlay {
-  display: none !important;
+/* Desktop: Hide Mobile Elements (Min-width 992px to be safe, or just > mobile breakpoint) */
+@media screen and (min-width: 577px) {
+
+  .mobile-menu-btn,
+  .nav-header,
+  .menu-overlay {
+    display: none !important;
+  }
 }
 
 /* Ensure Nav is visible and horizontal on Desktop */
@@ -1638,8 +1641,14 @@ footer {
   }
 
   .header .Logo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+    /* Vertically center in the red bar */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
   }
 
   .header .btn-sign-up {
