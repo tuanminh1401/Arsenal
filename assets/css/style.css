@@ -1641,8 +1641,8 @@ footer {
   }
 
   .header .Logo {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     /* Vertically center in the red bar */
     position: absolute;
     top: 50%;
