@@ -1147,5 +1147,80 @@
         </div>
       </div>
     </footer>
-  </body>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            
+            <!-- Auth Selection -->
+            <div id="auth-selection" class="auth-view">
+                <h2 class="heading-lv2" style="text-align: center; margin-bottom: 2rem;">Welcome to Arsenal</h2>
+                <div class="auth-buttons">
+                    <button id="btn-show-login" class="btn btn-full">Login</button>
+                    <button id="btn-show-register" class="btn btn-full btn-outline">Register</button>
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="auth-view hidden">
+                <h2 class="heading-lv2" style="text-align: center; margin-bottom: 2rem;">Login</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-full">Login</button>
+                </form>
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="#" id="link-to-register">Register</a></p>
+                </div>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" class="auth-view hidden">
+                <h2 class="heading-lv2" style="text-align: center; margin-bottom: 2rem;">Register</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="reg-name">Full Name</label>
+                        <input type="text" id="reg-name" placeholder="Thierry Henry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-dob">Date of Birth</label>
+                        <input type="date" id="reg-dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-nation">Nationality</label>
+                        <input type="text" id="reg-nation" placeholder="e.g. France" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reg-email">Email</label>
+                        <div class="input-with-btn">
+                            <input type="email" id="reg-email" placeholder="email@example.com" required>
+                            <button type="button" class="btn-small" id="btn-send-code">Send Code</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group hidden" id="group-verify-code">
+                        <label for="reg-code">Verification Code</label>
+                        <input type="text" id="reg-code" placeholder="Enter 6-digit code">
+                    </div>
+
+                    <button type="submit" class="btn btn-full">Create Account</button>
+                </form>
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="#" id="link-to-login">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/js/main.js"></script>
+    </body>
 </html>
