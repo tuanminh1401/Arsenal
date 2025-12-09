@@ -159,8 +159,61 @@ div::-webkit-scrollbar {
 
 /* Desktop: Hide Mobile Elements */
 .mobile-menu-btn,
-.nav-header {
-  display: none;
+.nav-header,
+.menu-overlay {
+  display: none !important;
+}
+
+/* Ensure Nav is visible and horizontal on Desktop */
+.nav {
+  display: block !important;
+  position: static;
+  height: auto;
+  width: auto;
+  max-width: none;
+  background: transparent;
+  transform: none;
+  box-shadow: none;
+  padding: 0;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.nav ul {
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+}
+
+.nav a {
+  color: black !important;
+  padding: 8px 21px;
+  border-bottom: none;
+  text-align: center;
+  width: auto;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: #171100 !important;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+/* Fix User Profile on Desktop to not be huge */
+.user-avatar {
+  width: 40px !important;
+  height: 40px !important;
+  border: 2px solid #333;
+  /* Darker border for light header */
+}
+
+/* Revert Header Body to Flex Row on Desktop */
+.header .body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .user-profile.hidden {
