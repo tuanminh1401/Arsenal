@@ -157,6 +157,67 @@ div::-webkit-scrollbar {
   background: #171100;
 }
 
+/* Desktop: Hide Mobile Elements */
+.mobile-menu-btn,
+.nav-header {
+  display: none;
+}
+
+.user-profile.hidden {
+  display: none;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.user-name {
+  color: #fff;
+  /* Assuming dark header background or dark text depending on design */
+  font-weight: 600;
+  font-size: 14px;
+  display: none;
+  /* Hide name on mobile to save space, show on desktop if needed */
+}
+
+/* Desktop overrides */
+@media screen and (min-width: 992px) {
+  .user-name {
+    display: block;
+    color: #000;
+  }
+}
+
+.header .body {
+  justify-content: space-between;
+  /* Ensure spacing on desktop too */
+}
+
+/* Reset order for Desktop */
+.header .logo-link {
+  order: 0;
+}
+
+.nav {
+  order: 1;
+  margin-left: auto;
+}
+
+.action {
+  order: 2;
+}
+
 /* ====================hero=================== */
 .hero {
   display: block;
@@ -1173,6 +1234,11 @@ footer {
     padding: 10px 0;
   }
 
+  /* Profile Name color adjustment for tablet/mobile if outside header */
+  .user-name {
+    color: #333;
+  }
+
   /* Disable sticky header on mobile to prevent view obstruction */
   .header.fixed {
     position: relative;
@@ -1386,19 +1452,136 @@ footer {
 /* Mobile */
 @media screen and (max-width: 576px) {
   .header .body {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    /* Keep row for 3 items */
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 10px 0;
+    position: relative;
   }
 
-  .nav {
-    margin-left: 0;
-    margin-top: 10px;
+  .mobile-menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    padding: 0;
+  }
+
+  .mobile-menu-btn .bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  .header .Logo {
+    width: 60px;
+    height: 60px;
+    /* Center visually */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .header .btn-sign-up {
+    margin: 0;
+    min-width: auto;
     width: auto;
-    min-width: 140px;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .user-name {
+    display: none;
+    /* Keep name hidden on small mobile */
+  }
+
+  /* Off-canvas Nav */
+  .nav {
+    display: block;
+    /* Override previous none/width settings */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    max-width: 80%;
+    background: #c31a1a;
+    z-index: 2000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .nav.active {
+    transform: translateX(0);
+  }
+
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+  }
+
+  .close-menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .nav a {
+    color: white !important;
+    display: block;
+    font-size: 18px;
+    padding: 15px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+  }
+
+  .nav a:hover {
+    color: var(--primary-color) !important;
+    text-shadow: none;
+  }
+
+  /* Overlay */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1500;
+    display: none;
+  }
+
+  .menu-overlay.active {
+    display: block;
   }
 
   .header .Logo {

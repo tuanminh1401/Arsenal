@@ -1,447 +1,399 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- reset css -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <!-- embed -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Roboto:ital,wght@0,300;1,300&family=Sen&display=swap"
-      rel="stylesheet"
-    />
-    <!-- style -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Arsenal</title>
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header fixed">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- reset css -->
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <!-- embed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Roboto:ital,wght@0,300;1,300&family=Sen&display=swap"
+    rel="stylesheet" />
+  <!-- style -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Arsenal</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header fixed">
+    <div class="main-content">
+      <div class="body">
+        <!-- mobile menu btn -->
+        <button class="mobile-menu-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+
+        <!-- navigator -->
+        <nav class="nav">
+          <div class="nav-header">
+            <h3 class="heading-lv2" style="font-size: 24px; color: #fff;">Menu</h3>
+            <button class="close-menu-btn">&times;</button>
+          </div>
+          <ul>
+            <li class="active">
+              <a href="#!">Home</a>
+            </li>
+            <li>
+              <a href="#!">Player</a>
+            </li>
+            <li>
+              <a href="#!">Squad</a>
+            </li>
+            <li>
+              <a href="#!">Achievement</a>
+            </li>
+            <li>
+              <a href="#!">Transfers</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- logo -->
+        <a href="#" class="logo-link">
+          <img src="./pic/arsenal-fc-logo.png" alt="Arsenal" class="Logo" />
+        </a>
+
+        <!-- btn -->
+        <div class="action">
+          <a href="#!" class="btn btn-sign-up" id="btn-login-trigger">Sign Up</a>
+
+          <!-- User Profile (Hidden by default) -->
+          <div class="user-profile hidden" id="user-profile-display">
+            <span class="user-name">Tuan Minh</span>
+            <img src="https://i.pravatar.cc/150?img=11" alt="Avatar" class="user-avatar">
+          </div>
+        </div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main>
+    <!-- hero -->
+    <div class="hero">
       <div class="main-content">
+        <h1 class="heading top">Arsenal - The team of legendary moments.</h1>
         <div class="body">
-          <!-- logo -->
-          <img src="./pic/arsenal-fc-logo.png" alt="Lesson." class="Logo" />
-          <!-- navigator -->
-          <nav class="nav">
-            <ul>
-              <li class="active">
-                <a href="#!">Home</a>
-              </li>
-              <li>
-                <a href="#!">Player</a>
-              </li>
-              <li>
-                <a href="#!">Squad</a>
-              </li>
-              <li>
-                <a href="#!">Achievement</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- btn -->
-          <div class="action">
-            <a href="#!" class="btn btn-sign-up">Sign Up</a>
+          <!-- hero left -->
+          <div class="media-block">
+            <img src="./pic/phao.jpg" alt="Learn without limits and spread knowledge" class="img" />
           </div>
-          <div class="line"></div>
+          <!-- hero right -->
+          <div class="content-block">
+            <h1 class="heading">The Invincible season 2003-2004</h1>
+            <hr />
+            <p class="desc">
+              Arsenal's 2003-2004 season is legendary, earning them the title
+              "The Invincibles." Under Arsène Wenger's guidance, they
+              completed the Premier League campaign unbeaten with 26 wins and
+              12 draws, amassing 90 points. Thierry Henry was the team's
+              standout star, scoring 30 league goals, supported by key players
+              like Patrick Vieira, Robert Pires, and Dennis Bergkamp.
+            </p>
+            <br />
+            <p class="desc">
+              A key moment came when they secured the title with 2-2 draw
+              against rivals Tottenham. Though they didn't achieve success in
+              other competitions, their Premier League dominance cemented
+              their legacy as one of the greatest teams in football history.
+              This remarkable feat remains unmatched in the modern 38-game
+              league format.
+            </p>
+            <div class="cta-group">
+              <a href="https://www.arsenal.com/news/explainer-arsenals-200304-invincibles#:~:text=Our%202003%2F04%20Premier%20League,earned%20the%20nickname%20the%20Invincibles."
+                target="_blank" class="btn hero-cta">Read More</a>
+              <a href="https://www.youtube.com/watch?v=Z41Um_rDbVw" target="blank">
+                <button class="watch-video">
+                  <div class="icon">
+                    <img src="./icon/tamgiac.svg" alt="youtube" />
+                  </div>
+                  <span>Watch Highlight</span>
+                </button>
+              </a>
+            </div>
+            <p class="desc desc-recent">Matches result</p>
+            <p class="desc stats">
+              <strong>26</strong> Wins <strong>12</strong> Draws
+              <strong>0</strong> Lose
+            </p>
+          </div>
+        </div>
+        <div class="logo-bottom">
+          <img src="./pic/bottom.jpg" alt="logo" class="logo-bottom-mini" />
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- main -->
-    <main>
-      <!-- hero -->
-      <div class="hero">
-        <div class="main-content">
-          <h1 class="heading top">Arsenal - The team of legendary moments.</h1>
-          <div class="body">
-            <!-- hero left -->
-            <div class="media-block">
-              <img
-                src="./pic/phao.jpg"
-                alt="Learn without limits and spread knowledge"
-                class="img"
-              />
-            </div>
-            <!-- hero right -->
-            <div class="content-block">
-              <h1 class="heading">The Invincible season 2003-2004</h1>
-              <hr />
-              <p class="desc">
-                Arsenal's 2003-2004 season is legendary, earning them the title
-                "The Invincibles." Under Arsène Wenger's guidance, they
-                completed the Premier League campaign unbeaten with 26 wins and
-                12 draws, amassing 90 points. Thierry Henry was the team's
-                standout star, scoring 30 league goals, supported by key players
-                like Patrick Vieira, Robert Pires, and Dennis Bergkamp.
-              </p>
-              <br />
-              <p class="desc">
-                A key moment came when they secured the title with 2-2 draw
-                against rivals Tottenham. Though they didn't achieve success in
-                other competitions, their Premier League dominance cemented
-                their legacy as one of the greatest teams in football history.
-                This remarkable feat remains unmatched in the modern 38-game
-                league format.
-              </p>
-              <div class="cta-group">
-                <a
-                  href="https://www.arsenal.com/news/explainer-arsenals-200304-invincibles#:~:text=Our%202003%2F04%20Premier%20League,earned%20the%20nickname%20the%20Invincibles."
-                  target="_blank"
-                  class="btn hero-cta"
-                  >Read More</a
-                >
-                <a
-                  href="https://www.youtube.com/watch?v=Z41Um_rDbVw"
-                  target="blank"
-                >
-                  <button class="watch-video">
-                    <div class="icon">
-                      <img src="./icon/tamgiac.svg" alt="youtube" />
-                    </div>
-                    <span>Watch Highlight</span>
-                  </button>
+    <!-- popular -->
+    <div class="popular">
+      <div class="main-content">
+        <div class="popular-top">
+          <!-- popular-left -->
+          <div class="infor">
+            <h2 class="heading-lv2">Player Squad 2003-2004</h2>
+            <hr />
+            <p class="desc">
+              Arsenal's 2003-2004 squad included many superstars who created
+              the Gunners' miraculous championship - the unbeaten season.
+            </p>
+          </div>
+
+          <!-- popular-right -->
+          <div class="control">
+            <button class="control-btn">
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="control-btn">
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="course-list">
+          <!-- item 1 -->
+          <div class="course-item" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card">
+              <div class="flip-front">
+                <a href="#!">
+                  <img src="./pic/henry.jpg" alt="Basic web design" class="thumb" />
                 </a>
-              </div>
-              <p class="desc desc-recent">Matches result</p>
-              <p class="desc stats">
-                <strong>26</strong> Wins <strong>12</strong> Draws
-                <strong>0</strong> Lose
-              </p>
-            </div>
-          </div>
-          <div class="logo-bottom">
-            <img src="./pic/bottom.jpg" alt="logo" class="logo-bottom-mini" />
-          </div>
-        </div>
-      </div>
-
-      <!-- popular -->
-      <div class="popular">
-        <div class="main-content">
-          <div class="popular-top">
-            <!-- popular-left -->
-            <div class="infor">
-              <h2 class="heading-lv2">Player Squad 2003-2004</h2>
-              <hr />
-              <p class="desc">
-                Arsenal's 2003-2004 squad included many superstars who created
-                the Gunners' miraculous championship - the unbeaten season.
-              </p>
-            </div>
-
-            <!-- popular-right -->
-            <div class="control">
-              <button class="control-btn">
-                <svg
-                  width="8"
-                  height="14"
-                  viewBox="0 0 8 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7 1L1 7L7 13"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <button class="control-btn">
-                <svg
-                  width="8"
-                  height="14"
-                  viewBox="0 0 8 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1L7 7L1 13"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="course-list">
-            <!-- item 1 -->
-            <div class="course-item" onclick="this.classList.toggle('flipped')">
-              <div class="flip-card">
-                <div class="flip-front">
-                  <a href="#!">
-                    <img
-                      src="./pic/henry.jpg"
-                      alt="Basic web design"
-                      class="thumb"
-                    />
-                  </a>
-                  <div class="info">
-                    <div class="head">
-                      <h3 class="title">
-                        <a class="line-clamp break-all" href="#!"
-                          >Thierry Henry</a
-                        >
-                      </h3>
-                    </div>
-                    <p class="desc line-clamp line-2 break-all">
-                      Thierry Henry, Arsenal’s legendary striker, exemplified
-                      brilliance, elegance, speed, and precision. His
-                      creativity, leadership, and charisma left an indelible
-                      legacy, inspiring generations and defining football
-                      greatness forever.
-                    </p>
+                <div class="info">
+                  <div class="head">
+                    <h3 class="title">
+                      <a class="line-clamp break-all" href="#!">Thierry Henry</a>
+                    </h3>
                   </div>
+                  <p class="desc line-clamp line-2 break-all">
+                    Thierry Henry, Arsenal’s legendary striker, exemplified
+                    brilliance, elegance, speed, and precision. His
+                    creativity, leadership, and charisma left an indelible
+                    legacy, inspiring generations and defining football
+                    greatness forever.
+                  </p>
                 </div>
-                <div class="flip-back">
-                  <div class="flip-back-content">
-                    <!-- top -->
-                    <div class="image">
-                      <img
-                        src="./pic/primary-bg.svg"
-                        alt=""
-                        class="background"
-                      />
-                      <img
-                        src="./pic/primary-graphic-big.svg"
-                        alt=""
-                        class="foreground"
-                      />
-                      <div class="mini-content">
-                        <img
-                          src="https://resources.premierleague.com/premierleague/photos/players/250x250/p1619.png"
-                          alt=""
-                          class="henry-minipic"
-                        />
-                        <p class="henry">Thierry <strong>Henry</strong></p>
-                      </div>
+              </div>
+              <div class="flip-back">
+                <div class="flip-back-content">
+                  <!-- top -->
+                  <div class="image">
+                    <img src="./pic/primary-bg.svg" alt="" class="background" />
+                    <img src="./pic/primary-graphic-big.svg" alt="" class="foreground" />
+                    <div class="mini-content">
+                      <img src="https://resources.premierleague.com/premierleague/photos/players/250x250/p1619.png"
+                        alt="" class="henry-minipic" />
+                      <p class="henry">Thierry <strong>Henry</strong></p>
                     </div>
-                    <!-- bottom 1 -->
-                    <div class="thongtin">
-                      <div class="information box1">
-                        <p class="personal-detail">Personal Details</p>
-                        <div class="nation">
-                          <p>Nationality</p>
-                          <div class="nation-left">
-                            <img
-                              src="https://resources.premierleague.com/premierleague/flags/FR.png"
-                              alt="France"
-                            />
-                            <p class="inhoa">France</p>
-                          </div>
+                  </div>
+                  <!-- bottom 1 -->
+                  <div class="thongtin">
+                    <div class="information box1">
+                      <p class="personal-detail">Personal Details</p>
+                      <div class="nation">
+                        <p>Nationality</p>
+                        <div class="nation-left">
+                          <img src="https://resources.premierleague.com/premierleague/flags/FR.png" alt="France" />
+                          <p class="inhoa">France</p>
                         </div>
-                        <!-- <hr> -->
                       </div>
-                      <div class="information box2">
-                        <p>Date of Birth</p>
-                        <p class="inhoa">17/08/1977</p>
-                      </div>
-                      <div class="information box3">
-                        <p>Height</p>
-                        <p class="inhoa">188cm</p>
-                      </div>
-                      <div class="information box4">
-                        <p>Position</p>
-                        <p class="inhoa">Forward</p>
-                      </div>
+                      <!-- <hr> -->
                     </div>
-                    <!-- bottom 2 -->
-                    <div class="thongtin second">
-                      <div class="information box1">
-                        <p class="personal-detail">Premier League Record</p>
-                        <div class="nation">
-                          <p>Appearances</p>
-                          <div class="nation-left">
-                            <!-- <img
+                    <div class="information box2">
+                      <p>Date of Birth</p>
+                      <p class="inhoa">17/08/1977</p>
+                    </div>
+                    <div class="information box3">
+                      <p>Height</p>
+                      <p class="inhoa">188cm</p>
+                    </div>
+                    <div class="information box4">
+                      <p>Position</p>
+                      <p class="inhoa">Forward</p>
+                    </div>
+                  </div>
+                  <!-- bottom 2 -->
+                  <div class="thongtin second">
+                    <div class="information box1">
+                      <p class="personal-detail">Premier League Record</p>
+                      <div class="nation">
+                        <p>Appearances</p>
+                        <div class="nation-left">
+                          <!-- <img
                               src="https://resources.premierleague.com/premierleague/flags/FR.png"
                               alt=""
                             /> -->
-                            <p class="inhoa">258</p>
-                          </div>
+                          <p class="inhoa">258</p>
                         </div>
                       </div>
-                      <div class="information box2">
-                        <p>Goals</p>
-                        <p class="inhoa">175</p>
-                      </div>
-                      <div class="information box3">
-                        <p>Assist</p>
-                        <p class="inhoa">74</p>
-                      </div>
-                      <!-- <div class="information box4">
+                    </div>
+                    <div class="information box2">
+                      <p>Goals</p>
+                      <p class="inhoa">175</p>
+                    </div>
+                    <div class="information box3">
+                      <p>Assist</p>
+                      <p class="inhoa">74</p>
+                    </div>
+                    <!-- <div class="information box4">
                         <p>Position</p>
                         <p class="inhoa">Forward</p>
                       </div> -->
-                    </div>
-                    <!-- bottom 3 -->
-                    <div class="thongtin second">
-                      <div class="information box1">
-                        <p class="personal-detail">Honours & Awards</p>
-                        <div class="nation">
-                          <p>Golden Boot</p>
-                          <div class="nation-left">
-                            <!-- <img
+                  </div>
+                  <!-- bottom 3 -->
+                  <div class="thongtin second">
+                    <div class="information box1">
+                      <p class="personal-detail">Honours & Awards</p>
+                      <div class="nation">
+                        <p>Golden Boot</p>
+                        <div class="nation-left">
+                          <!-- <img
                               src="https://resources.premierleague.com/premierleague/flags/FR.png"
                               alt=""
                             /> -->
-                            <p class="inhoa">4</p>
-                          </div>
+                          <p class="inhoa">4</p>
                         </div>
-                        <div class="golden-boot">
-                          <p>2001/02</p>
-                          <p>2003/04</p>
-                          <p>2004/05</p>
-                          <p>2005/06</p>
-                        </div>
-                        <!-- <hr> -->
                       </div>
-                      <div class="information box2">
-                        <p>Player of the Season</p>
-                        <p class="inhoa">2</p>
-                      </div>
-                      <div class="pots">
-                        <p>2003/04</p>
-                        <p>2005/06</p>
-                      </div>
-                      <div class="information box3">
-                        <p>Premier League Champion</p>
-                        <p class="inhoa">2</p>
-                      </div>
-                      <div class="champion">
+                      <div class="golden-boot">
                         <p>2001/02</p>
                         <p>2003/04</p>
+                        <p>2004/05</p>
+                        <p>2005/06</p>
                       </div>
-                      <div class="information box4">
-                        <p>Player of the Month</p>
-                        <p class="inhoa">4</p>
-                      </div>
-                      <div class="potm">
-                        <p>April 2000</p>
-                        <p>September 2002</p>
-                        <p>January 2004</p>
-                        <p>April 2004</p>
-                      </div>
+                      <!-- <hr> -->
+                    </div>
+                    <div class="information box2">
+                      <p>Player of the Season</p>
+                      <p class="inhoa">2</p>
+                    </div>
+                    <div class="pots">
+                      <p>2003/04</p>
+                      <p>2005/06</p>
+                    </div>
+                    <div class="information box3">
+                      <p>Premier League Champion</p>
+                      <p class="inhoa">2</p>
+                    </div>
+                    <div class="champion">
+                      <p>2001/02</p>
+                      <p>2003/04</p>
+                    </div>
+                    <div class="information box4">
+                      <p>Player of the Month</p>
+                      <p class="inhoa">4</p>
+                    </div>
+                    <div class="potm">
+                      <p>April 2000</p>
+                      <p>September 2002</p>
+                      <p>January 2004</p>
+                      <p>April 2004</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- item 2 -->
-            <div class="course-item" onclick="this.classList.toggle('flipped')">
-              <div class="flip-card">
-                <div class="flip-front">
-                  <a href="#!">
-                    <img
-                      src="./pic/bergkam.jpg"
-                      alt="Basic web design"
-                      class="thumb"
-                    />
-                  </a>
-                  <div class="info">
-                    <div class="head">
-                      <h3 class="title">
-                        <a class="line-clamp break-all" href="#!"
-                          >Dennis Bergkamp</a
-                        >
-                      </h3>
-                    </div>
-                    <p class="desc line-clamp line-2 break-all">
-                      Dennis Bergkamp, Arsenal's maestro, blended elegance,
-                      intelligence, and vision. His iconic goals and creativity
-                      inspired generations, solidifying his legacy as a
-                      legendary, tactical, timeless football genius.
-                    </p>
+          </div>
+          <!-- item 2 -->
+          <div class="course-item" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card">
+              <div class="flip-front">
+                <a href="#!">
+                  <img src="./pic/bergkam.jpg" alt="Basic web design" class="thumb" />
+                </a>
+                <div class="info">
+                  <div class="head">
+                    <h3 class="title">
+                      <a class="line-clamp break-all" href="#!">Dennis Bergkamp</a>
+                    </h3>
                   </div>
+                  <p class="desc line-clamp line-2 break-all">
+                    Dennis Bergkamp, Arsenal's maestro, blended elegance,
+                    intelligence, and vision. His iconic goals and creativity
+                    inspired generations, solidifying his legacy as a
+                    legendary, tactical, timeless football genius.
+                  </p>
                 </div>
-                <div class="flip-back">
-                  <div class="flip-back-content">
-                    <!-- top -->
-                    <div class="image-bergkamp">
-                      <img
-                        src="./pic/primary-bg.svg"
-                        alt=""
-                        class="background"
-                      />
-                      <img
-                        src="./pic/primary-graphic-big.svg"
-                        alt=""
-                        class="foreground"
-                      />
-                      <div class="mini-content">
-                        <img
-                          src="https://resources.premierleague.com/premierleague/photos/players/250x250/p1608.png"
-                          alt=""
-                          class="henry-minipic"
-                        />
-                        <p class="bergkamp">Dennis <strong>Bergkamp</strong></p>
-                      </div>
+              </div>
+              <div class="flip-back">
+                <div class="flip-back-content">
+                  <!-- top -->
+                  <div class="image-bergkamp">
+                    <img src="./pic/primary-bg.svg" alt="" class="background" />
+                    <img src="./pic/primary-graphic-big.svg" alt="" class="foreground" />
+                    <div class="mini-content">
+                      <img src="https://resources.premierleague.com/premierleague/photos/players/250x250/p1608.png"
+                        alt="" class="henry-minipic" />
+                      <p class="bergkamp">Dennis <strong>Bergkamp</strong></p>
                     </div>
-                    <!-- bottom 1 -->
-                    <div class="thongtin">
-                      <div class="information box1">
-                        <p class="personal-detail">Personal Details</p>
-                        <div class="nation">
-                          <p>Nationality</p>
-                          <div class="nation-left">
-                            <img
-                              src="https://resources.premierleague.com/premierleague/flags/NL.png"
-                              alt=""
-                            />
-                            <p class="inhoa">Netherlands</p>
-                          </div>
+                  </div>
+                  <!-- bottom 1 -->
+                  <div class="thongtin">
+                    <div class="information box1">
+                      <p class="personal-detail">Personal Details</p>
+                      <div class="nation">
+                        <p>Nationality</p>
+                        <div class="nation-left">
+                          <img src="https://resources.premierleague.com/premierleague/flags/NL.png" alt="" />
+                          <p class="inhoa">Netherlands</p>
                         </div>
-                        <!-- <hr> -->
                       </div>
-                      <div class="information box2">
-                        <p>Date of Birth</p>
-                        <p class="inhoa">10/05/1969</p>
-                      </div>
-                      <div class="information box3">
-                        <p>Height</p>
-                        <p class="inhoa">183cm</p>
-                      </div>
-                      <div class="information box4">
-                        <p>Position</p>
-                        <p class="inhoa">Forward</p>
-                      </div>
+                      <!-- <hr> -->
                     </div>
-                    <!-- bottom 2 -->
-                    <div class="thongtin second">
-                      <div class="information box1">
-                        <p class="personal-detail">Premier League Record</p>
-                        <div class="nation">
-                          <p>Appearances</p>
-                          <div class="nation-left">
-                            <!-- <img
+                    <div class="information box2">
+                      <p>Date of Birth</p>
+                      <p class="inhoa">10/05/1969</p>
+                    </div>
+                    <div class="information box3">
+                      <p>Height</p>
+                      <p class="inhoa">183cm</p>
+                    </div>
+                    <div class="information box4">
+                      <p>Position</p>
+                      <p class="inhoa">Forward</p>
+                    </div>
+                  </div>
+                  <!-- bottom 2 -->
+                  <div class="thongtin second">
+                    <div class="information box1">
+                      <p class="personal-detail">Premier League Record</p>
+                      <div class="nation">
+                        <p>Appearances</p>
+                        <div class="nation-left">
+                          <!-- <img
                               src="https://resources.premierleague.com/premierleague/flags/FR.png"
                               alt=""
                             /> -->
-                            <p class="inhoa">315</p>
-                          </div>
+                          <p class="inhoa">315</p>
                         </div>
                       </div>
-                      <div class="information box2">
-                        <p>Goals</p>
-                        <p class="inhoa">87</p>
-                      </div>
-                      <div class="information box3">
-                        <p>Assist</p>
-                        <p class="inhoa">94</p>
-                      </div>
-                      <!-- <div class="information box4">
+                    </div>
+                    <div class="information box2">
+                      <p>Goals</p>
+                      <p class="inhoa">87</p>
+                    </div>
+                    <div class="information box3">
+                      <p>Assist</p>
+                      <p class="inhoa">94</p>
+                    </div>
+                    <!-- <div class="information box4">
                         <p>Position</p>
                         <p class="inhoa">Forward</p>
                       </div> -->
-                    </div>
-                    <!-- bottom 3 -->
-                    <div class="thongtin second">
-                      <div class="information box1">
-                        <p class="personal-detail">Honours & Awards</p>
-                        <!-- <div class="nation">
+                  </div>
+                  <!-- bottom 3 -->
+                  <div class="thongtin second">
+                    <div class="information box1">
+                      <p class="personal-detail">Honours & Awards</p>
+                      <!-- <div class="nation">
                           <p>Golden Boot</p>
                           <div class="nation-left">
                             <p class="inhoa">4</p>
@@ -453,9 +405,9 @@
                           <p>2004/05</p>
                           <p>2005/06</p>
                         </div> -->
-                        <!-- <hr> -->
-                      </div>
-                      <!-- <div class="information box2">
+                      <!-- <hr> -->
+                    </div>
+                    <!-- <div class="information box2">
                         <p>Player of the Season</p>
                         <p class="inhoa">2</p>
                       </div>
@@ -463,139 +415,119 @@
                         <p>2003/04</p>
                         <p>2005/06</p>
                       </div> -->
-                      <div class="information box3">
-                        <p>Premier League Champion</p>
-                        <p class="inhoa">3</p>
-                      </div>
-                      <div class="champion">
-                        <p>1997/98</p>
-                        <p>2001/02</p>
-                        <p>2003/04</p>
-                      </div>
-                      <div class="information box4">
-                        <p>Player of the Month</p>
-                        <p class="inhoa">4</p>
-                      </div>
-                      <div class="potm">
-                        <p>August 1997</p>
-                        <p>September 1997</p>
-                        <p>March 2002</p>
-                        <p>February 2004</p>
-                      </div>
+                    <div class="information box3">
+                      <p>Premier League Champion</p>
+                      <p class="inhoa">3</p>
+                    </div>
+                    <div class="champion">
+                      <p>1997/98</p>
+                      <p>2001/02</p>
+                      <p>2003/04</p>
+                    </div>
+                    <div class="information box4">
+                      <p>Player of the Month</p>
+                      <p class="inhoa">4</p>
+                    </div>
+                    <div class="potm">
+                      <p>August 1997</p>
+                      <p>September 1997</p>
+                      <p>March 2002</p>
+                      <p>February 2004</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- item 3 -->
-            <div class="course-item" onclick="this.classList.toggle('flipped')">
-              <div class="flip-card">
-                <div class="flip-front">
-                  <a href="#!">
-                    <img
-                      src="./pic/pires2.JPG"
-                      alt="Basic web design"
-                      class="thumb"
-                    />
-                  </a>
-                  <div class="info">
-                    <div class="head">
-                      <h3 class="title">
-                        <a class="line-clamp break-all" href="#!"
-                          >Robert Pirès</a
-                        >
-                      </h3>
-                    </div>
-                    <p class="desc line-clamp line-2 break-all">
-                      Robert Pires, Arsenal’s midfield maestro, combined
-                      elegance, creativity, flair, and intelligence. His
-                      technical skill, adaptability, vision, and relentless
-                      determination crafted iconic moments, inspiring teammates
-                      and defining football artistry eternally.
-                    </p>
+          </div>
+          <!-- item 3 -->
+          <div class="course-item" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card">
+              <div class="flip-front">
+                <a href="#!">
+                  <img src="./pic/pires2.JPG" alt="Basic web design" class="thumb" />
+                </a>
+                <div class="info">
+                  <div class="head">
+                    <h3 class="title">
+                      <a class="line-clamp break-all" href="#!">Robert Pirès</a>
+                    </h3>
                   </div>
+                  <p class="desc line-clamp line-2 break-all">
+                    Robert Pires, Arsenal’s midfield maestro, combined
+                    elegance, creativity, flair, and intelligence. His
+                    technical skill, adaptability, vision, and relentless
+                    determination crafted iconic moments, inspiring teammates
+                    and defining football artistry eternally.
+                  </p>
                 </div>
-                <div class="flip-back">
-                  <div class="flip-back-content">
-                    <!-- top -->
-                    <div class="image-pires">
-                      <img
-                        src="./pic/primary-bg.svg"
-                        alt=""
-                        class="background"
-                      />
-                      <img
-                        src="./pic/primary-graphic-big.svg"
-                        alt=""
-                        class="foreground"
-                      />
-                      <div class="mini-content">
-                        <img
-                          src="https://resources.premierleague.com/premierleague/photos/players/250x250/p3884.png"
-                          alt=""
-                          class="henry-minipic"
-                        />
-                        <p class="pires">Robert <strong>Pirès</strong></p>
-                      </div>
+              </div>
+              <div class="flip-back">
+                <div class="flip-back-content">
+                  <!-- top -->
+                  <div class="image-pires">
+                    <img src="./pic/primary-bg.svg" alt="" class="background" />
+                    <img src="./pic/primary-graphic-big.svg" alt="" class="foreground" />
+                    <div class="mini-content">
+                      <img src="https://resources.premierleague.com/premierleague/photos/players/250x250/p3884.png"
+                        alt="" class="henry-minipic" />
+                      <p class="pires">Robert <strong>Pirès</strong></p>
                     </div>
-                    <!-- bottom 1 -->
-                    <div class="thongtin">
-                      <div class="information box1">
-                        <p class="personal-detail">Personal Details</p>
-                        <div class="nation">
-                          <p>Nationality</p>
-                          <div class="nation-left">
-                            <img
-                              src="https://resources.premierleague.com/premierleague/flags/FR.png"
-                              alt=""
-                            />
-                            <p class="inhoa">France</p>
-                          </div>
-                        </div>
-                        <!-- <hr> -->
-                      </div>
-                      <div class="information box2">
-                        <p>Date of Birth</p>
-                        <p class="inhoa">29/10/1973</p>
-                      </div>
-                      <div class="information box3">
-                        <p>Height</p>
-                        <p class="inhoa">187cm</p>
-                      </div>
-                      <div class="information box4">
-                        <p>Position</p>
-                        <p class="inhoa">Midfielder</p>
-                      </div>
-                    </div>
-                    <!-- bottom 2 -->
-                    <div class="thongtin second">
-                      <div class="information box1">
-                        <p class="personal-detail">Premier League Record</p>
-                        <div class="nation">
-                          <p>Appearances</p>
-                          <div class="nation-left">
-                            <p class="inhoa">198</p>
-                          </div>
+                  </div>
+                  <!-- bottom 1 -->
+                  <div class="thongtin">
+                    <div class="information box1">
+                      <p class="personal-detail">Personal Details</p>
+                      <div class="nation">
+                        <p>Nationality</p>
+                        <div class="nation-left">
+                          <img src="https://resources.premierleague.com/premierleague/flags/FR.png" alt="" />
+                          <p class="inhoa">France</p>
                         </div>
                       </div>
-                      <div class="information box2">
-                        <p>Goals</p>
-                        <p class="inhoa">62</p>
+                      <!-- <hr> -->
+                    </div>
+                    <div class="information box2">
+                      <p>Date of Birth</p>
+                      <p class="inhoa">29/10/1973</p>
+                    </div>
+                    <div class="information box3">
+                      <p>Height</p>
+                      <p class="inhoa">187cm</p>
+                    </div>
+                    <div class="information box4">
+                      <p>Position</p>
+                      <p class="inhoa">Midfielder</p>
+                    </div>
+                  </div>
+                  <!-- bottom 2 -->
+                  <div class="thongtin second">
+                    <div class="information box1">
+                      <p class="personal-detail">Premier League Record</p>
+                      <div class="nation">
+                        <p>Appearances</p>
+                        <div class="nation-left">
+                          <p class="inhoa">198</p>
+                        </div>
                       </div>
-                      <div class="information box3">
-                        <p>Assist</p>
-                        <p class="inhoa">41</p>
-                      </div>
-                      <!-- <div class="information box4">
+                    </div>
+                    <div class="information box2">
+                      <p>Goals</p>
+                      <p class="inhoa">62</p>
+                    </div>
+                    <div class="information box3">
+                      <p>Assist</p>
+                      <p class="inhoa">41</p>
+                    </div>
+                    <!-- <div class="information box4">
                         <p>Position</p>
                         <p class="inhoa">Forward</p>
                       </div> -->
-                    </div>
-                    <!-- bottom 3 -->
-                    <div class="thongtin second">
-                      <div class="information box1">
-                        <p class="personal-detail">Honours & Awards</p>
-                        <!-- <div class="nation">
+                  </div>
+                  <!-- bottom 3 -->
+                  <div class="thongtin second">
+                    <div class="information box1">
+                      <p class="personal-detail">Honours & Awards</p>
+                      <!-- <div class="nation">
                           <p>Golden Boot</p>
                           <div class="nation-left">
                             <p class="inhoa">4</p>
@@ -607,9 +539,9 @@
                           <p>2004/05</p>
                           <p>2005/06</p>
                         </div> -->
-                        <!-- <hr> -->
-                      </div>
-                      <!-- <div class="information box2">
+                      <!-- <hr> -->
+                    </div>
+                    <!-- <div class="information box2">
                         <p>Player of the Season</p>
                         <p class="inhoa">2</p>
                       </div>
@@ -617,183 +549,24 @@
                         <p>2003/04</p>
                         <p>2005/06</p>
                       </div> -->
-                      <div class="information box3">
-                        <p>Premier League Champion</p>
-                        <p class="inhoa">2</p>
-                      </div>
-                      <div class="champion">
-                        <p>2001/02</p>
-                        <p>2003/04</p>
-                      </div>
-                      <div class="information box4">
-                        <p>Player of the Month</p>
-                        <p class="inhoa">1</p>
-                      </div>
-                      <div class="potm">
-                        <p>February 2003</p>
-                      </div>
+                    <div class="information box3">
+                      <p>Premier League Champion</p>
+                      <p class="inhoa">2</p>
+                    </div>
+                    <div class="champion">
+                      <p>2001/02</p>
+                      <p>2003/04</p>
+                    </div>
+                    <div class="information box4">
+                      <p>Player of the Month</p>
+                      <p class="inhoa">1</p>
+                    </div>
+                    <div class="potm">
+                      <p>February 2003</p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="logo-bottom">
-            <img src="./pic/bottom.jpg" alt="logo" class="logo-bottom-mini" />
-          </div>
-        </div>
-      </div>
-
-      <!-- feedback -->
-      <div class="feedback">
-        <div class="main-content">
-          <div class="feedback-list">
-            <!-- item 1 -->
-            <div class="feedback-item">
-              <!-- block left -->
-              <div class="info">
-                <img src="./pic/wenger.jpg" alt="Peter Moor" class="avatar" />
-                <p class="member-name">Arsène Wenger</p>
-                <p class="desc">Manager of Arsenal</p>
-                <div class="dots">
-                  <div class="dot active"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
-
-              <!-- block right -->
-              <div class="content">
-                <img
-                  src="./icon/openquotes.svg"
-                  alt="open-quotes"
-                  class="oepen-quotes"
-                />
-                <blockquote>
-                  The easy answer is 2004 because we were the only team to win
-                  the title without losing a game. But the best seasons don’t
-                  have to be the hardest… The hard seasons, like 2013, were when
-                  we couldn’t afford to make any mistakes and sometimes the
-                  manager’s job is harder in the years when the team didn’t play
-                  well. But the best team was definitely 2004."
-                </blockquote>
-              </div>
-            </div>
-
-            <!-- item 2 -->
-            <div class="feedback-item">
-              <!-- block left -->
-              <div class="info">
-                <img
-                  src="./pic/vicky-hladynets-C8Ta0gwPbQg-unsplash.jpg"
-                  alt="Peter Moor"
-                  class="avatar"
-                />
-                <p class="member-name">Peter Moor</p>
-                <p class="desc">Student of Web Design</p>
-                <div class="dots">
-                  <div class="dot"></div>
-                  <div class="dot active"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
-
-              <!-- block right -->
-              <div class="content">
-                <img
-                  src="./icon/openquotes.svg"
-                  alt="open-quotes"
-                  class="oepen-quotes"
-                />
-                <blockquote>
-                  Not only does my resume look impressive—filled with the names
-                  and logos of world-class institutions—but these certificates
-                  also bring me closer to my career goals by validating the
-                  skills I've learned."
-                </blockquote>
-              </div>
-            </div>
-
-            <!-- item 3 -->
-            <div class="feedback-item">
-              <!-- block left -->
-              <div class="info">
-                <img
-                  src="./pic/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
-                  alt="Peter Moor"
-                  class="avatar"
-                />
-                <p class="member-name">Peter Moor</p>
-                <p class="desc">Student of Web Design</p>
-                <div class="dots">
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                  <div class="dot active"></div>
-                </div>
-              </div>
-
-              <!-- block right -->
-              <div class="content">
-                <img
-                  src="./icon/openquotes.svg"
-                  alt="open-quotes"
-                  class="oepen-quotes"
-                />
-                <blockquote>
-                  Not only does my resume look impressive—filled with the names
-                  and logos of world-class institutions—but these certificates
-                  also bring me closer to my career goals by validating the
-                  skills I've learned."
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- feature 1-->
-      <div class="feature">
-        <div class="main-content">
-          <div class="body">
-            <div class="images">
-              <img
-                class="lower"
-                src="./pic/hb1.jpg"
-                alt="Learner outcomes through our awesome platform"
-              />
-              <img
-                src="./pic/ray-parlour-jens-lehmann-arsenal-855279746.webp"
-                alt="Learner outcomes through our awesome platform"
-              />
-            </div>
-            <div class="content">
-              <h2 class="heading-lv2">
-                The perfect duos created a legendary season.
-              </h2>
-              <div
-                style="
-                  width: 100%;
-                  height: 1px;
-                  background-color: rgb(107, 107, 107);
-                "
-                class="line-ngang"
-              ></div>
-              <p class="desc">
-                Thierry Henry and Dennis Bergkamp were a legendary partnership,
-                blending Bergkamp's creative brilliance with Henry's
-                electrifying pace and precision. Together, they redefined
-                football artistry, mesmerizing fans and tormenting defenses.
-                Their legacy remains a hallmark of Arsenal's golden era.
-              </p>
-              <p class="desc">
-                Jens Lehmann and Ray Parlour were symbols of grit and tenacity,
-                offering stability and heart to Arsenal's legendary squad.
-                Lehmann's commanding presence in goal and Parlour's tireless
-                work ethic in midfield made them indispensable. Together, they
-                embodied the unsung spirit behind Arsenal's success.
-              </p>
-              <!-- <p class="desc">Lesson Impact Report (2022)</p> -->
-              <!-- <a href="#!" class="btn cta-btn">Sign Up</a> -->
             </div>
           </div>
         </div>
@@ -801,426 +574,516 @@
           <img src="./pic/bottom.jpg" alt="logo" class="logo-bottom-mini" />
         </div>
       </div>
-
-      <!-- feature 2-->
-      <div class="feature feature-2nd">
-        <div class="main-content">
-          <div class="body">
-            <div class="images">
-              <img
-                src="./pic/vodich.jpg"
-                alt="Learner outcomes through our awesome platform"
-              />
-            </div>
-            <div class="content">
-              <h2 class="heading-lv2">
-                Why is Arsenal's unbeaten record so special ?
-              </h2>
-              <hr />
-              <p class="desc">
-                We became the first team in the modern era to go unbeaten in the
-                English top flight. We also did it in the Premier League in a
-                38-game season, against a Manchester United side managed by Sir
-                Alex Ferguson and a Chelsea side that had spent £110m the
-                previous summer, an unheard of sum at the time.
-              </p>
-              <br />
-              <p class="desc">
-                The Invincibles are the only team to complete a 38-match
-                unbeaten season in the English top flight. They also hold the
-                record for the longest unbeaten run in the league, which was 49
-                matches between May 2003 and October 2005.
-              </p>
-              <br />
-              <p class="desc">
-                Arsène Wenger built a team that could rival any in Europe. Sol
-                Campbell, Kolo Toure and Patrick Vieira provided the steel for
-                the spine of the team, allowing Robert Pires and Dennis Bergkamp
-                to express their creativity. Thierry Henry was arguably the best
-                striker in the world during this period, while Ashley Cole was
-                perhaps the best left-back of his era. The team was spirited and
-                unbeaten, highlighted by the fact that they never trailed in the
-                final 20 minutes of any of their 49 unbeaten matches.
-              </p>
-              <br />
-              <p class="desc">
-                The Invincibles picked up 90 points from 38 games in their
-                famous 2003/04 season, thanks to 28 wins and 12 draws. They
-                scored 73 goals and conceded just 26, finishing 11 points clear
-                of second-placed Chelsea.
-              </p>
-              <!-- <a href="#!" class="btn cta-btn">Join Now</a> -->
-            </div>
-          </div>
-          <div class="logo-bottom">
-            <img src="./pic/bottom.jpg" alt="logo" class="logo-bottom-mini" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Blogs -->
-      <div class="blogs">
-        <div class="main-content">
-          <div class="blog-top">
-            <h2 class="heading-lv2">Tuấn Minh blog</h2>
-            <p class="desc">
-              Read articles about Arsenal and their achievements through Premier
-              League season
-            </p>
-          </div>
-          <div class="blog-list">
-            <!-- item 1 -->
-            <div class="item">
-              <a href="#!"
-                ><img
-                  src="./pic/rice.jpg"
-                  alt="How to become a pro web designer in 2022 and get remote job?"
-                  class="thumb"
-              /></a>
-              <div class="info">
-                <span class="date">21 November 2021</span>
-                <hr width="160px" size="1px" color="#e2dfda" />
-                <a href="#!">
-                  <h3 class="title">
-                    Declan Rice: Arsenal's unstoppable machine and versatile
-                    midfield leader.
-                  </h3>
-                </a>
-                <a href="#!" class="btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- item 2 -->
-            <div class="item">
-              <a href="#!"
-                ><img
-                  src="./pic/saka.jpg"
-                  alt="How to become a pro web designer in 2022 and get remote job?"
-                  class="thumb"
-              /></a>
-              <div class="info">
-                <span class="date">21 November 2021</span>
-                <hr width="160px" size="1px" color="#e2dfda" />
-                <a href="#!">
-                  <h3 class="title">
-                    Bukayo Saka: Arsenal's creative and dynamic winger.
-                  </h3>
-                </a>
-                <a href="#!" class="btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- item 3 -->
-            <div class="item">
-              <a href="#!"
-                ><img
-                  src="./pic/white.jpg"
-                  alt="How to become a pro web designer in 2022 and get remote job?"
-                  class="thumb"
-              /></a>
-              <div class="info">
-                <span class="date">21 November 2021</span>
-                <hr width="160px" size="1px" color="#e2dfda" />
-                <a href="#!">
-                  <h3 class="title">
-                    Benjamin White: Arsenal's versatile and composed defender.
-                  </h3>
-                </a>
-                <a href="#!" class="btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- item 4 -->
-            <div class="item">
-              <a href="#!"
-                ><img
-                  src="/Figma-to-HTML/Project01/assets/img/aaron-burden-QJDzYT_K8Xg-unsplash.jpg"
-                  alt="How to become a pro web designer in 2022 and get remote job?"
-                  class="thumb"
-              /></a>
-              <div class="info">
-                <span class="date">21 November 2021</span>
-                <hr width="160px" size="1px" color="#e2dfda" />
-                <a href="#!">
-                  <h3 class="title">
-                    How to become a pro web designer in 2022 and get remote job?
-                  </h3>
-                </a>
-                <a href="#!" class="btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- item 5 -->
-            <div class="item">
-              <a href="#!"
-                ><img
-                  src="/Figma-to-HTML/Project01/assets/img/annie-spratt-ORDz1m1-q0I-unsplash.jpg"
-                  alt="How to become a pro web designer in 2022 and get remote job?"
-                  class="thumb"
-              /></a>
-              <div class="info">
-                <span class="date">21 November 2021</span>
-                <hr width="160px" size="1px" color="#e2dfda" />
-                <a href="#!">
-                  <h3 class="title">
-                    How to become a pro web designer in 2022 and get remote job?
-                  </h3>
-                </a>
-                <a href="#!" class="btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- item 6 -->
-            <div class="item">
-              <a href="#!"
-                ><img
-                  src="/Figma-to-HTML/Project01/assets/img/siora-photography-hgFY1mZY-Y0-unsplash.jpg"
-                  alt="How to become a pro web designer in 2022 and get remote job?"
-                  class="thumb"
-              /></a>
-              <div class="info">
-                <span class="date">21 November 2021</span>
-                <hr width="160px" size="1px" color="#e2dfda" />
-                <a href="#!">
-                  <h3 class="title">
-                    How to become a pro web designer in 2022 and get remote job?
-                  </h3>
-                </a>
-                <a href="#!" class="btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- item 7 -->
-            <div class="item">
-              <a href="#!"
-                ><img
-                  src="/Figma-to-HTML/Project01/assets/img/aaron-burden-QJDzYT_K8Xg-unsplash.jpg"
-                  alt="How to become a pro web designer in 2022 and get remote job?"
-                  class="thumb"
-              /></a>
-              <div class="info">
-                <span class="date">21 November 2021</span>
-                <hr width="160px" size="1px" color="#e2dfda" />
-                <a href="#!">
-                  <h3 class="title">
-                    How to become a pro web designer in 2022 and get remote job?
-                  </h3>
-                </a>
-                <a href="#!" class="btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- item 8 -->
-            <div class="item">
-              <a href="#!"
-                ><img
-                  src="/Figma-to-HTML/Project01/assets/img/annie-spratt-ORDz1m1-q0I-unsplash.jpg"
-                  alt="How to become a pro web designer in 2022 and get remote job?"
-                  class="thumb"
-              /></a>
-              <div class="info">
-                <span class="date">21 November 2021</span>
-                <hr width="160px" size="1px" color="#e2dfda" />
-                <a href="#!">
-                  <h3 class="title">
-                    How to become a pro web designer in 2022 and get remote job?
-                  </h3>
-                </a>
-                <a href="#!" class="btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- item 9 -->
-            <div class="item">
-              <a href="#!"
-                ><img
-                  src="/Figma-to-HTML/Project01/assets/img/siora-photography-hgFY1mZY-Y0-unsplash.jpg"
-                  alt="How to become a pro web designer in 2022 and get remote job?"
-                  class="thumb"
-              /></a>
-              <div class="info">
-                <span class="date">21 November 2021</span>
-                <hr width="160px" size="1px" color="#e2dfda" />
-                <a href="#!">
-                  <h3 class="title">
-                    How to become a pro web designer in 2022 and get remote job?
-                  </h3>
-                </a>
-                <a href="#!" class="btn">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="dots">
-            <span class="dot"></span>
-            <span class="dot active"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="main-content">
-        <div class="row">
-          <!-- column 1 -->
-          <div class="column">
-            <strong>Arsenal.</strong>
-            <p class="desc">
-              Need to help for your dream Career? trust us. With Lesson, study
-              becomes a lot easier with us.
-            </p>
-            <div class="socials">
-              <a href="https://x.com/arsenal/?lang=vi" target="_blank">
-                <img src="./icon/Twitter.svg" alt="Twitter" class="icon" />
-              </a>
-              <a href="https://www.facebook.com/Arsenal/?locale=vi_VN" target="_blank">
-                <img src="./icon/Facebook.svg" alt="FB" class="icon" />
-              </a>
-              <a href="https://uk.linkedin.com/company/arsenal-f-c" target="_blank">
-                <img src="./icon/Linkedin.svg" alt="Linkedin" class="icon" />
-              </a>
-              <a href="https://www.instagram.com/arsenal/" target="_blank">
-                <img src="./icon/Instagram.svg" alt="Instagram" class="icon" />
-              </a>
-            </div>
-          </div>
-          <!-- column 2 -->
-          <div class="column">
-            <h3 class="title">Company</h3>
-            <ul class="list">
-              <li>
-                <a href="#!">About Us</a>
-              </li>
-              <li>
-                <a href="#!">Features</a>
-              </li>
-              <li>
-                <a href="#!">Our Pricing</a>
-              </li>
-              <li>
-                <a href="#!">Latest News</a>
-              </li>
-            </ul>
-          </div>
-          <!-- column 3 -->
-          <div class="column">
-            <h3 class="title">Support</h3>
-            <ul class="list">
-              <li>
-                <a href="#!">FAQ’s</a>
-              </li>
-              <li>
-                <a href="#!">Terms & Conditions</a>
-              </li>
-              <li>
-                <a href="#!">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#!">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <!-- column 4 -->
-          <div class="column">
-            <h3 class="title">Address</h3>
-            <ul class="list">
-              <li>
-                <a href="#!"
-                  ><strong>Location</strong>: 27 Division St, New York, NY
-                  10002, USA</a
-                >
-              </li>
-              <li>
-                <a href="#!"><strong>Email</strong>: email@gmail.com</a>
-              </li>
-              <li>
-                <a href="#!"><strong>Phone</strong>: + 000 1234 567 890</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- copyright -->
-        <div class="copyright">
-          <p>Copyright ©2022 webdesign.gdn All rights reserved</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Auth Modal -->
-    <div id="auth-modal" class="modal hidden">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="close-modal">&times;</button>
-            
-            <!-- Auth Selection -->
-            <div id="auth-selection" class="auth-view">
-                <h2 class="heading-lv2" style="text-align: center; margin-bottom: 2rem;">Welcome to Arsenal</h2>
-                <div class="auth-buttons">
-                    <button id="btn-show-login" class="btn btn-full">Login</button>
-                    <button id="btn-show-register" class="btn btn-full btn-outline">Register</button>
-                </div>
-            </div>
-
-            <!-- Login Form -->
-            <div id="login-form" class="auth-view hidden">
-                <h2 class="heading-lv2" style="text-align: center; margin-bottom: 2rem;">Login</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="login-email">Email</label>
-                        <input type="email" id="login-email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="login-password">Password</label>
-                        <input type="password" id="login-password" placeholder="Enter your password" required>
-                    </div>
-                    <button type="submit" class="btn btn-full">Login</button>
-                </form>
-                <div class="auth-footer">
-                    <p>Don't have an account? <a href="#" id="link-to-register">Register</a></p>
-                </div>
-            </div>
-
-            <!-- Register Form -->
-            <div id="register-form" class="auth-view hidden">
-                <h2 class="heading-lv2" style="text-align: center; margin-bottom: 2rem;">Register</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="reg-name">Full Name</label>
-                        <input type="text" id="reg-name" placeholder="Thierry Henry" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="reg-dob">Date of Birth</label>
-                        <input type="date" id="reg-dob" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="reg-nation">Nationality</label>
-                        <input type="text" id="reg-nation" placeholder="e.g. France" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="reg-email">Email</label>
-                        <div class="input-with-btn">
-                            <input type="email" id="reg-email" placeholder="email@example.com" required>
-                            <button type="button" class="btn-small" id="btn-send-code">Send Code</button>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group hidden" id="group-verify-code">
-                        <label for="reg-code">Verification Code</label>
-                        <input type="text" id="reg-code" placeholder="Enter 6-digit code">
-                    </div>
-
-                    <button type="submit" class="btn btn-full">Create Account</button>
-                </form>
-                <div class="auth-footer">
-                    <p>Already have an account? <a href="#" id="link-to-login">Login</a></p>
-                </div>
-            </div>
-        </div>
     </div>
-    
-    <script src="./assets/js/main.js"></script>
-    </body>
+
+    <!-- feedback -->
+    <div class="feedback">
+      <div class="main-content">
+        <div class="feedback-list">
+          <!-- item 1 -->
+          <div class="feedback-item">
+            <!-- block left -->
+            <div class="info">
+              <img src="./pic/wenger.jpg" alt="Peter Moor" class="avatar" />
+              <p class="member-name">Arsène Wenger</p>
+              <p class="desc">Manager of Arsenal</p>
+              <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+
+            <!-- block right -->
+            <div class="content">
+              <img src="./icon/openquotes.svg" alt="open-quotes" class="oepen-quotes" />
+              <blockquote>
+                The easy answer is 2004 because we were the only team to win
+                the title without losing a game. But the best seasons don’t
+                have to be the hardest… The hard seasons, like 2013, were when
+                we couldn’t afford to make any mistakes and sometimes the
+                manager’s job is harder in the years when the team didn’t play
+                well. But the best team was definitely 2004."
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="feedback-item">
+            <!-- block left -->
+            <div class="info">
+              <img src="./pic/vicky-hladynets-C8Ta0gwPbQg-unsplash.jpg" alt="Peter Moor" class="avatar" />
+              <p class="member-name">Peter Moor</p>
+              <p class="desc">Student of Web Design</p>
+              <div class="dots">
+                <div class="dot"></div>
+                <div class="dot active"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+
+            <!-- block right -->
+            <div class="content">
+              <img src="./icon/openquotes.svg" alt="open-quotes" class="oepen-quotes" />
+              <blockquote>
+                Not only does my resume look impressive—filled with the names
+                and logos of world-class institutions—but these certificates
+                also bring me closer to my career goals by validating the
+                skills I've learned."
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="feedback-item">
+            <!-- block left -->
+            <div class="info">
+              <img src="./pic/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="Peter Moor" class="avatar" />
+              <p class="member-name">Peter Moor</p>
+              <p class="desc">Student of Web Design</p>
+              <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot active"></div>
+              </div>
+            </div>
+
+            <!-- block right -->
+            <div class="content">
+              <img src="./icon/openquotes.svg" alt="open-quotes" class="oepen-quotes" />
+              <blockquote>
+                Not only does my resume look impressive—filled with the names
+                and logos of world-class institutions—but these certificates
+                also bring me closer to my career goals by validating the
+                skills I've learned."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- feature 1-->
+    <div class="feature">
+      <div class="main-content">
+        <div class="body">
+          <div class="images">
+            <img class="lower" src="./pic/hb1.jpg" alt="Learner outcomes through our awesome platform" />
+            <img src="./pic/ray-parlour-jens-lehmann-arsenal-855279746.webp"
+              alt="Learner outcomes through our awesome platform" />
+          </div>
+          <div class="content">
+            <h2 class="heading-lv2">
+              The perfect duos created a legendary season.
+            </h2>
+            <div style="
+                  width: 100%;
+                  height: 1px;
+                  background-color: rgb(107, 107, 107);
+                " class="line-ngang"></div>
+            <p class="desc">
+              Thierry Henry and Dennis Bergkamp were a legendary partnership,
+              blending Bergkamp's creative brilliance with Henry's
+              electrifying pace and precision. Together, they redefined
+              football artistry, mesmerizing fans and tormenting defenses.
+              Their legacy remains a hallmark of Arsenal's golden era.
+            </p>
+            <p class="desc">
+              Jens Lehmann and Ray Parlour were symbols of grit and tenacity,
+              offering stability and heart to Arsenal's legendary squad.
+              Lehmann's commanding presence in goal and Parlour's tireless
+              work ethic in midfield made them indispensable. Together, they
+              embodied the unsung spirit behind Arsenal's success.
+            </p>
+            <!-- <p class="desc">Lesson Impact Report (2022)</p> -->
+            <!-- <a href="#!" class="btn cta-btn">Sign Up</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="logo-bottom">
+        <img src="./pic/bottom.jpg" alt="logo" class="logo-bottom-mini" />
+      </div>
+    </div>
+
+    <!-- feature 2-->
+    <div class="feature feature-2nd">
+      <div class="main-content">
+        <div class="body">
+          <div class="images">
+            <img src="./pic/vodich.jpg" alt="Learner outcomes through our awesome platform" />
+          </div>
+          <div class="content">
+            <h2 class="heading-lv2">
+              Why is Arsenal's unbeaten record so special ?
+            </h2>
+            <hr />
+            <p class="desc">
+              We became the first team in the modern era to go unbeaten in the
+              English top flight. We also did it in the Premier League in a
+              38-game season, against a Manchester United side managed by Sir
+              Alex Ferguson and a Chelsea side that had spent £110m the
+              previous summer, an unheard of sum at the time.
+            </p>
+            <br />
+            <p class="desc">
+              The Invincibles are the only team to complete a 38-match
+              unbeaten season in the English top flight. They also hold the
+              record for the longest unbeaten run in the league, which was 49
+              matches between May 2003 and October 2005.
+            </p>
+            <br />
+            <p class="desc">
+              Arsène Wenger built a team that could rival any in Europe. Sol
+              Campbell, Kolo Toure and Patrick Vieira provided the steel for
+              the spine of the team, allowing Robert Pires and Dennis Bergkamp
+              to express their creativity. Thierry Henry was arguably the best
+              striker in the world during this period, while Ashley Cole was
+              perhaps the best left-back of his era. The team was spirited and
+              unbeaten, highlighted by the fact that they never trailed in the
+              final 20 minutes of any of their 49 unbeaten matches.
+            </p>
+            <br />
+            <p class="desc">
+              The Invincibles picked up 90 points from 38 games in their
+              famous 2003/04 season, thanks to 28 wins and 12 draws. They
+              scored 73 goals and conceded just 26, finishing 11 points clear
+              of second-placed Chelsea.
+            </p>
+            <!-- <a href="#!" class="btn cta-btn">Join Now</a> -->
+          </div>
+        </div>
+        <div class="logo-bottom">
+          <img src="./pic/bottom.jpg" alt="logo" class="logo-bottom-mini" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Blogs -->
+    <div class="blogs">
+      <div class="main-content">
+        <div class="blog-top">
+          <h2 class="heading-lv2">Tuấn Minh blog</h2>
+          <p class="desc">
+            Read articles about Arsenal and their achievements through Premier
+            League season
+          </p>
+        </div>
+        <div class="blog-list">
+          <!-- item 1 -->
+          <div class="item">
+            <a href="#!"><img src="./pic/rice.jpg" alt="How to become a pro web designer in 2022 and get remote job?"
+                class="thumb" /></a>
+            <div class="info">
+              <span class="date">21 November 2021</span>
+              <hr width="160px" size="1px" color="#e2dfda" />
+              <a href="#!">
+                <h3 class="title">
+                  Declan Rice: Arsenal's unstoppable machine and versatile
+                  midfield leader.
+                </h3>
+              </a>
+              <a href="#!" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="item">
+            <a href="#!"><img src="./pic/saka.jpg" alt="How to become a pro web designer in 2022 and get remote job?"
+                class="thumb" /></a>
+            <div class="info">
+              <span class="date">21 November 2021</span>
+              <hr width="160px" size="1px" color="#e2dfda" />
+              <a href="#!">
+                <h3 class="title">
+                  Bukayo Saka: Arsenal's creative and dynamic winger.
+                </h3>
+              </a>
+              <a href="#!" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="item">
+            <a href="#!"><img src="./pic/white.jpg" alt="How to become a pro web designer in 2022 and get remote job?"
+                class="thumb" /></a>
+            <div class="info">
+              <span class="date">21 November 2021</span>
+              <hr width="160px" size="1px" color="#e2dfda" />
+              <a href="#!">
+                <h3 class="title">
+                  Benjamin White: Arsenal's versatile and composed defender.
+                </h3>
+              </a>
+              <a href="#!" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <!-- item 4 -->
+          <div class="item">
+            <a href="#!"><img src="/Figma-to-HTML/Project01/assets/img/aaron-burden-QJDzYT_K8Xg-unsplash.jpg"
+                alt="How to become a pro web designer in 2022 and get remote job?" class="thumb" /></a>
+            <div class="info">
+              <span class="date">21 November 2021</span>
+              <hr width="160px" size="1px" color="#e2dfda" />
+              <a href="#!">
+                <h3 class="title">
+                  How to become a pro web designer in 2022 and get remote job?
+                </h3>
+              </a>
+              <a href="#!" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <!-- item 5 -->
+          <div class="item">
+            <a href="#!"><img src="/Figma-to-HTML/Project01/assets/img/annie-spratt-ORDz1m1-q0I-unsplash.jpg"
+                alt="How to become a pro web designer in 2022 and get remote job?" class="thumb" /></a>
+            <div class="info">
+              <span class="date">21 November 2021</span>
+              <hr width="160px" size="1px" color="#e2dfda" />
+              <a href="#!">
+                <h3 class="title">
+                  How to become a pro web designer in 2022 and get remote job?
+                </h3>
+              </a>
+              <a href="#!" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <!-- item 6 -->
+          <div class="item">
+            <a href="#!"><img src="/Figma-to-HTML/Project01/assets/img/siora-photography-hgFY1mZY-Y0-unsplash.jpg"
+                alt="How to become a pro web designer in 2022 and get remote job?" class="thumb" /></a>
+            <div class="info">
+              <span class="date">21 November 2021</span>
+              <hr width="160px" size="1px" color="#e2dfda" />
+              <a href="#!">
+                <h3 class="title">
+                  How to become a pro web designer in 2022 and get remote job?
+                </h3>
+              </a>
+              <a href="#!" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <!-- item 7 -->
+          <div class="item">
+            <a href="#!"><img src="/Figma-to-HTML/Project01/assets/img/aaron-burden-QJDzYT_K8Xg-unsplash.jpg"
+                alt="How to become a pro web designer in 2022 and get remote job?" class="thumb" /></a>
+            <div class="info">
+              <span class="date">21 November 2021</span>
+              <hr width="160px" size="1px" color="#e2dfda" />
+              <a href="#!">
+                <h3 class="title">
+                  How to become a pro web designer in 2022 and get remote job?
+                </h3>
+              </a>
+              <a href="#!" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <!-- item 8 -->
+          <div class="item">
+            <a href="#!"><img src="/Figma-to-HTML/Project01/assets/img/annie-spratt-ORDz1m1-q0I-unsplash.jpg"
+                alt="How to become a pro web designer in 2022 and get remote job?" class="thumb" /></a>
+            <div class="info">
+              <span class="date">21 November 2021</span>
+              <hr width="160px" size="1px" color="#e2dfda" />
+              <a href="#!">
+                <h3 class="title">
+                  How to become a pro web designer in 2022 and get remote job?
+                </h3>
+              </a>
+              <a href="#!" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <!-- item 9 -->
+          <div class="item">
+            <a href="#!"><img src="/Figma-to-HTML/Project01/assets/img/siora-photography-hgFY1mZY-Y0-unsplash.jpg"
+                alt="How to become a pro web designer in 2022 and get remote job?" class="thumb" /></a>
+            <div class="info">
+              <span class="date">21 November 2021</span>
+              <hr width="160px" size="1px" color="#e2dfda" />
+              <a href="#!">
+                <h3 class="title">
+                  How to become a pro web designer in 2022 and get remote job?
+                </h3>
+              </a>
+              <a href="#!" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="main-content">
+      <div class="row">
+        <!-- column 1 -->
+        <div class="column">
+          <strong>Arsenal.</strong>
+          <p class="desc">
+            Need to help for your dream Career? trust us. With Lesson, study
+            becomes a lot easier with us.
+          </p>
+          <div class="socials">
+            <a href="https://x.com/arsenal/?lang=vi" target="_blank">
+              <img src="./icon/Twitter.svg" alt="Twitter" class="icon" />
+            </a>
+            <a href="https://www.facebook.com/Arsenal/?locale=vi_VN" target="_blank">
+              <img src="./icon/Facebook.svg" alt="FB" class="icon" />
+            </a>
+            <a href="https://uk.linkedin.com/company/arsenal-f-c" target="_blank">
+              <img src="./icon/Linkedin.svg" alt="Linkedin" class="icon" />
+            </a>
+            <a href="https://www.instagram.com/arsenal/" target="_blank">
+              <img src="./icon/Instagram.svg" alt="Instagram" class="icon" />
+            </a>
+          </div>
+        </div>
+        <!-- column 2 -->
+        <div class="column">
+          <h3 class="title">Company</h3>
+          <ul class="list">
+            <li>
+              <a href="#!">About Us</a>
+            </li>
+            <li>
+              <a href="#!">Features</a>
+            </li>
+            <li>
+              <a href="#!">Our Pricing</a>
+            </li>
+            <li>
+              <a href="#!">Latest News</a>
+            </li>
+          </ul>
+        </div>
+        <!-- column 3 -->
+        <div class="column">
+          <h3 class="title">Support</h3>
+          <ul class="list">
+            <li>
+              <a href="#!">FAQ’s</a>
+            </li>
+            <li>
+              <a href="#!">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#!">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- column 4 -->
+        <div class="column">
+          <h3 class="title">Address</h3>
+          <ul class="list">
+            <li>
+              <a href="#!"><strong>Location</strong>: 27 Division St, New York, NY
+                10002, USA</a>
+            </li>
+            <li>
+              <a href="#!"><strong>Email</strong>: email@gmail.com</a>
+            </li>
+            <li>
+              <a href="#!"><strong>Phone</strong>: + 000 1234 567 890</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="copyright">
+        <p>Copyright ©2022 webdesign.gdn All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Auth Modal -->
+  <div id="auth-modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="close-modal">&times;</button>
+
+      <!-- Auth Selection -->
+      <div id="auth-selection" class="auth-view">
+        <h2 class="heading-lv2" style="text-align: center; margin-bottom: 2rem;">Welcome to Arsenal</h2>
+        <div class="auth-buttons">
+          <button id="btn-show-login" class="btn btn-full">Login</button>
+          <button id="btn-show-register" class="btn btn-full btn-outline">Register</button>
+        </div>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login-form" class="auth-view hidden">
+        <h2 class="heading-lv2" style="text-align: center; margin-bottom: 2rem;">Login</h2>
+        <form>
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Enter your password" required>
+          </div>
+          <button type="submit" class="btn btn-full">Login</button>
+        </form>
+        <div class="auth-footer">
+          <p>Don't have an account? <a href="#" id="link-to-register">Register</a></p>
+        </div>
+      </div>
+
+      <!-- Register Form -->
+      <div id="register-form" class="auth-view hidden">
+        <h2 class="heading-lv2" style="text-align: center; margin-bottom: 2rem;">Register</h2>
+        <form>
+          <div class="form-group">
+            <label for="reg-name">Full Name</label>
+            <input type="text" id="reg-name" placeholder="Thierry Henry" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-dob">Date of Birth</label>
+            <input type="date" id="reg-dob" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-nation">Nationality</label>
+            <input type="text" id="reg-nation" placeholder="e.g. France" required>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-email">Email</label>
+            <div class="input-with-btn">
+              <input type="email" id="reg-email" placeholder="email@example.com" required>
+              <button type="button" class="btn-small" id="btn-send-code">Send Code</button>
+            </div>
+          </div>
+
+          <div class="form-group hidden" id="group-verify-code">
+            <label for="reg-code">Verification Code</label>
+            <input type="text" id="reg-code" placeholder="Enter 6-digit code">
+          </div>
+
+          <button type="submit" class="btn btn-full">Create Account</button>
+        </form>
+        <div class="auth-footer">
+          <p>Already have an account? <a href="#" id="link-to-login">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
