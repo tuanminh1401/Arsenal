@@ -1684,7 +1684,8 @@ footer {
 
   .hero .stats strong {
     font-size: 28px;
-    margin-right: 10px;
+    margin-right: 15px;
+    display: inline-block;
   }
 
   .hero .stats strong:nth-child(2),
