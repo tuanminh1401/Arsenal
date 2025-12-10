@@ -1677,6 +1677,14 @@ footer {
     font-size: 15px;
   }
 
+  /* Fix Stats overlapping/clipping */
+  .hero .stats {
+    position: relative;
+    z-index: 5;
+    padding-left: 2px;
+    /* Prevent edge clipping */
+  }
+
   .footer .row .column,
   .footer .row .column:first-child {
     width: 100%;
