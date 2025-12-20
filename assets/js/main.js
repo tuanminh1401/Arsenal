@@ -1,8 +1,8 @@
-```javascript
+
 // --- Auth Functions --- //
 
 // Expose switchView to global scope for inline onclicks (if any)
-window.switchView = function(viewName) {
+window.switchView = function (viewName) {
     const viewSelection = document.getElementById("auth-selection");
     const viewLogin = document.getElementById("login-form");
     const viewRegister = document.getElementById("register-form");
@@ -21,7 +21,7 @@ window.switchView = function(viewName) {
 };
 
 // Expose sendCode
-window.sendCode = function() {
+window.sendCode = function () {
     const btn = document.querySelector(".input-with-btn .btn-small");
     const codeGroup = document.getElementById("group-verify-code");
     if (!btn || !codeGroup) return;
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileNav = document.querySelector(".nav");
     const closeMenuBtn = document.querySelector(".close-menu-btn");
     const body = document.body;
-    
+
     // DOM Elements for User Profile
     const btnLoginTrigger = document.getElementById("btn-login-trigger");
     const userProfileDisplay = document.getElementById("user-profile-display");
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileMenuBtn) mobileMenuBtn.addEventListener("click", openMenu);
     if (closeMenuBtn) closeMenuBtn.addEventListener("click", closeMenu);
-    
+
     // Close menu when clicking overlay
     menuOverlay.addEventListener("click", closeMenu);
 
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (btnShowLogin) btnShowLogin.addEventListener("click", () => window.switchView("login"));
     if (btnShowRegister) btnShowRegister.addEventListener("click", () => window.switchView("register"));
-    
+
     if (linkToRegister) {
         linkToRegister.addEventListener("click", (e) => {
             e.preventDefault();
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.switchView("login");
         });
     }
-    
+
     // --- Mock Login Success ---
     // For demonstration, we can simulate login success either from the console or attached to a specific button
     // Let's attach it to the "Login" full button in the login form
@@ -214,8 +214,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (avatarImg) avatarImg.src = avatarUrl;
         }
     }
-    
+
     // Expose for debugging if needed
     window.updateUserProfile = updateUserProfile;
 });
-```
+
