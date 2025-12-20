@@ -143,24 +143,66 @@ window.sendCode = sendCode;
 // For demonstration, we can simulate login success either from the console or attached to a specific button
 // Let's attach it to the "Login" full button in the login form
 
-const loginSubmitBtn = document.querySelector("#login-form .btn-full");
-if (loginSubmitBtn) {
-    loginSubmitBtn.addEventListener("click", (e) => {
-        // Prevent actual submission
-        // e.preventDefault(); // If it was a real form
+// --- Handle Register Submission ---
+const registerForm = document.querySelector("#register-form form");
+if (registerForm) {
+    registerForm.addEventListener("submit", (e) => {
+        e.preventDefault(); // Prevent actual form submission
 
-        // Mock Login
-        performMockLogin();
+        // Get Input Values
+        const name = document.getElementById("reg-name").value;
+        const avatarInput = document.getElementById("reg-avatar");
+        const address = document.getElementById("reg-address").value; // Stored but not shown in header
+        const fanSince = document.getElementById("reg-fan-since").value;
+        const idol = document.getElementById("reg-idol").value;
+
+        // Determine Avatar URL
+        let avatarUrl = "https://i.pravatar.cc/150?img=11"; // Default
+        if (avatarInput.files && avatarInput.files[0]) {
+            avatarUrl = URL.createObjectURL(avatarInput.files[0]);
+        }
+
+        // Perform "Login" / Update UI
+        updateUserProfile(name, avatarUrl);
+
+        // Extended logic: Console log the extra data to simulate backend saving
+        console.log("Registered User:", {
+            name,
+            address,
+            fanSince,
+            idol,
+            avatar: avatarUrl
+        });
+
+        alert("Registration Complete! Welcome to the Gunner family, " + name + "!");
+        closeModal();
     });
 }
 
-function performMockLogin() {
-    alert("Login Successful! Welcome, Tuan Minh.");
-    closeModal();
-
-    // Update Header
-    if (btnLoginTrigger) btnLoginTrigger.classList.add("hidden");
-    if (userProfileDisplay) userProfileDisplay.classList.remove("hidden");
+// --- Handle Login Submission ---
+const loginForm = document.querySelector("#login-form form");
+if (loginForm) {
+    loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // Mock Login
+        updateUserProfile("Tuan Minh", "https://i.pravatar.cc/150?img=11");
+        alert("Login Successful! Welcome back.");
+        closeModal();
+    });
 }
 
-window.performMockLogin = performMockLogin;
+function updateUserProfile(name, avatarUrl) {
+    // Update Header UI
+    if (btnLoginTrigger) btnLoginTrigger.classList.add("hidden");
+    if (userProfileDisplay) {
+        userProfileDisplay.classList.remove("hidden");
+        const nameSpan = userProfileDisplay.querySelector(".user-name");
+        const avatarImg = userProfileDisplay.querySelector(".user-avatar");
+
+        if (nameSpan) nameSpan.textContent = name;
+        if (avatarImg) avatarImg.src = avatarUrl;
+    }
+}
+
+// Expose for debugging if needed
+window.updateUserProfile = updateUserProfile;
