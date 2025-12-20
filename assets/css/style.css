@@ -288,16 +288,6 @@ div::-webkit-scrollbar {
 
 .action {
   order: 2;
-  display: flex !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  align-items: center;
-}
-
-.header .btn-sign-up {
-  display: inline-block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
 }
 
 /* ====================hero=================== */
