@@ -207,9 +207,10 @@ div::-webkit-scrollbar {
 }
 
 /* Fix User Profile on Desktop to not be huge */
+/* Fix User Profile on Desktop to not be huge */
 .user-avatar {
-  width: 40px !important;
-  height: 40px !important;
+  width: 60px !important;
+  height: 60px !important;
   border: 2px solid #333;
   /* Darker border for light header */
 }
@@ -224,29 +225,30 @@ div::-webkit-scrollbar {
 }
 
 .user-profile.hidden {
-  display: none;
+  display: none !important;
 }
 
 .user-profile {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   cursor: pointer;
 }
 
 .user-avatar {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #fff;
 }
 
 .user-name {
-  color: #fff;
-  /* Assuming dark header background or dark text depending on design */
-  font-weight: 600;
-  font-size: 14px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  /* Match typical nav size */
   display: none;
   /* Hide name on mobile to save space, show on desktop if needed */
 }
