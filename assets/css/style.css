@@ -206,24 +206,7 @@ div::-webkit-scrollbar {
   text-shadow: 1px 0 0 currentColor;
 }
 
-/* Fix User Profile on Desktop to not be huge */
-/* Fix User Profile on Desktop to not be huge */
-.user-avatar {
-  width: 60px !important;
-  height: 60px !important;
-  border: 2px solid #333;
-  /* Darker border for light header */
-}
-
-/* Revert Header Body to Flex Row on Desktop */
-.header .body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
+/* User Card Styling */
 .user-profile.hidden {
   display: none !important;
 }
@@ -231,33 +214,55 @@ div::-webkit-scrollbar {
 .user-profile {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 6px 16px 6px 6px;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+.user-profile:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .user-avatar {
-  width: 60px;
-  height: 60px;
+  width: 45px !important;
+  height: 45px !important;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #fff;
 }
 
 .user-name {
-  color: #000;
+  color: #fff;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  /* Match typical nav size */
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-right: 4px;
   display: none;
-  /* Hide name on mobile to save space, show on desktop if needed */
+}
+
+.icon-arrow-down {
+  color: #fff;
+  margin-top: 2px;
+  display: none;
 }
 
 /* Desktop overrides */
 @media screen and (min-width: 992px) {
-  .user-name {
+
+  .user-name,
+  .icon-arrow-down {
     display: block;
-    color: #000;
+  }
+
+
+  /* Revert Header Body to Flex Row on Desktop */
+  .header .body {
+    display: flex;
+    flex-direction: row;
   }
 
   /* Fix logo overlapping stats text on desktop */
