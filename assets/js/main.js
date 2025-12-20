@@ -53,6 +53,14 @@ window.sendCode = function () {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Store User Data (Mock) ---
+    let currentUserData = {
+        name: "User",
+        address: "N/A",
+        fanSince: "N/A",
+        idol: "N/A"
+    };
+
     // DOM Elements for Auth
     const modal = document.getElementById("auth-modal");
     const openModalBtns = document.querySelectorAll(".btn-sign-up");
@@ -160,8 +168,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Get Input Values
             const nameInput = document.getElementById("reg-name");
-            const name = nameInput ? nameInput.value : "User";
+            const addressInput = document.getElementById("reg-address");
+            const fanSinceInput = document.getElementById("reg-fan-since");
+            const idolInput = document.getElementById("reg-idol");
             const avatarInput = document.getElementById("reg-avatar");
+
+            const name = nameInput ? nameInput.value : "User";
+            const address = addressInput ? addressInput.value : "";
+            const fanSince = fanSinceInput ? fanSinceInput.value : "";
+            const idol = idolInput ? idolInput.value : "";
+
+            // Save Data
+            currentUserData = { name, address, fanSince, idol };
 
             // Determine Avatar URL
             let avatarUrl = "https://i.pravatar.cc/150?img=11"; // Default
@@ -183,6 +201,12 @@ document.addEventListener('DOMContentLoaded', () => {
         loginForm.addEventListener("submit", (e) => {
             e.preventDefault();
             // Mock Login
+            currentUserData = {
+                name: "Tuan Minh",
+                address: "London, UK",
+                fanSince: "2010",
+                idol: "Thierry Henry"
+            };
             updateUserProfile("Tuan Minh", "https://i.pravatar.cc/150?img=11");
             alert("Login Successful! Welcome back.");
             closeModal();
@@ -226,11 +250,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Handle User Info (Placeholder)
+    // Handle User Info
     if (menuUserInfo) {
         menuUserInfo.addEventListener("click", (e) => {
             e.preventDefault();
-            alert("User Information feature coming soon!");
+            const info = `User Information:\n\nName: ${currentUserData.name}\nAddress: ${currentUserData.address || "N/A"}\nFan Since: ${currentUserData.fanSince || "N/A"}\nIdol: ${currentUserData.idol || "N/A"}`;
+            alert(info);
         });
     }
 
