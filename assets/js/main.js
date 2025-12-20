@@ -102,6 +102,34 @@ function switchView(viewName) {
     }
 }
 
+// Attach View Switching Listeners
+const btnShowLogin = document.getElementById("btn-show-login");
+const btnShowRegister = document.getElementById("btn-show-register");
+const linkToRegister = document.getElementById("link-to-register");
+const linkToLogin = document.getElementById("link-to-login");
+
+if (btnShowLogin) {
+    btnShowLogin.addEventListener("click", () => switchView("login"));
+}
+
+if (btnShowRegister) {
+    btnShowRegister.addEventListener("click", () => switchView("register"));
+}
+
+if (linkToRegister) {
+    linkToRegister.addEventListener("click", (e) => {
+        e.preventDefault();
+        switchView("register");
+    });
+}
+
+if (linkToLogin) {
+    linkToLogin.addEventListener("click", (e) => {
+        e.preventDefault();
+        switchView("login");
+    });
+}
+
 // Expose switchView to global scope for inline onclicks (if any)
 window.switchView = switchView;
 
