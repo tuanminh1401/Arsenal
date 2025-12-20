@@ -253,6 +253,13 @@ div::-webkit-scrollbar {
     display: block;
     color: #000;
   }
+
+  /* Fix logo overlapping stats text on desktop */
+  .logo-bottom {
+    margin-top: 60px;
+    position: relative;
+    z-index: 10;
+  }
 }
 
 .header .body {
