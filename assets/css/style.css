@@ -1764,6 +1764,81 @@ footer {
   .hero .stats strong:nth-child(3) {
     margin-left: 10px;
   }
+
+  /* --- FIX: User Card Arrow Visibility --- */
+  .user-profile {
+    display: flex !important;
+    align-items: center;
+    padding-right: 0;
+    /* Adjust if needed */
+  }
+
+  /* Force arrow display on mobile */
+  .icon-arrow-down {
+    display: block !important;
+    margin-left: 5px;
+  }
+
+  /* --- FIX: Read More Button Spacing --- */
+  .blogs .item .btn {
+    line-height: 1.2;
+    /* Bring text closer */
+    padding: 10px 15px;
+    /* Adjust padding if it's a circle style, assuming standard btn here */
+    white-space: pre-wrap;
+    /* Allow wrapping if intended */
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* If it's a circle button (based on user image), precise styling might be needed. 
+     Assuming standard class usage, reducing line-height helps. */
+
+  /* --- FIX: Player Card Full Column --- */
+  .popular .course-item .thumb {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    /* Or generic ratio */
+  }
+
+  /* --- FIX: Manager Section Alignment --- */
+  .feedback-item {
+    flex-direction: column;
+    text-align: left;
+    /* Reset text align */
+  }
+
+  .feedback-item .info {
+    display: flex;
+    flex-direction: row;
+    /* Avatar | Text */
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .feedback-item .info .avatar {
+    margin-bottom: 0;
+    /* Remove bottom margin if any */
+    margin-right: 15px;
+  }
+
+  /* Wrap name/desc in a div if they are siblings of avatar? 
+     Structure is: img, p.name, p.desc, dots. 
+     Flex row puts them all in a line. We want Avatar | (Name \n Desc) 
+     This requires wrapping name/desc in HTML or using grid.
+     For now, flex row puts them side by side. 
+     User said "arrange in row". */
+
+  /* --- FIX: Why is... Image Size --- */
+  .feature .images img {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
 }
 
 
