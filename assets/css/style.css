@@ -1894,16 +1894,22 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.9);
-  display: flex;
+  display: flex !important;
+  /* Force flex to keep centering */
   justify-content: center;
   align-items: center;
-  z-index: 2000;
+  z-index: 9999;
+  /* Maximize Z-Index */
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;
+  transform: translate(0, 0);
+  /* Fix for some rendering engines */
 }
 
 .modal-overlay.hidden {
