@@ -119,14 +119,13 @@
             <div class="cta-group">
               <a href="https://www.arsenal.com/news/explainer-arsenals-200304-invincibles#:~:text=Our%202003%2F04%20Premier%20League,earned%20the%20nickname%20the%20Invincibles."
                 target="_blank" class="btn hero-cta">Read More</a>
-              <a href="https://www.youtube.com/watch?v=Z41Um_rDbVw" target="blank">
-                <button class="watch-video">
-                  <div class="icon">
-                    <img src="./icon/tamgiac.svg" alt="youtube" />
-                  </div>
-                  <span>Watch Highlight</span>
-                </button>
-              </a>
+              <!-- Updated Watch Highlight to trigger Modal -->
+              <button class="watch-video" onclick="openVideo()">
+                <div class="icon">
+                  <img src="./icon/tamgiac.svg" alt="play" />
+                </div>
+                <span>Watch Highlight</span>
+              </button>
             </div>
             <p class="desc desc-recent">Matches result</p>
             <p class="desc stats">
@@ -147,7 +146,10 @@
         <div class="popular-top">
           <!-- popular-left -->
           <div class="infor">
-            <h2 class="heading-lv2">Player Squad 2003-2004</h2>
+            <h2 class="heading-lv2" onclick="openPlayerDatabase()" style="cursor: pointer; transition: color 0.3s;"
+              onmouseover="this.style.color='#c31a1a'" onmouseout="this.style.color=''">
+              Player Squad 2003-2004 <span style="font-size: 0.8em; opacity: 0.7;">(View All)</span>
+            </h2>
             <hr />
             <p class="desc">
               Arsenal's 2003-2004 squad included many superstars who created
@@ -1100,6 +1102,36 @@
         <div class="auth-footer">
           <p>Already have an account? <a href="#" id="link-to-login">Login</a></p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="modal-overlay hidden" onclick="closeVideo(event)">
+    <div class="video-container">
+      <span class="close-btn" onclick="closeVideo(event)">&times;</span>
+      <iframe id="youtube-frame" width="100%" height="100%" src="" title="Arsenal Highlights" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Player Database View (Full Screen Overlay) -->
+  <div id="player-database-view" class="player-db-overlay hidden">
+    <div class="db-container">
+      <div class="db-header">
+        <h2 class="heading-lv2" style="color: #fff;">Arsenal Squad Database</h2>
+        <span class="close-db" onclick="closePlayerDatabase()">&times;</span>
+      </div>
+
+      <div class="search-bar-container">
+        <input type="text" id="player-search" placeholder="Search for a player..." onkeyup="filterPlayers()">
+        <button class="btn search-btn">Search</button>
+      </div>
+
+      <div class="player-table-container">
+        <!-- JS will populate this -->
+        <div id="player-list-grid" class="player-grid"></div>
       </div>
     </div>
   </div>

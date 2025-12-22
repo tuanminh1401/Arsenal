@@ -277,3 +277,186 @@ document.addEventListener('DOMContentLoaded', () => {
     // Expose for debugging if needed
     window.updateUserProfile = updateUserProfile;
 });
+
+/* ================= VIDEO MODAL LOGIC ================= */
+function openVideo() {
+    const modal = document.getElementById('video-modal');
+    const iframe = document.getElementById('youtube-frame');
+    if (modal && iframe) {
+        modal.classList.remove('hidden');
+        // Arsenal Invincibles Highlight URL (Embed version)
+        iframe.src = "https://www.youtube.com/embed/Z41Um_rDbVw?autoplay=1";
+    }
+}
+
+function closeVideo(e) {
+    const modal = document.getElementById('video-modal');
+    const iframe = document.getElementById('youtube-frame');
+    // Close if clicked overlay or x button
+    if (e && (e.target === modal || e.target.classList.contains('close-btn') || e.target.classList.contains('icon-close'))) {
+        if (modal && iframe) {
+            modal.classList.add('hidden');
+            iframe.src = ""; // Stop playback
+        }
+    }
+}
+
+/* ================= PLAYER DATABASE LOGIC ================= */
+// Mock Data (Based on user request + FC Mobile style stats)
+const playerData = [
+    {
+        name: "Thierry Henry",
+        pos: "ST",
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1619.png",
+        ovr: 96,
+        pac: 98, // Pace
+        sho: 95, // Shooting
+        pas: 90, // Passing
+        dri: 94  // Dribbling
+    },
+    {
+        name: "Bukayo Saka",
+        pos: "RW",
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p223340.png",
+        ovr: 90,
+        pac: 91,
+        sho: 85,
+        pas: 86,
+        dri: 92
+    },
+    {
+        name: "Declan Rice",
+        pos: "CDM",
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p204480.png",
+        ovr: 89,
+        pac: 78,
+        sho: 75,
+        pas: 88,
+        dri: 84
+    },
+    {
+        name: "Martin Ødegaard",
+        pos: "CAM",
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p184029.png",
+        ovr: 89,
+        pac: 81,
+        sho: 84,
+        pas: 92,
+        dri: 91
+    },
+    {
+        name: "William Saliba",
+        pos: "CB",
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p462424.png",
+        ovr: 88,
+        pac: 84,
+        sho: 50,
+        pas: 79,
+        dri: 78
+    },
+    {
+        name: "Gabriel Jesus",
+        pos: "ST",
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p205651.png",
+        ovr: 86,
+        pac: 87,
+        sho: 84,
+        pas: 80,
+        dri: 89
+    },
+    {
+        name: "Gabriel Magalhães",
+        pos: "CB",
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p225321.png",
+        ovr: 87,
+        pac: 79,
+        sho: 55,
+        pas: 72,
+        dri: 70
+    },
+    {
+        name: "Dennis Bergkamp",
+        pos: "CF",
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1608.png",
+        ovr: 94,
+        pac: 85,
+        sho: 92,
+        pas: 95,
+        dri: 96
+    }
+];
+
+function openPlayerDatabase() {
+    const dbView = document.getElementById('player-database-view');
+    if (dbView) {
+        dbView.classList.remove('hidden');
+        renderPlayerList(playerData); // Render on open
+    }
+}
+
+function closePlayerDatabase() {
+    const dbView = document.getElementById('player-database-view');
+    if (dbView) {
+        dbView.classList.add('hidden');
+    }
+}
+
+function renderPlayerList(data) {
+    const grid = document.getElementById('player-list-grid');
+    if (!grid) return;
+    grid.innerHTML = "";
+
+    data.forEach(p => {
+        // Dynamic color for Pos
+        let posClass = p.pos; // ST, RW, CB, etc. used in CSS
+
+        const html = `
+            <div class="player-row">
+                <div class="p-pos ${posClass}">${p.pos}</div>
+                <div class="p-info">
+                    <img src="${p.avatar}" alt="${p.name}" class="p-avatar">
+                    <div style="display:flex; flex-direction:column;">
+                        <span class="p-name">${p.name}</span>
+                        <span style="font-size:12px; color:#888;">OVR: ${p.ovr}</span>
+                    </div>
+                </div>
+                <!-- Stats Overlay -->
+                <div class="p-stat">
+                    <div style="display:flex; justify-content:space-between;">
+                         <label>Pace</label>
+                         <span class="stat-val">${p.pac}</span>
+                    </div>
+                    <div class="stat-bar-bg"><div class="stat-bar-fill" style="width:${p.pac}%"></div></div>
+                </div>
+                <div class="p-stat">
+                     <div style="display:flex; justify-content:space-between;">
+                         <label>Shooting</label>
+                         <span class="stat-val">${p.sho}</span>
+                    </div>
+                     <div class="stat-bar-bg"><div class="stat-bar-fill" style="width:${p.sho}%"></div></div>
+                </div>
+                <div class="p-stat">
+                     <div style="display:flex; justify-content:space-between;">
+                         <label>Passing</label>
+                         <span class="stat-val">${p.pas}</span>
+                    </div>
+                     <div class="stat-bar-bg"><div class="stat-bar-fill" style="width:${p.pas}%"></div></div>
+                </div>
+                <div class="p-stat">
+                     <div style="display:flex; justify-content:space-between;">
+                         <label>Dribbling</label>
+                         <span class="stat-val">${p.dri}</span>
+                    </div>
+                     <div class="stat-bar-bg"><div class="stat-bar-fill" style="width:${p.dri}%"></div></div>
+                </div>
+            </div>
+        `;
+        grid.innerHTML += html;
+    });
+}
+
+function filterPlayers() {
+    const query = document.getElementById('player-search').value.toLowerCase();
+    const filtered = playerData.filter(p => p.name.toLowerCase().includes(query));
+    renderPlayerList(filtered);
+}
