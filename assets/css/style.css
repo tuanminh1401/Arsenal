@@ -1945,14 +1945,17 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
   background: linear-gradient(135deg, #1a1f25 0%, #101418 100%);
   /* Dark FC Mobile theme */
   z-index: 3000;
   display: block;
   /* Changed from flex to block for reliable scrolling */
-  overflow-y: auto;
+  overflow-y: scroll;
+  /* Force scrollbar to be always visible/allocated */
   padding: 20px;
   color: #fff;
   text-align: center;
@@ -1961,22 +1964,16 @@ footer {
 
 /* Custom Scrollbar for the overlay */
 .player-db-overlay::-webkit-scrollbar {
-  width: 10px;
+  display: none;
+  /* Hide scrollbar completely */
 }
 
-.player-db-overlay::-webkit-scrollbar-track {
-  background: #0f1216;
-}
-
-.player-db-overlay::-webkit-scrollbar-thumb {
-  background: #c31a1a;
-  /* Red thumb for Arsenal */
-  border-radius: 5px;
-  border: 2px solid #0f1216;
-}
-
-.player-db-overlay::-webkit-scrollbar-thumb:hover {
-  background: #e61b1b;
+/* Ensure it still scrolls */
+.player-db-overlay {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .player-db-overlay.hidden {
