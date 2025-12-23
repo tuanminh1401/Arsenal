@@ -141,11 +141,14 @@ div::-webkit-scrollbar {
   font-size: 1rem;
   padding: 8px 21px;
   position: relative;
+  transition: color 0.3s ease;
+  /* Smooth color change */
 }
 
 .nav li.active a,
 .nav a:hover {
-  color: #171100;
+  color: #c31a1a;
+  /* Arsenal Red */
   text-shadow: 1px 0 0 currentColor;
 }
 
@@ -202,7 +205,8 @@ div::-webkit-scrollbar {
 
 .nav li.active a,
 .nav a:hover {
-  color: #171100 !important;
+  color: #c31a1a !important;
+  /* Arsenal Red */
   text-shadow: 1px 0 0 currentColor;
 }
 
