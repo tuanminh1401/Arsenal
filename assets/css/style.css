@@ -2119,16 +2119,45 @@ footer {
   transition: all 0.3s ease;
 }
 
-.filter-btn:hover {
+/* Default Hover/Active (e.g. for All) */
+.filter-btn:hover,
+.filter-btn.active {
   background: #333;
   color: #fff;
   border-color: #fff;
 }
 
-.filter-btn.active {
+/* Specific Colors */
+.filter-btn.btn-all.active,
+.filter-btn.btn-all:hover {
   background: #c31a1a;
-  color: #fff;
   border-color: #c31a1a;
+}
+
+.filter-btn.btn-fwd.active,
+.filter-btn.btn-fwd:hover {
+  background: #e61b1b;
+  border-color: #e61b1b;
+}
+
+.filter-btn.btn-mid.active,
+.filter-btn.btn-mid:hover {
+  background: #1ba035;
+  border-color: #1ba035;
+}
+
+.filter-btn.btn-def.active,
+.filter-btn.btn-def:hover {
+  background: #1b68e6;
+  border-color: #1b68e6;
+}
+
+.filter-btn.btn-gk.active,
+.filter-btn.btn-gk:hover {
+  background: #ffd700;
+  border-color: #ffd700;
+  color: #111;
+  /* Dark text for contrast on yellow */
 }
 
 /* Position Colors (Strict Mapping) */
@@ -2171,14 +2200,20 @@ footer {
 .p-bar.RB,
 .p-bar.LWB,
 .p-bar.RWB,
-.p-bar.GK,
 .p-pos-box.CB,
 .p-pos-box.LB,
 .p-pos-box.RB,
 .p-pos-box.LWB,
-.p-pos-box.RWB,
-.p-pos-box.GK {
+.p-pos-box.RWB {
   background: #1b68e6;
+}
+
+/* GK (Yellow) */
+.p-bar.GK,
+.p-pos-box.GK {
+  background: #ffd700;
+  color: #111;
+  /* Dark text for contrast */
 }
 
 /* Avatar */
@@ -2285,9 +2320,13 @@ footer {
 
 .p-pos-box.CB,
 .p-pos-box.LB,
-.p-pos-box.RB,
-.p-pos-box.GK {
+.p-pos-box.RB {
   background: #1a7bc3;
+}
+
+.p-pos-box.GK {
+  background: #ffd700;
+  color: #111;
 }
 
 .p-ovr-num {
