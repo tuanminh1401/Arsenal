@@ -375,6 +375,60 @@ const playerData = [
         avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p205651.png",
         ovr: 118,
         pac: 116, sho: 112, pas: 105, dri: 120
+    },
+    {
+        name: "G. Martinelli",
+        season: "25TS",
+        pos: "LW",
+        stars: 4,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p444145.png",
+        ovr: 118,
+        pac: 121, sho: 110, pas: 105, dri: 119
+    },
+    {
+        name: "Ben White",
+        season: "25TS",
+        pos: "RB",
+        stars: 3,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p198869.png",
+        ovr: 117,
+        pac: 105, sho: 70, pas: 110, dri: 95
+    },
+    {
+        name: "Kai Havertz",
+        season: "25TS",
+        pos: "ST",
+        stars: 4,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p219847.png",
+        ovr: 118,
+        pac: 108, sho: 112, pas: 108, dri: 110
+    },
+    {
+        name: "Leandro Trossard",
+        season: "25TS",
+        pos: "LW",
+        stars: 4,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p116216.png",
+        ovr: 116,
+        pac: 105, sho: 114, pas: 108, dri: 115
+    },
+    {
+        name: "David Raya",
+        season: "25TS",
+        pos: "GK",
+        stars: 1,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p154566.png",
+        ovr: 117,
+        pac: 80, sho: 60, pas: 95, dri: 70
+    },
+    {
+        name: "Thomas Partey",
+        season: "24TY",
+        pos: "CDM",
+        stars: 3,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p167199.png",
+        ovr: 116,
+        pac: 95, sho: 90, pas: 112, dri: 105
     }
 ];
 
