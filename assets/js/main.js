@@ -374,6 +374,7 @@ function openPlayerDatabase() {
     const dbView = document.getElementById('player-database-view');
     if (dbView) {
         dbView.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Disable background scroll
         renderPlayerList(playerData); // Render full list on open
         setActiveFilter('all');
     }
@@ -383,6 +384,7 @@ function closePlayerDatabase() {
     const dbView = document.getElementById('player-database-view');
     if (dbView) {
         dbView.classList.add('hidden');
+        document.body.style.overflow = ''; // Restore background scroll
     }
 }
 

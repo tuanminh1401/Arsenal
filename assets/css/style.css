@@ -1950,12 +1950,33 @@ footer {
   background: linear-gradient(135deg, #1a1f25 0%, #101418 100%);
   /* Dark FC Mobile theme */
   z-index: 3000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  /* Changed from flex to block for reliable scrolling */
   overflow-y: auto;
   padding: 20px;
   color: #fff;
+  text-align: center;
+  /* Helper for centering inline-block children if any */
+}
+
+/* Custom Scrollbar for the overlay */
+.player-db-overlay::-webkit-scrollbar {
+  width: 10px;
+}
+
+.player-db-overlay::-webkit-scrollbar-track {
+  background: #0f1216;
+}
+
+.player-db-overlay::-webkit-scrollbar-thumb {
+  background: #c31a1a;
+  /* Red thumb for Arsenal */
+  border-radius: 5px;
+  border: 2px solid #0f1216;
+}
+
+.player-db-overlay::-webkit-scrollbar-thumb:hover {
+  background: #e61b1b;
 }
 
 .player-db-overlay.hidden {
@@ -1965,7 +1986,12 @@ footer {
 .db-container {
   width: 100%;
   max-width: 1200px;
-  margin-top: 40px;
+  margin: 40px auto;
+  /* Center horizontally */
+  padding-bottom: 50px;
+  /* Ensure space at bottom */
+  text-align: left;
+  /* Reset text align */
 }
 
 .db-header {
