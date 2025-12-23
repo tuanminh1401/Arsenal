@@ -205,7 +205,7 @@ div::-webkit-scrollbar {
 
 .nav li.active a,
 .nav a:hover {
-  color: #c31a1a !important;
+  color: black !important;
   /* Arsenal Red */
   text-shadow: 1px 0 0 currentColor;
 }
