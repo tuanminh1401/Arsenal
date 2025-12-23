@@ -2070,25 +2070,89 @@ footer {
   /* Hide if too cluttered */
 }
 
-/* Position Colors */
+/* Filters */
+.db-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background: #252a30;
+  border: 1px solid #444;
+  color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #333;
+  color: #fff;
+  border-color: #fff;
+}
+
+.filter-btn.active {
+  background: #c31a1a;
+  color: #fff;
+  border-color: #c31a1a;
+}
+
+/* Position Colors (Strict Mapping) */
+/* FWD (Red) */
 .p-bar.ST,
 .p-bar.RW,
 .p-bar.LW,
-.p-bar.CF {
-  background: #c31a1a;
+.p-bar.CF,
+.p-bar.RF,
+.p-bar.LF,
+.p-pos-box.ST,
+.p-pos-box.RW,
+.p-pos-box.LW,
+.p-pos-box.CF,
+.p-pos-box.RF,
+.p-pos-box.LF {
+  background: #e61b1b;
 }
 
-.p-bar.CM,
+/* CAM (Yellow/Lime) */
+.p-bar.CAM,
+.p-pos-box.CAM {
+  background: #d4e61b;
+  color: #111 !important;
+  /* Dark text for contrast */
+}
+
+/* MID/CDM (Green) */
 .p-bar.CDM,
-.p-bar.CAM {
-  background: #85c31a;
+.p-bar.CM,
+.p-bar.LM,
+.p-bar.RM,
+.p-pos-box.CDM,
+.p-pos-box.CM,
+.p-pos-box.LM,
+.p-pos-box.RM {
+  background: #1ba035;
 }
 
+/* DEF/GK (Blue) */
 .p-bar.CB,
 .p-bar.LB,
 .p-bar.RB,
-.p-bar.GK {
-  background: #1a7bc3;
+.p-bar.LWB,
+.p-bar.RWB,
+.p-bar.GK,
+.p-pos-box.CB,
+.p-pos-box.LB,
+.p-pos-box.RB,
+.p-pos-box.LWB,
+.p-pos-box.RWB,
+.p-pos-box.GK {
+  background: #1b68e6;
 }
 
 /* Avatar */

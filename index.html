@@ -1115,6 +1115,15 @@
         <span class="close-db" onclick="closePlayerDatabase()">&times;</span>
       </div>
 
+      <!-- Filters -->
+      <div class="db-filters">
+        <button class="filter-btn active" onclick="filterPlayersByPos('all')">All</button>
+        <button class="filter-btn" onclick="filterPlayersByPos('FWD')">Forwards</button>
+        <button class="filter-btn" onclick="filterPlayersByPos('MID')">Midfielders</button>
+        <button class="filter-btn" onclick="filterPlayersByPos('DEF')">Defenders</button>
+        <button class="filter-btn" onclick="filterPlayersByPos('GK')">Goalkeepers</button>
+      </div>
+
       <div class="search-bar-container">
         <input type="text" id="player-search" placeholder="Search for a player..." onkeyup="filterPlayers()">
         <button class="btn search-btn">Search</button>
