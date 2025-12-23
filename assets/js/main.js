@@ -305,25 +305,25 @@ function closeVideo(e) {
 // Comprehensive Arsenal Player Database (Current, Legends, Past Stars)
 const playerData = [
     // --- Current Squad ---
-    { name: "Bukayo Saka", season: "24TS", pos: "RW", stars: 5, ovr: 92, pac: 91, sho: 86, pas: 87, dri: 93, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p223340.png" },
-    { name: "Martin Ødegaard", season: "24TY", pos: "CAM", stars: 5, ovr: 91, pac: 83, sho: 85, pas: 94, dri: 92, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p184029.png" },
-    { name: "Declan Rice", season: "24TS", pos: "CDM", stars: 4, ovr: 90, pac: 80, sho: 78, pas: 89, dri: 85, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p204480.png" },
-    { name: "William Saliba", season: "24TS", pos: "CB", stars: 3, ovr: 89, pac: 85, sho: 55, pas: 80, dri: 81, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p462424.png" },
-    { name: "Gabriel Magalhães", season: "24TS", pos: "CB", stars: 3, ovr: 88, pac: 80, sho: 60, pas: 75, dri: 72, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p225321.png" },
-    { name: "Gabriel Jesus", season: "23", pos: "ST", stars: 4, ovr: 85, pac: 86, sho: 82, pas: 79, dri: 88, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p205651.png" },
-    { name: "G. Martinelli", season: "24", pos: "LW", stars: 4, ovr: 86, pac: 92, sho: 80, pas: 78, dri: 87, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p444145.png" },
-    { name: "Ben White", season: "24", pos: "RB", stars: 3, ovr: 86, pac: 82, sho: 65, pas: 82, dri: 80, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p198869.png" },
-    { name: "Kai Havertz", season: "24TS", pos: "ST", stars: 4, ovr: 87, pac: 84, sho: 83, pas: 84, dri: 85, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p219847.png" },
-    { name: "Leandro Trossard", season: "24", pos: "LW", stars: 4, ovr: 84, pac: 83, sho: 84, pas: 82, dri: 86, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p116216.png" },
+    { name: "Bukayo Saka", season: "24TS", pos: "RW", stars: 5, ovr: 92, pac: 91, sho: 86, pas: 87, dri: 93, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/SAKA_Headshot_web_mxqw4vma.png?auto=webp&itok=nSOTSLiN" },
+    { name: "Martin Ødegaard", season: "24TY", pos: "CAM", stars: 5, ovr: 91, pac: 83, sho: 85, pas: 94, dri: 92, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/ODEGAARD_Headshot_web_z0tram3m.png?auto=webp&itok=F8jOXTSf" },
+    { name: "Declan Rice", season: "24TS", pos: "CDM", stars: 4, ovr: 90, pac: 80, sho: 78, pas: 89, dri: 85, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/RICE_Headshot_web_ml5vq29g.png?auto=webp&itok=3MZ50MMk" },
+    { name: "William Saliba", season: "24TS", pos: "CB", stars: 3, ovr: 89, pac: 85, sho: 55, pas: 80, dri: 81, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/SALIBA_Headshot_web_khl9z1vw.png?auto=webp&itok=fZFYbPqZ" },
+    { name: "Gabriel Magalhães", season: "24TS", pos: "CB", stars: 3, ovr: 88, pac: 80, sho: 60, pas: 75, dri: 72, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/MAGALHAES_Headshot_web_uhkgt913.png?auto=webp&itok=UoaaAYnU" },
+    { name: "Gabriel Jesus", season: "23", pos: "ST", stars: 4, ovr: 85, pac: 86, sho: 82, pas: 79, dri: 88, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/JESUS_Headshot_web_wtybpitx.png?auto=webp&itok=TH4RbWIt" },
+    { name: "G. Martinelli", season: "24", pos: "LW", stars: 4, ovr: 86, pac: 92, sho: 80, pas: 78, dri: 87, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/MARTINELLI_Headshot_web_l7r7lao5.png?auto=webp&itok=QK8zQJ7L" },
+    { name: "Ben White", season: "24", pos: "RB", stars: 3, ovr: 86, pac: 82, sho: 65, pas: 82, dri: 80, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/B.WHITE_Headshot_web_xdbqzl78.png?auto=webp&itok=0gg2E5xJ" },
+    { name: "Kai Havertz", season: "24TS", pos: "ST", stars: 4, ovr: 87, pac: 84, sho: 83, pas: 84, dri: 85, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/HAVERTZ_Headshot_web_frc1i8l3.png?auto=webp&itok=JvqDQSL8" },
+    { name: "Leandro Trossard", season: "24", pos: "LW", stars: 4, ovr: 84, pac: 83, sho: 84, pas: 82, dri: 86, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/TROSSARD_Headshot_web_c75bgy21.png?auto=webp&itok=dCCTIY0U" },
     { name: "Thomas Partey", season: "23", pos: "CDM", stars: 3, ovr: 84, pac: 75, sho: 78, pas: 84, dri: 83, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p167199.png" },
     { name: "Jorginho", season: "23", pos: "CM", stars: 3, ovr: 83, pac: 60, sho: 70, pas: 88, dri: 82, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p85955.png" },
-    { name: "Oleksandr Zinchenko", season: "23", pos: "LB", stars: 3, ovr: 83, pac: 78, sho: 72, pas: 86, dri: 85, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p207233.png" },
+    { name: "Oleksandr Zinchenko", season: "23", pos: "LB", stars: 3, ovr: 83, pac: 78, sho: 72, pas: 86, dri: 85, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/Zinchenko_Headshot_web_htlbwppj.png?auto=webp&itok=_8IMI2Mj" },
     { name: "Takehiro Tomiyasu", season: "23", pos: "RB", stars: 3, ovr: 81, pac: 79, sho: 55, pas: 74, dri: 73, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p223723.png" },
-    { name: "Jurrien Timber", season: "24", pos: "LB", stars: 3, ovr: 82, pac: 84, sho: 60, pas: 80, dri: 82, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p424497.png" },
-    { name: "Jakub Kiwior", season: "24", pos: "CB", stars: 2, ovr: 79, pac: 78, sho: 45, pas: 72, dri: 70, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p440939.png" },
-    { name: "David Raya", season: "24TS", pos: "GK", stars: 1, ovr: 86, pac: 82, sho: 55, pas: 88, dri: 70, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p154566.png" },
+    { name: "Jurrien Timber", season: "24", pos: "LB", stars: 3, ovr: 82, pac: 84, sho: 60, pas: 80, dri: 82, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/TIMBER_Headshot_web_by8hrsl6.png?auto=webp&itok=k6XxXs7u" },
+    { name: "Jakub Kiwior", season: "24", pos: "CB", stars: 2, ovr: 79, pac: 78, sho: 45, pas: 72, dri: 70, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/KIWIOR_Headshot_web_yxrcq925.png?auto=webp&itok=bFPJ-Yfy" },
+    { name: "David Raya", season: "24TS", pos: "GK", stars: 1, ovr: 86, pac: 82, sho: 55, pas: 88, dri: 70, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/RAYA_Headshot_web_njztl3wr.png?auto=webp&itok=_6peqasx" },
     { name: "Aaron Ramsdale", season: "23", pos: "GK", stars: 1, ovr: 82, pac: 80, sho: 60, pas: 85, dri: 65, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p204801.png" },
-    { name: "Fabio Vieira", season: "23", pos: "CAM", stars: 3, ovr: 78, pac: 76, sho: 75, pas: 82, dri: 80, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p438498.png" },
+    { name: "Fabio Vieira", season: "23", pos: "CAM", stars: 3, ovr: 78, pac: 76, sho: 75, pas: 82, dri: 80, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/VIEIRA_Headshot_web_ttvp4mvt.png?auto=webp&itok=e0RYtimf" },
     { name: "Eddie Nketiah", season: "23", pos: "ST", stars: 3, ovr: 77, pac: 84, sho: 78, pas: 68, dri: 80, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p205533.png" },
 
     // --- Legends (Invincibles & Icons) ---
@@ -339,33 +339,33 @@ const playerData = [
     { name: "Tony Adams", season: "ICON", pos: "CB", stars: 2, ovr: 91, pac: 78, sho: 55, pas: 75, dri: 70, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p898.png" },
     { name: "Emmanuel Petit", season: "ICON", pos: "CDM", stars: 3, ovr: 88, pac: 82, sho: 75, pas: 86, dri: 80, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1622.png" },
     { name: "Lauren", season: "ICON", pos: "RB", stars: 3, ovr: 86, pac: 85, sho: 65, pas: 80, dri: 82, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1621.png" },
-    { name: "Gilberto Silva", season: "ICON", pos: "CDM", stars: 3, ovr: 87, pac: 78, sho: 68, pas: 84, dri: 79, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1888.png" },
-    { name: "Kolo Toure", season: "ICON", pos: "CB", stars: 3, ovr: 86, pac: 83, sho: 55, pas: 72, dri: 75, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p13829.png" },
-    { name: "Jens Lehmann", season: "ICON", pos: "GK", stars: 1, ovr: 87, pac: 78, sho: 50, pas: 85, dri: 72, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p2510.png" },
+    { name: "Gilberto Silva", season: "ICON", pos: "CDM", stars: 3, ovr: 87, pac: 78, sho: 68, pas: 84, dri: 79, avatar: "./pic/players/gilberto.jpg" },
+    { name: "Kolo Toure", season: "ICON", pos: "CB", stars: 3, ovr: 86, pac: 83, sho: 55, pas: 72, dri: 75, avatar: "./pic/players/toure.jpg" },
+    { name: "Jens Lehmann", season: "ICON", pos: "GK", stars: 1, ovr: 87, pac: 78, sho: 50, pas: 85, dri: 72, avatar: "./pic/players/lehmann.jpg" },
 
     // --- Past Stars ---
-    { name: "Cesc Fabregas", season: "LEG", pos: "CM", stars: 4, ovr: 90, pac: 78, sho: 84, pas: 95, dri: 88, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p17758.png" },
-    { name: "Robin van Persie", season: "LEG", pos: "ST", stars: 4, ovr: 91, pac: 87, sho: 93, pas: 84, dri: 89, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p7280.png" },
-    { name: "Alexis Sanchez", season: "LEG", pos: "LW", stars: 4, ovr: 90, pac: 90, sho: 87, pas: 85, dri: 92, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p37265.png" },
+    { name: "Cesc Fabregas", season: "LEG", pos: "CM", stars: 4, ovr: 90, pac: 78, sho: 84, pas: 95, dri: 88, avatar: "./pic/players/fabregas.jpg" },
+    { name: "Robin van Persie", season: "LEG", pos: "ST", stars: 4, ovr: 91, pac: 87, sho: 93, pas: 84, dri: 89, avatar: "./pic/players/van_persie.jpg" },
+    { name: "Alexis Sanchez", season: "LEG", pos: "LW", stars: 4, ovr: 90, pac: 90, sho: 87, pas: 85, dri: 92, avatar: "./pic/players/sanchez.jpg" },
     { name: "Mesut Özil", season: "LEG", pos: "CAM", stars: 5, ovr: 90, pac: 78, sho: 76, pas: 96, dri: 90, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p37605.png" },
-    { name: "Santi Cazorla", season: "LEG", pos: "CM", stars: 5, ovr: 88, pac: 80, sho: 82, pas: 90, dri: 91, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p22068.png" },
-    { name: "Aaron Ramsey", season: "LEG", pos: "CM", stars: 3, ovr: 86, pac: 82, sho: 80, pas: 85, dri: 84, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p39104.png" },
-    { name: "Jack Wilshere", season: "LEG", pos: "CM", stars: 4, ovr: 85, pac: 80, sho: 75, pas: 86, dri: 88, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p45175.png" },
-    { name: "Theo Walcott", season: "LEG", pos: "RW", stars: 3, ovr: 84, pac: 96, sho: 80, pas: 75, dri: 83, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p17189.png" },
-    { name: "Olivier Giroud", season: "LEG", pos: "ST", stars: 3, ovr: 85, pac: 60, sho: 86, pas: 78, dri: 75, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p40989.png" },
+    { name: "Santi Cazorla", season: "LEG", pos: "CM", stars: 5, ovr: 88, pac: 80, sho: 82, pas: 90, dri: 91, avatar: "./pic/players/cazorla.jpg" },
+    { name: "Aaron Ramsey", season: "LEG", pos: "CM", stars: 3, ovr: 86, pac: 82, sho: 80, pas: 85, dri: 84, avatar: "./pic/players/ramsey.jpg" },
+    { name: "Jack Wilshere", season: "LEG", pos: "CM", stars: 4, ovr: 85, pac: 80, sho: 75, pas: 86, dri: 88, avatar: "./pic/players/wilshere.jpg" },
+    { name: "Theo Walcott", season: "LEG", pos: "RW", stars: 3, ovr: 84, pac: 96, sho: 80, pas: 75, dri: 83, avatar: "./pic/players/walcott.jpg" },
+    { name: "Olivier Giroud", season: "LEG", pos: "ST", stars: 3, ovr: 85, pac: 60, sho: 86, pas: 78, dri: 75, avatar: "./pic/players/giroud.jpg" },
     { name: "Laurent Koscielny", season: "LEG", pos: "CB", stars: 3, ovr: 86, pac: 82, sho: 50, pas: 75, dri: 74, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p51507.png" },
-    { name: "Tomas Rosicky", season: "LEG", pos: "CAM", stars: 4, ovr: 85, pac: 80, sho: 80, pas: 88, dri: 87, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1027.png" },
-    { name: "Samir Nasri", season: "LEG", pos: "CAM", stars: 4, ovr: 86, pac: 84, sho: 80, pas: 87, dri: 89, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p37160.png" },
-    { name: "Gael Clichy", season: "LEG", pos: "LB", stars: 3, ovr: 84, pac: 90, sho: 60, pas: 78, dri: 82, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1025.png" },
-    { name: "Bacary Sagna", season: "LEG", pos: "RB", stars: 3, ovr: 84, pac: 84, sho: 60, pas: 78, dri: 76, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p22849.png" },
-    { name: "Wojciech Szczesny", season: "LEG", pos: "GK", stars: 1, ovr: 85, pac: 80, sho: 50, pas: 80, dri: 72, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p69140.png" },
-    { name: "Lukas Podolski", season: "LEG", pos: "LM", stars: 3, ovr: 84, pac: 85, sho: 90, pas: 78, dri: 80, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p17183.png" },
-    { name: "Per Mertesacker", season: "LEG", pos: "CB", stars: 2, ovr: 84, pac: 35, sho: 40, pas: 65, dri: 50, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p20467.png" },
+    { name: "Tomas Rosicky", season: "LEG", pos: "CAM", stars: 4, ovr: 85, pac: 80, sho: 80, pas: 88, dri: 87, avatar: "./pic/players/rosicky.jpg" },
+    { name: "Samir Nasri", season: "LEG", pos: "CAM", stars: 4, ovr: 86, pac: 84, sho: 80, pas: 87, dri: 89, avatar: "./pic/players/nasri.jpg" },
+    { name: "Gael Clichy", season: "LEG", pos: "LB", stars: 3, ovr: 84, pac: 90, sho: 60, pas: 78, dri: 82, avatar: "./pic/players/clichy.jpg" },
+    { name: "Bacary Sagna", season: "LEG", pos: "RB", stars: 3, ovr: 84, pac: 84, sho: 60, pas: 78, dri: 76, avatar: "./pic/players/sagna.jpg" },
+    { name: "Wojciech Szczesny", season: "LEG", pos: "GK", stars: 1, ovr: 85, pac: 80, sho: 50, pas: 80, dri: 72, avatar: "./pic/players/szczesny.jpg" },
+    { name: "Lukas Podolski", season: "LEG", pos: "LM", stars: 3, ovr: 84, pac: 85, sho: 90, pas: 78, dri: 80, avatar: "./pic/players/podolski.jpg" },
+    { name: "Per Mertesacker", season: "LEG", pos: "CB", stars: 2, ovr: 84, pac: 35, sho: 40, pas: 65, dri: 50, avatar: "./pic/players/mertesacker.jpg" },
     { name: "Alex Lacazette", season: "LEG", pos: "ST", stars: 4, ovr: 85, pac: 84, sho: 85, pas: 78, dri: 85, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p59966.png" },
-    { name: "Pierre-Emerick Aubameyang", season: "LEG", pos: "ST", stars: 4, ovr: 89, pac: 96, sho: 88, pas: 75, dri: 84, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p54694.png" },
+    { name: "Pierre-Emerick Aubameyang", season: "LEG", pos: "ST", stars: 4, ovr: 89, pac: 96, sho: 88, pas: 75, dri: 84, avatar: "./pic/players/aubameyang.jpg" },
     { name: "Granit Xhaka", season: "LEG", pos: "CDM", stars: 3, ovr: 84, pac: 60, sho: 75, pas: 86, dri: 78, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p84450.png" },
     { name: "Kieran Tierney", season: "23", pos: "LB", stars: 3, ovr: 81, pac: 86, sho: 65, pas: 78, dri: 80, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p192895.png" },
-    { name: "Emile Smith Rowe", season: "23", pos: "CAM", stars: 4, ovr: 80, pac: 82, sho: 75, pas: 82, dri: 85, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p209289.png" }
+    { name: "Emile Smith Rowe", season: "23", pos: "CAM", stars: 4, ovr: 80, pac: 82, sho: 75, pas: 82, dri: 85, avatar: "./pic/players/smith_rowe.jpg" }
 ];
 
 let globalPlayerData = playerData; // To store filtered state
@@ -445,7 +445,7 @@ function renderPlayerList(data) {
         let posClass = p.pos;
 
         // Use Placeholder if no avatar
-        const avatarUrl = p.avatar ? p.avatar : "./icon/logo.svg";
+        const avatarUrl = p.avatar ? p.avatar : "./pic/arsenal-fc-logo.png";
 
         const html = `
             <div class="player-row">
@@ -456,7 +456,7 @@ function renderPlayerList(data) {
                 
                 <!-- Avatar -->
                 <div class="p-avatar-container">
-                    <img src="${avatarUrl}" alt="${p.name}" class="p-avatar-img" onerror="this.src='./icon/logo.svg'">
+                    <img src="${avatarUrl}" alt="${p.name}" class="p-avatar-img" onerror="this.src='./pic/arsenal-fc-logo.png'">
                 </div>
 
                 <!-- Info Block (Name, Season, OVR, Pos) -->
