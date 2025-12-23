@@ -145,9 +145,12 @@ div::-webkit-scrollbar {
   /* Smooth color change */
 }
 
-color: black;
-/* Arsenal Red */
-text-shadow: 1px 0 0 currentColor;
+.nav li.active a,
+.nav a:hover {
+  color: black;
+  /* Arsenal Red */
+  text-shadow: 1px 0 0 currentColor;
+  font-weight: 700;
 }
 
 .nav li.active a::after {
@@ -201,9 +204,12 @@ text-shadow: 1px 0 0 currentColor;
   width: auto;
 }
 
-color: black !important;
-/* Arsenal Red */
-text-shadow: 1px 0 0 currentColor;
+.nav li.active a,
+.nav a:hover {
+  color: black !important;
+  /* Arsenal Red */
+  text-shadow: 1px 0 0 currentColor;
+  font-weight: 700;
 }
 
 /* User Card Styling */
