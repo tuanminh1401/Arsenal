@@ -2025,122 +2025,232 @@ footer {
 .player-grid {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
+  width: 100%;
 }
 
 .player-row {
-  display: grid;
-  grid-template-columns: 80px 200px 1fr 1fr 1fr 1fr;
-  /* Custom col widths */
-  background: #1e2329;
-  border-radius: 6px;
-  padding: 10px;
+  display: flex;
+  /* Changed from grid to flex for better control */
   align-items: center;
+  background: #1e2630;
+  border-radius: 4px;
+  padding: 0;
+  height: 90px;
+  border: 1px solid #2c3540;
+  position: relative;
+  overflow: hidden;
   transition: transform 0.2s, background 0.2s;
-  border-left: 5px solid transparent;
 }
 
 .player-row:hover {
-  background: #2a3038;
-  transform: translateX(5px);
-  border-left-color: #cda45e;
+  background: #252e3a;
+  transform: translateX(3px);
+  border-color: #3b4654;
 }
 
-.p-pos {
-  font-weight: 900;
-  font-size: 24px;
-  text-align: center;
-  color: #fff;
-  border-right: 1px solid #333;
-  padding-right: 15px;
+/* Left Colored Bar */
+.p-bar {
+  width: 6px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.p-bar .vertical-pos {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: rgba(255, 255, 255, 0.7);
+  display: none;
+  /* Hide if too cluttered */
+}
+
+/* Position Colors */
+.p-bar.ST,
+.p-bar.RW,
+.p-bar.LW,
+.p-bar.CF {
+  background: #c31a1a;
+}
+
+.p-bar.CM,
+.p-bar.CDM,
+.p-bar.CAM {
+  background: #85c31a;
+}
+
+.p-bar.CB,
+.p-bar.LB,
+.p-bar.RB,
+.p-bar.GK {
+  background: #1a7bc3;
+}
+
+/* Avatar */
+.p-avatar-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 15px;
 }
 
-.p-pos.ST,
-.p-pos.RW,
-.p-pos.LW {
-  color: #c31a1a !important;
-}
-
-.p-pos.CM,
-.p-pos.CDM,
-.p-pos.CAM {
-  color: #85c31a !important;
-}
-
-.p-pos.CB,
-.p-pos.LB,
-.p-pos.RB,
-.p-pos.GK {
-  color: #1a7bc3 !important;
-}
-
-.p-info {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.p-avatar {
-  width: 50px;
-  height: 50px;
+.p-avatar-img {
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #555;
+  border: 2px solid #444;
+}
+
+/* Info Block */
+.p-main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  /* Fixed width for alignment */
+  gap: 6px;
+}
+
+.p-top-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.p-season-badge {
+  background: linear-gradient(45deg, #eee, #ccc);
+  color: #111;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 1px 4px;
+  border-radius: 3px;
+  border: 1px solid #fff;
 }
 
 .p-name {
+  font-size: 20px;
   font-weight: 700;
-  font-size: 18px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.p-bottom-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.p-stars {
+  display: flex;
+  gap: 1px;
+}
+
+.star {
+  font-size: 10px;
+}
+
+.star.gold {
+  color: #ffd700;
+  text-shadow: 0 0 2px #b8860b;
+}
+
+.star.gray {
+  color: #444;
+}
+
+.p-pos-box {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+  width: 34px;
+}
+
+/* Reuse position colors for box backgrounds */
+.p-pos-box.ST,
+.p-pos-box.RW,
+.p-pos-box.LW,
+.p-pos-box.CF {
+  background: #c31a1a;
+}
+
+.p-pos-box.CM,
+.p-pos-box.CDM,
+.p-pos-box.CAM {
+  background: #85c31a;
+}
+
+.p-pos-box.CB,
+.p-pos-box.LB,
+.p-pos-box.RB,
+.p-pos-box.GK {
+  background: #1a7bc3;
+}
+
+.p-ovr-num {
+  font-size: 16px;
+  font-weight: 700;
   color: #eee;
 }
 
-.p-stat {
+/* Stats Group (Right Side) */
+.p-stats-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+  padding-right: 30px;
+}
+
+.p-stat-col {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding: 0 10px;
-}
-
-.p-stat label {
-  font-size: 11px;
-  color: #888;
-  text-transform: uppercase;
-}
-
-.stat-bar-bg {
-  width: 100%;
-  height: 6px;
-  background: #333;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.stat-bar-fill {
-  height: 100%;
-  background: #cda45e;
+  align-items: center;
+  width: 30px;
 }
 
 .stat-val {
+  font-size: 18px;
   font-weight: 700;
-  font-size: 14px;
   color: #ccc;
 }
 
-/* Mobile responsive for DB */
-@media screen and (max-width: 768px) {
-  .player-row {
-    grid-template-columns: 60px 1fr;
-    /* Simplify on mobile */
-    gap: 10px;
-  }
+.stat-val.high {
+  color: #85c31a;
+}
 
-  .p-stat {
+/* Green for >100 */
+
+.stat-label {
+  font-size: 10px;
+  color: #666;
+  font-weight: 600;
+}
+
+.p-team-logo {
+  margin-left: 20px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .p-stats-group {
     display: none;
   }
 
-  /* Hide stats on small mobile or stack them */
-  /* Maybe show just OVR or simple stats */
+  /* Hide stats on mobile */
+  .p-main-info {
+    width: auto;
+  }
 }
 
 .modal {

@@ -305,84 +305,76 @@ function closeVideo(e) {
 // Mock Data (Based on user request + FC Mobile style stats)
 const playerData = [
     {
-        name: "Thierry Henry",
+        name: "V. Gyökeres",
+        season: "25TS",
         pos: "ST",
-        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1619.png",
-        ovr: 96,
-        pac: 98, // Pace
-        sho: 95, // Shooting
-        pas: 90, // Passing
-        dri: 94  // Dribbling
+        stars: 4,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p468028.png", // Placeholder
+        ovr: 121,
+        pac: 122, sho: 119, pas: 105, dri: 115
     },
     {
-        name: "Bukayo Saka",
-        pos: "RW",
-        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p223340.png",
-        ovr: 90,
-        pac: 91,
-        sho: 85,
-        pas: 86,
-        dri: 92
-    },
-    {
-        name: "Declan Rice",
-        pos: "CDM",
-        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p204480.png",
-        ovr: 89,
-        pac: 78,
-        sho: 75,
-        pas: 88,
-        dri: 84
-    },
-    {
-        name: "Martin Ødegaard",
-        pos: "CAM",
-        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p184029.png",
-        ovr: 89,
-        pac: 81,
-        sho: 84,
-        pas: 92,
-        dri: 91
-    },
-    {
-        name: "William Saliba",
+        name: "Gabriel",
+        season: "25TS",
         pos: "CB",
+        stars: 3,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p225321.png",
+        ovr: 119,
+        pac: 106, sho: 60, pas: 95, dri: 90
+    },
+    {
+        name: "D. Rice",
+        season: "25TS",
+        pos: "CM",
+        stars: 4,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p204480.png",
+        ovr: 119,
+        pac: 102, sho: 98, pas: 115, dri: 108
+    },
+    {
+        name: "B. Saka",
+        season: "25TS",
+        pos: "RW",
+        stars: 5,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p223340.png",
+        ovr: 119,
+        pac: 120, sho: 115, pas: 110, dri: 122
+    },
+    {
+        name: "E. Eze",
+        season: "25DP",
+        pos: "CAM",
+        stars: 5,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p232361.png", // Eze placeholder (Crystal Palace but requested in context likely)
+        ovr: 119,
+        pac: 115, sho: 112, pas: 118, dri: 124
+    },
+    {
+        name: "W. Saliba",
+        season: "25TY",
+        pos: "CB",
+        stars: 3,
         avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p462424.png",
-        ovr: 88,
-        pac: 84,
-        sho: 50,
-        pas: 79,
-        dri: 78
+        ovr: 118,
+        pac: 108, sho: 55, pas: 98, dri: 95
+    },
+    {
+        name: "Jorginho",
+        season: "CH",
+        pos: "CDM",
+        stars: 3,
+        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p85955.png",
+        ovr: 118,
+        pac: 85, sho: 88, pas: 118, dri: 105
     },
     {
         name: "Gabriel Jesus",
+        season: "FAC",
         pos: "ST",
+        stars: 5,
         avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p205651.png",
-        ovr: 86,
-        pac: 87,
-        sho: 84,
-        pas: 80,
-        dri: 89
-    },
-    {
-        name: "Gabriel Magalhães",
-        pos: "CB",
-        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p225321.png",
-        ovr: 87,
-        pac: 79,
-        sho: 55,
-        pas: 72,
-        dri: 70
-    },
-    {
-        name: "Dennis Bergkamp",
-        pos: "CF",
-        avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1608.png",
-        ovr: 94,
-        pac: 85,
-        sho: 92,
-        pas: 95,
-        dri: 96
+        ovr: 118,
+        pac: 116, sho: 112, pas: 105, dri: 120
     }
 ];
 
@@ -407,47 +399,63 @@ function renderPlayerList(data) {
     grid.innerHTML = "";
 
     data.forEach(p => {
-        // Dynamic color for Pos
-        let posClass = p.pos; // ST, RW, CB, etc. used in CSS
+        // Generate Stars HTML
+        let starsHtml = '';
+        for (let i = 0; i < 5; i++) {
+            starsHtml += `<span class="star ${i < p.stars ? 'gold' : 'gray'}">★</span>`;
+        }
+
+        // Color based on Position for bars/boxes
+        let posClass = p.pos;
 
         const html = `
             <div class="player-row">
-                <div class="p-pos ${posClass}">${p.pos}</div>
-                <div class="p-info">
-                    <img src="${p.avatar}" alt="${p.name}" class="p-avatar">
-                    <div style="display:flex; flex-direction:column;">
+                <!-- Left Colored Bar -->
+                <div class="p-bar ${posClass}">
+                    <span class="vertical-pos">${p.pos}</span>
+                </div>
+                
+                <!-- Avatar -->
+                <div class="p-avatar-container">
+                    <img src="${p.avatar}" alt="${p.name}" class="p-avatar-img">
+                </div>
+
+                <!-- Info Block (Name, Season, OVR, Pos) -->
+                <div class="p-main-info">
+                    <div class="p-top-row">
+                        <span class="p-season-badge">${p.season}</span>
                         <span class="p-name">${p.name}</span>
-                        <span style="font-size:12px; color:#888;">OVR: ${p.ovr}</span>
+                    </div>
+                    <div class="p-bottom-row">
+                        <div class="p-stars">${starsHtml}</div>
+                        <span class="p-pos-box ${posClass}">${p.pos}</span>
+                        <span class="p-ovr-num">${p.ovr}</span>
                     </div>
                 </div>
-                <!-- Stats Overlay -->
-                <div class="p-stat">
-                    <div style="display:flex; justify-content:space-between;">
-                         <label>Pace</label>
-                         <span class="stat-val">${p.pac}</span>
+
+                <!-- Stats Columns (Right Side) -->
+                <!-- Use grid fraction layout for these -->
+                <div class="p-stats-group">
+                    <div class="p-stat-col">
+                         <div class="stat-val ${p.pac >= 100 ? 'high' : ''}">${p.pac}</div>
+                         <div class="stat-label">PAC</div>
                     </div>
-                    <div class="stat-bar-bg"><div class="stat-bar-fill" style="width:${p.pac}%"></div></div>
-                </div>
-                <div class="p-stat">
-                     <div style="display:flex; justify-content:space-between;">
-                         <label>Shooting</label>
-                         <span class="stat-val">${p.sho}</span>
+                    <div class="p-stat-col">
+                         <div class="stat-val ${p.sho >= 100 ? 'high' : ''}">${p.sho}</div>
+                          <div class="stat-label">SHO</div>
                     </div>
-                     <div class="stat-bar-bg"><div class="stat-bar-fill" style="width:${p.sho}%"></div></div>
-                </div>
-                <div class="p-stat">
-                     <div style="display:flex; justify-content:space-between;">
-                         <label>Passing</label>
-                         <span class="stat-val">${p.pas}</span>
+                    <div class="p-stat-col">
+                         <div class="stat-val ${p.pas >= 100 ? 'high' : ''}">${p.pas}</div>
+                          <div class="stat-label">PAS</div>
                     </div>
-                     <div class="stat-bar-bg"><div class="stat-bar-fill" style="width:${p.pas}%"></div></div>
-                </div>
-                <div class="p-stat">
-                     <div style="display:flex; justify-content:space-between;">
-                         <label>Dribbling</label>
-                         <span class="stat-val">${p.dri}</span>
+                    <div class="p-stat-col">
+                         <div class="stat-val ${p.dri >= 100 ? 'high' : ''}">${p.dri}</div>
+                          <div class="stat-label">DRI</div>
                     </div>
-                     <div class="stat-bar-bg"><div class="stat-bar-fill" style="width:${p.dri}%"></div></div>
+                     <!-- Arsenal Logo on far right -->
+                    <div class="p-team-logo">
+                        <img src="./pic/arsenal-fc-logo.png" alt="Arsenal" style="width:30px; opacity:0.8;">
+                    </div>
                 </div>
             </div>
         `;
