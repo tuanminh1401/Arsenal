@@ -322,7 +322,7 @@ const playerData = [
     { name: "Jurrien Timber", season: "24", pos: "LB", stars: 3, ovr: 82, pac: 84, sho: 60, pas: 80, dri: 82, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/TIMBER_Headshot_web_by8hrsl6.png?auto=webp&itok=k6XxXs7u" },
     { name: "Jakub Kiwior", season: "24", pos: "CB", stars: 2, ovr: 79, pac: 78, sho: 45, pas: 72, dri: 70, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/KIWIOR_Headshot_web_yxrcq925.png?auto=webp&itok=bFPJ-Yfy" },
     { name: "David Raya", season: "24TS", pos: "GK", stars: 1, ovr: 86, pac: 82, sho: 55, pas: 88, dri: 70, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/RAYA_Headshot_web_njztl3wr.png?auto=webp&itok=_6peqasx" },
-    { name: "Aaron Ramsdale", season: "23", pos: "GK", stars: 1, ovr: 82, pac: 80, sho: 60, pas: 85, dri: 65, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p204801.png" },
+    { name: "Aaron Ramsdale", season: "23", pos: "GK", stars: 1, ovr: 82, pac: 80, sho: 60, pas: 85, dri: 65, avatar: "./pic/players/ramsdale.jpg" },
     { name: "Fabio Vieira", season: "23", pos: "CAM", stars: 3, ovr: 78, pac: 76, sho: 75, pas: 82, dri: 80, avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/VIEIRA_Headshot_web_ttvp4mvt.png?auto=webp&itok=e0RYtimf" },
     { name: "Eddie Nketiah", season: "23", pos: "ST", stars: 3, ovr: 77, pac: 84, sho: 78, pas: 68, dri: 80, avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p205533.png" },
 
