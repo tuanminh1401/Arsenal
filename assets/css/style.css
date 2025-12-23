@@ -2148,24 +2148,21 @@ footer {
   background: #e61b1b;
 }
 
-/* CAM (Yellow/Lime) */
-.p-bar.CAM,
-.p-pos-box.CAM {
-  background: #d4e61b;
-  color: #111 !important;
-  /* Dark text for contrast */
-}
 
-/* MID/CDM (Green) */
+
+/* MID/CDM/CAM (Green) */
 .p-bar.CDM,
 .p-bar.CM,
 .p-bar.LM,
 .p-bar.RM,
+.p-bar.CAM,
 .p-pos-box.CDM,
 .p-pos-box.CM,
 .p-pos-box.LM,
-.p-pos-box.RM {
+.p-pos-box.RM,
+.p-pos-box.CAM {
   background: #1ba035;
+  color: #fff;
 }
 
 /* DEF/GK (Blue) */
@@ -2267,6 +2264,9 @@ footer {
   color: #fff;
   text-align: center;
   width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Reuse position colors for box backgrounds */
@@ -2280,7 +2280,7 @@ footer {
 .p-pos-box.CM,
 .p-pos-box.CDM,
 .p-pos-box.CAM {
-  background: #85c31a;
+  background: #1ba035;
 }
 
 .p-pos-box.CB,
