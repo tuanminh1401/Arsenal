@@ -719,7 +719,12 @@ function renderTraits(p) {
     // Mock traits
     const mockTraits = ["Finesse Shot", "Speed Dribbler (AI)", "Technical Dribbler (AI)", "Playmaker (AI)", "Outside Foot Shot"];
     const list = document.getElementById('pd-traits-list');
-    list.innerHTML = mockTraits.map(t => `<li>${t}</li>`).join('');
+    list.innerHTML = mockTraits.map(t => `
+        <li>
+            <img src="./icon/star.svg" alt="Trait" class="trait-icon">
+            <span class="trait-text">${t}</span>
+        </li>
+    `).join('');
 }
 
 function renderRadarChart(s) {

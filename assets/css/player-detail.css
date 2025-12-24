@@ -642,16 +642,23 @@
 }
 
 .pd-traits-box li {
-    font-size: 13px;
-    color: #ccc;
-    margin-bottom: 5px;
+    font-size: 16px;
+    /* Increased from 13px */
+    color: #eee;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
+.trait-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(80%) sepia(50%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    /* Gold tint attempt or keep regular */
+}
+
+/* Remove old bullet */
 .pd-traits-box li::before {
-    content: "◆";
-    color: #666;
-    font-size: 10px;
+    content: none;
 }
