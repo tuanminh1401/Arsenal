@@ -33,20 +33,18 @@
 
 .close-detail {
     position: absolute;
-    top: -15px;
-    right: -15px;
+    top: 5px;
+    right: 10px;
     font-size: 30px;
     cursor: pointer;
     color: #fff;
-    background: #333;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* Removed circle styles */
+    background: transparent;
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 0;
     z-index: 10;
-    border: 2px solid #555;
 }
 
 .close-detail:hover {
