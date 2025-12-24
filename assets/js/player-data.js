@@ -626,7 +626,7 @@ const playerData = [
         ]
     },
     {
-        name: "Jens Lehmann", season: "ICON", pos: "GK", stars: 1, ovr: 87, pac: 78, sho: 50, pas: 85, dri: 72, flag: "DE", avatar: "./pic/players/lehmann.jpg",
+        name: "Jens Lehmann", season: "ICON", pos: "GK", stars: 1, ovr: 87, pac: 78, sho: 50, pas: 85, dri: 72, flag: "DE", avatar: "./pic/players/lehmann.png",
         general: {
             bio: "Jens Lehmann was a charismatic and commanding goalkeeper. His presence and communication (often loud!) organized the Invincibles' defense.",
             history: "Signed to replace Seaman, Lehmann played every single league match of the unbeaten season. He holds the record for most consecutive clean sheets in the Champions League.",
@@ -646,7 +646,7 @@ const playerData = [
 
     // --- Past Stars ---
     {
-        name: "Cesc Fabregas", season: "LEG", pos: "CM", stars: 4, ovr: 90, pac: 78, sho: 84, pas: 95, dri: 88, flag: "ES", avatar: "./pic/players/fabregas.jpg",
+        name: "Cesc Fabregas", season: "LEG", pos: "CM", stars: 4, ovr: 90, pac: 78, sho: 84, pas: 95, dri: 88, flag: "ES", avatar: "./pic/players/fabregas.png",
         general: {
             bio: "Cesc Fàbregas was the heartbeat of Arsenal's midfield for nearly a decade. Endowed with incredible vision and passing range, he became one of the club's youngest ever captains.",
             history: "Poached from Barcelona's academy at 16, Fàbregas broke into the invincible era team. He evolved into a goalscoring midfielder and the team's talisman before returning to Barcelona.",
@@ -664,7 +664,7 @@ const playerData = [
         ]
     },
     {
-        name: "Robin van Persie", season: "LEG", pos: "ST", stars: 4, ovr: 91, pac: 87, sho: 93, pas: 84, dri: 89, flag: "NL", avatar: "./pic/players/van_persie.jpg",
+        name: "Robin van Persie", season: "LEG", pos: "ST", stars: 4, ovr: 91, pac: 87, sho: 93, pas: 84, dri: 89, flag: "NL", avatar: "./pic/players/van_persie.png",
         general: {
             bio: "Robin van Persie evolved from a volatile winger into one of the most complete strikers in the world. His technique, volleying ability, and movement were world-class.",
             history: "Signed from Feyenoord, injuries hampered his early years. His final season at Arsenal was a masterpiece, winning the Golden Boot and PFA Player of the Year.",
@@ -682,7 +682,7 @@ const playerData = [
         ]
     },
     {
-        name: "Alexis Sanchez", season: "LEG", pos: "LW", stars: 4, ovr: 90, pac: 90, sho: 87, pas: 85, dri: 92, flag: "CL", avatar: "./pic/players/sanchez.jpg",
+        name: "Alexis Sanchez", season: "LEG", pos: "LW", stars: 4, ovr: 90, pac: 90, sho: 87, pas: 85, dri: 92, flag: "CL", avatar: "./pic/players/sanchez.png",
         general: {
             bio: "Alexis Sánchez was a whirlwind of energy and skill. A relentless presser and match-winner, he carried the team at times with his goals and assists.",
             history: "Signed from Barcelona in 2014, Alexis hit the ground running. He scored stunning goals in two FA Cup finals and was unstoppable in his prime.",
@@ -718,7 +718,7 @@ const playerData = [
         ]
     },
     {
-        name: "Santi Cazorla", season: "LEG", pos: "CM", stars: 5, ovr: 88, pac: 80, sho: 82, pas: 90, dri: 91, flag: "ES", avatar: "./pic/players/cazorla.jpg",
+        name: "Santi Cazorla", season: "LEG", pos: "CM", stars: 5, ovr: 88, pac: 80, sho: 82, pas: 90, dri: 91, flag: "ES", avatar: "./pic/players/cazorla.png",
         general: {
             bio: "Santi Cazorla is one of the most technically gifted players to ever play for Arsenal. Two-footed, diminutive, and always smiling, he could dictate play from deep or weave magic in the final third.",
             history: "Signed from Malaga, Cazorla became an instant hit. His free-kick in the 2014 FA Cup final sparked the comeback that saved Arsenal's season.",
