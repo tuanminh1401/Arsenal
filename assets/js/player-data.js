@@ -736,7 +736,7 @@ const playerData = [
         ]
     },
     {
-        name: "Aaron Ramsey", season: "LEG", pos: "CM", stars: 3, ovr: 86, pac: 82, sho: 80, pas: 85, dri: 84, flag: "GB-WLS", avatar: "./pic/players/ramsey.jpg",
+        name: "Aaron Ramsey", season: "LEG", pos: "CM", stars: 3, ovr: 86, pac: 82, sho: 80, pas: 85, dri: 84, flag: "GB-WLS", avatar: "./pic/players/ramsey.png",
         general: {
             bio: "Aaron Ramsey developed into a dynamic box-to-box midfielder with a knack for scoring crucial goals. He will forever be remembered for his FA Cup final winners.",
             history: "Joining from Cardiff as a teenager, Ramsey overcame a horrific leg break to become a key player. He scored the winning goals in the 2014 and 2017 FA Cup finals.",
@@ -753,7 +753,7 @@ const playerData = [
         ]
     },
     {
-        name: "Jack Wilshere", season: "LEG", pos: "CM", stars: 4, ovr: 85, pac: 80, sho: 75, pas: 86, dri: 88, flag: "GB-ENG", avatar: "./pic/players/wilshere.jpg",
+        name: "Jack Wilshere", season: "LEG", pos: "CM", stars: 4, ovr: 85, pac: 80, sho: 75, pas: 86, dri: 88, flag: "GB-ENG", avatar: "./pic/players/wilshere.png",
         general: {
             bio: "Jack Wilshere was a Hale End academy graduate who burst onto the scene with a fearless style of play. His performance against Barcelona at age 19 is legendary.",
             history: "Arsenal's youngest ever league debutant at the time. Injuries blighted his career, but his talent and connection with the fans were undeniable.",
@@ -771,7 +771,7 @@ const playerData = [
         ]
     },
     {
-        name: "Theo Walcott", season: "LEG", pos: "RW", stars: 3, ovr: 84, pac: 96, sho: 80, pas: 75, dri: 83, flag: "GB-ENG", avatar: "./pic/players/walcott.jpg",
+        name: "Theo Walcott", season: "LEG", pos: "RW", stars: 3, ovr: 84, pac: 96, sho: 80, pas: 75, dri: 83, flag: "GB-ENG", avatar: "./pic/players/walcott.png",
         general: {
             bio: "Theo Walcott was a speedster who spent 12 years at the club. Often used on the wing or as a striker, he joined the exclusive 100-goal club.",
             history: "Signed from Southampton at 16, he went to the 2006 World Cup without playing a Premier League game. He scored many memorable goals, including a hat-trick against Newcastle.",
@@ -788,7 +788,7 @@ const playerData = [
         ]
     },
     {
-        name: "Olivier Giroud", season: "LEG", pos: "ST", stars: 3, ovr: 85, pac: 60, sho: 86, pas: 78, dri: 75, flag: "FR", avatar: "./pic/players/giroud.jpg",
+        name: "Olivier Giroud", season: "LEG", pos: "ST", stars: 3, ovr: 85, pac: 60, sho: 86, pas: 78, dri: 75, flag: "FR", avatar: "./pic/players/giroud.png",
         general: {
             bio: "Olivier Giroud was the ideal target man. Handsome and effective, his link-up play allowed midfielders to flourish, and he scored some spectacular goals, including the Scorpion King.",
             history: "Signed from Montpellier, Giroud was a consistent scorer. He won the Puskas Award for his scorpion kick goal against Crystal Palace.",
@@ -823,7 +823,7 @@ const playerData = [
         ]
     },
     {
-        name: "Tomas Rosicky", season: "LEG", pos: "CAM", stars: 4, ovr: 85, pac: 80, sho: 80, pas: 88, dri: 87, flag: "CZ", avatar: "./pic/players/rosicky.jpg",
+        name: "Tomas Rosicky", season: "LEG", pos: "CAM", stars: 4, ovr: 85, pac: 80, sho: 80, pas: 88, dri: 87, flag: "CZ", avatar: "./pic/players/rosicky.png",
         general: {
             bio: "Tomas Rosicky, the 'Little Mozart', was a player of exquisite technique and vision. When fit, he orchestrated the midfield with his trademark outside-of-the-boot passes.",
             history: "Signed from Dortmund, Rosicky's Arsenal career was plagued by injuries, but his quality was never in doubt. He loved scoring against Tottenham.",
