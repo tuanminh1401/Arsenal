@@ -365,7 +365,7 @@ const playerData = [
 
     // --- Legends (Invincibles & Icons) ---
     {
-        name: "Thierry Henry", season: "ICON", pos: "ST", stars: 5, ovr: 96, pac: 98, sho: 96, pas: 90, dri: 95, flag: "FR", avatar: "https://resources.premierleague.com/premierleague/photos/players/500x500/p1619.png",
+        name: "Thierry Henry", season: "ICON", pos: "ST", stars: 5, ovr: 96, pac: 98, sho: 96, pas: 90, dri: 95, flag: "FR", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1619.png",
         general: {
             bio: "Thierry Henry is arguably the greatest player in Arsenal's history. A striker of unparalleled elegance, pace, and finishing ability, he redefined the role. He is the club's all-time record goalscorer.",
             history: "Signed from Juventus as a winger, Wenger converted him into a striker. He went on to win 4 Golden Boots and lead the Invincibles. His statue stands outside the Emirates Stadium.",
@@ -386,7 +386,7 @@ const playerData = [
         ]
     },
     {
-        name: "Dennis Bergkamp", season: "ICON", pos: "CF", stars: 5, ovr: 94, pac: 85, sho: 94, pas: 95, dri: 96, flag: "NL", avatar: "https://resources.premierleague.com/premierleague/photos/players/500x500/p1608.png",
+        name: "Dennis Bergkamp", season: "ICON", pos: "CF", stars: 5, ovr: 94, pac: 85, sho: 94, pas: 95, dri: 96, flag: "NL", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1608.png",
         general: {
             bio: "Dennis Bergkamp, the 'Non-Flying Dutchman', was a technician of the highest order. His touch, vision, and executed goals bordered on the impossible. He was the creative fulcrum of three title-winning sides.",
             history: "A product of Ajax's total football, Bergkamp joined after a difficult spell at Inter. His arrival signaled Arsenal's transformation into a modern, attractive football team.",
