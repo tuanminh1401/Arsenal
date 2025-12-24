@@ -256,8 +256,8 @@
 }
 
 #pd-action-img {
-    height: 108%;
-    /* Increase size slightly */
+    height: 95%;
+    /* Restore to 95% to show full head vertically */
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6)) contrast(1.1) saturate(1.1);
