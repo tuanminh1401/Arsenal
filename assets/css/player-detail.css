@@ -132,7 +132,9 @@
     border: none;
     box-shadow: inset -100px 0 100px -50px #000;
     /* Darkens the right side */
-    /* Removed mask-image to prevent text fading */
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    /* seamless fade */
     border-radius: 0 20px 20px 0;
     /* Flat left edge */
     padding: 30px 40px;
@@ -203,42 +205,9 @@
 .pd-pos {
     font-size: 26px;
     font-weight: 900;
-    color: #e61b1b;
+    color: #fff;
+    /* Reverted to White */
     text-shadow: none;
-}
-
-/* Position Colors Logic */
-/* Attackers: Red (Default) */
-.pd-pos.ST,
-.pd-pos.RW,
-.pd-pos.LW,
-.pd-pos.CF,
-.pd-pos.RF,
-.pd-pos.LF {
-    color: #e61b1b;
-}
-
-/* Midfielders: Green */
-.pd-pos.CAM,
-.pd-pos.CM,
-.pd-pos.CDM,
-.pd-pos.LM,
-.pd-pos.RM {
-    color: #2ecc71;
-}
-
-/* Defenders: Blue */
-.pd-pos.CB,
-.pd-pos.LB,
-.pd-pos.RB,
-.pd-pos.LWB,
-.pd-pos.RWB {
-    color: #3498db;
-}
-
-/* Goalkeepers: Yellow */
-.pd-pos.GK {
-    color: #ffd700;
 }
 
 .pd-club {
