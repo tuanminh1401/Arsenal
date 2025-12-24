@@ -958,7 +958,7 @@ const playerData = [
         ]
     },
     {
-        name: "Pierre-Emerick Aubameyang", season: "LEG", pos: "ST", stars: 4, ovr: 89, pac: 96, sho: 88, pas: 75, dri: 84, flag: "GA", avatar: "./pic/players/aubameyang.png",
+        name: "Pierre\u2011Emerick Aubameyang", season: "LEG", pos: "ST", stars: 4, ovr: 89, pac: 96, sho: 88, pas: 75, dri: 84, flag: "GA", avatar: "./pic/players/aubameyang.png",
         general: {
             bio: "Pierre-Emerick Aubameyang was a world-class goalscorer. His blistering pace and instinctive finishing brought him the Golden Boot and FA Cup glory.",
             history: "Signed from Dortmund, Auba had an incredible start to his Arsenal career. He single-handedly won the 2020 FA Cup with braces in the semi-final and final.",
