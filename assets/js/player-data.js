@@ -443,7 +443,7 @@ const playerData = [
         ]
     },
     {
-        name: "Sol Campbell", season: "ICON", pos: "CB", stars: 3, ovr: 90, pac: 84, sho: 45, pas: 70, dri: 72, flag: "GB-ENG", avatar: "./pic/players/campbell.jpg",
+        name: "Sol Campbell", season: "ICON", pos: "CB", stars: 3, ovr: 90, pac: 84, sho: 45, pas: 70, dri: 72, flag: "GB-ENG", avatar: "./pic/players/campbell.png",
         general: {
             bio: "Sol Campbell was a colossus in defense. His controversial move across North London resulted in unprecedented success, providing the rock-solid foundation for the Invincibles.",
             history: "Captain of Tottenham, Campbell let his contract run down to join Arsenal on a free transfer in search of trophies. He won the Double in his first season.",
