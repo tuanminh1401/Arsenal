@@ -123,8 +123,10 @@
     background: rgba(30, 30, 35, 0.4);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    /* border: 1px solid rgba(255, 255, 255, 0.08); REMOVED BORDER */
+    border: none;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); REMOVED SHADOW */
+    box-shadow: none;
     border-radius: 0 20px 20px 0;
     /* Flat left edge */
     padding: 30px 40px;
@@ -133,6 +135,19 @@
     gap: 8px;
     margin-left: 0;
     /* Touch left edge */
+    position: relative;
+    /* For pseudo-element */
+}
+
+/* Linear Gradient Separator ("Line Near") */
+.pd-header-glass::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 1px;
+    height: 70%;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4), transparent);
 }
 
 /* Top Row: Badges */
@@ -247,10 +262,12 @@
     /* Reduce height to create head space */
     width: auto;
     object-fit: contain;
-    filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6)) contrast(1.1) saturate(1.1);
     transform: translateY(20px) scale(1.05);
     /* Lower position and slight scale */
     transform-origin: bottom right;
+    image-rendering: -webkit-optimize-contrast;
+    /* Sharpen */
 }
 
 /* Responsive Adjusments */
