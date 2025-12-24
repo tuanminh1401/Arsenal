@@ -1145,29 +1145,42 @@
     <div class="p-detail-container">
       <span class="close-detail" onclick="closePlayerDetail()">&times;</span>
 
-      <!-- Header: Name, Club, Flag -->
+      <!-- Header: Hero Section -->
       <div class="pd-header">
-        <div class="pd-header-left">
-          <div class="pd-season-badge" id="pd-season">25TS</div>
-          <div class="pd-name-block">
+        <!-- Background & Glow -->
+        <div class="pd-header-bg"></div>
+        <div class="pd-header-glow"></div>
+
+        <!-- Watermark Number -->
+        <div id="pd-watermark" class="pd-watermark"></div>
+
+        <div class="pd-header-content">
+          <!-- Left: Text Info in Glass Container -->
+          <div class="pd-header-glass">
+            <div class="pd-top-row">
+              <div class="pd-season-badge" id="pd-season">25TS</div>
+              <div class="pd-ovr-badge" id="pd-ovr">119</div>
+            </div>
+
             <h1 class="pd-name" id="pd-name">Bukayo Saka</h1>
+
             <div class="pd-sub-info">
               <span class="pd-pos" id="pd-pos">RW</span>
-              <span class="pd-ovr" id="pd-ovr">119</span>
-            </div>
-            <div class="pd-club-country">
               <span class="pd-club">ARSENAL</span>
+            </div>
+
+            <div class="pd-meta-row">
               <div class="pd-nation">
-                <span id="pd-nation-name" style="text-transform: uppercase;">England</span>
                 <img id="pd-nation-flag" src="" alt="Flag">
+                <span id="pd-nation-name">England</span>
               </div>
+              <span class="pd-separator">•</span>
               <span class="pd-dob" id="pd-dob">5.9.2001 (23)</span>
             </div>
           </div>
-        </div>
-        <div class="pd-header-right">
-          <img id="pd-club-logo" src="./pic/arsenal-fc-logo.png" alt="Club">
-          <div class="pd-action-img-container">
+
+          <!-- Right: Hero Image -->
+          <div class="pd-hero-image-wrapper">
             <img id="pd-action-img" src="" alt="Action" onerror="this.src='./pic/arsenal-fc-logo.png'">
           </div>
         </div>

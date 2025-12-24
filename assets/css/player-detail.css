@@ -45,158 +45,262 @@
     color: #fff;
 }
 
-/* --- Header --- */
+/* --- Header: Hero Section --- */
 .pd-header {
+    position: relative;
+    width: 100%;
+    /* Min-height for hero feel */
+    min-height: 280px;
+    border-bottom: 1px solid #333;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    /* Contain the gradient/glow */
+    display: flex;
+    align-items: center;
+    /* Vertical Center */
+}
+
+/* Background Layers */
+.pd-header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Radial Gradient: Dark Red to Black */
+    background: radial-gradient(circle at 75% 40%, rgba(139, 0, 0, 0.5) 0%, rgba(20, 20, 20, 1) 70%);
+    z-index: 1;
+}
+
+.pd-watermark {
+    display: none;
+    /* Hidden to match Jorginho reference */
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 14rem;
+    font-weight: 900;
+    color: #fff;
+    opacity: 0.04;
+    z-index: 2;
+    pointer-events: none;
+    line-height: 1;
+    font-family: sans-serif;
+}
+
+.pd-header-glow {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(230, 27, 27, 0.4) 0%, transparent 70%);
+    transform: translate(50%, -50%);
+    filter: blur(40px);
+    z-index: 2;
+    opacity: 0.8;
+}
+
+/* Content Container */
+.pd-header-content {
+    position: relative;
+    z-index: 5;
+    /* Above BG */
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    border-bottom: 1px solid #333;
-    padding-bottom: 20px;
-}
-
-.pd-header-left {
-    display: flex;
-    gap: 20px;
     align-items: center;
+    width: 100%;
+    padding: 30px;
 }
 
-.pd-season-badge {
-    background: linear-gradient(135deg, #ddd, #fff);
-    color: #111;
-    font-weight: 800;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 14px;
-    border: 1px solid #fff;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-}
-
-.pd-name-block {
+/* --- Glass Container (Left) --- */
+.pd-header-glass {
+    flex: 1;
+    max-width: 580px;
+    /* Slightly wider */
+    background: rgba(30, 30, 35, 0.4);
+    /* Darker, less white */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    /* More rounded */
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
+    gap: 8px;
+    /* Tighter spacing */
+    margin-left: 20px;
+    /* Offset from left edge */
 }
 
+/* Top Row: Badges */
+.pd-top-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+/* Number/Season Badge (White) */
+.pd-season-badge {
+    background: #fff;
+    color: #000;
+    font-weight: 900;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    box-shadow: none;
+    border: none;
+    min-width: 40px;
+    text-align: center;
+}
+
+/* OVR Badge (Black) */
+.pd-ovr-badge {
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    min-width: 40px;
+    text-align: center;
+}
+
+/* Typography */
 .pd-name {
-    font-size: 42px;
-    font-weight: 700;
-    margin: 0;
-    line-height: 1.1;
+    font-size: 64px;
+    font-weight: 900;
+    margin: 5px 0;
+    line-height: 0.9;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #ddd;
-    /* Example: Silver/White */
+    letter-spacing: 0px;
+    /* Tighter letter spacing like image */
+    color: #fff;
 }
 
 .pd-sub-info {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     margin-top: 5px;
 }
 
 .pd-pos {
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 26px;
+    font-weight: 900;
     color: #e61b1b;
-    /* Default red, JS can override */
-}
-
-.pd-ovr {
-    font-size: 24px;
-    font-weight: 800;
-    background: #333;
-    padding: 2px 8px;
-    border-radius: 4px;
-    color: #fff;
-}
-
-.pd-club-country {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 14px;
-    color: #aaa;
-    margin-top: 8px;
+    /* Bright Red */
+    text-shadow: none;
 }
 
 .pd-club {
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
+    color: #ddd;
+    /* Lighter grey */
+    letter-spacing: 1px;
+}
+
+.pd-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #777;
+    /* Darker grey for meta */
+    margin-top: 2px;
+    font-weight: 500;
 }
 
 .pd-nation {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
 }
 
 .pd-nation img {
-    width: 24px;
-    height: 16px;
-    object-fit: cover;
+    width: 22px;
+    height: auto;
+    border-radius: 2px;
 }
 
-.pd-header-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.pd-separator {
+    color: #444;
 }
 
-#pd-club-logo {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-}
-
-.pd-action-img-container {
-    width: 250px;
-    height: 250px;
+/* --- Hero Image (Right) --- */
+/* --- Hero Image (Right) --- */
+.pd-hero-image-wrapper {
     position: relative;
-    /* Create a fade out effect at bottom if needed */
+    width: 450px;
+    /* Slightly wider */
+    height: 350px;
+    /* Taller */
+    display: flex;
+    justify-content: flex-end;
+    /* Align right to edge */
+    align-items: flex-end;
+    /* Align bottom */
     margin-bottom: -40px;
-    /* Overlap with header border */
+    /* More overlap */
+    margin-right: -20px;
+    z-index: 6;
+    /* Ensure on top */
 }
 
 #pd-action-img {
-    width: 100%;
     height: 100%;
+    width: auto;
     object-fit: contain;
-    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6));
+    /* Masking removed as user provided better image */
+    transform: scale(1.15);
+    /* Make him bigger */
 }
 
-/* --- Main Stats Row --- */
-.pd-main-stats-row {
-    display: flex;
-    justify-content: space-around;
-    background: #222;
-    padding: 15px;
-    border-radius: 6px;
-    border: 1px solid #333;
-}
+/* Responsive Adjusments */
+@media (max-width: 768px) {
+    .pd-header {
+        min-height: auto;
+        padding-top: 20px;
+    }
 
-.pd-stat-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-}
+    .pd-header-content {
+        flex-direction: column-reverse;
+        /* Image on top? Or Text on top container styled? Let's keep Text Top for info, Image below */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+    }
 
-.pd-stat-label {
-    font-size: 13px;
-    color: #888;
-    text-transform: uppercase;
-}
+    .pd-header-glass {
+        width: 100%;
+        padding: 20px;
+    }
 
-.pd-stat-val {
-    font-size: 24px;
-    font-weight: 700;
-    color: #d1d1d1;
-}
+    .pd-name {
+        font-size: 36px;
+    }
 
-.pd-stat-val.high {
-    color: #d633ff;
-    /* Pink/Purple for high stats */
-    text-shadow: 0 0 5px #d633ff;
+    .pd-hero-image-wrapper {
+        width: 100%;
+        height: 250px;
+        align-self: center;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .pd-header-glow {
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
 }
 
 /* --- Content Grid --- */
@@ -215,6 +319,50 @@
     padding: 20px;
     border-radius: 6px;
     font-size: 14px;
+}
+
+/* --- Main Stats Row --- */
+.pd-main-stats-row {
+    display: flex;
+    flex-direction: row;
+    /* Ensure horizontal */
+    justify-content: space-around;
+    background: #000000;
+    /* Black background */
+    padding: 20px 15px;
+    border-radius: 0 0 8px 8px;
+    /* Rounded bottom */
+    border: 1px solid #333;
+    border-top: none;
+    /* Merge with header potentially */
+    margin-top: -1px;
+}
+
+.pd-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.pd-stat-label {
+    font-size: 14px;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.pd-stat-val {
+    font-size: 28px;
+    font-weight: 700;
+    color: #e0e0e0;
+}
+
+.pd-stat-val.high {
+    color: #ffffff;
+    /* Brighter white */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    /* Glow for high stats */
 }
 
 .pd-attr-row {

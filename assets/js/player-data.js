@@ -1,7 +1,7 @@
 const playerData = [
     // --- Current Squad ---
     {
-        name: "Bukayo Saka", season: "24TS", pos: "RW", stars: 5, ovr: 92, pac: 91, sho: 86, pas: 87, dri: 93, flag: "GB-ENG", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/SAKA_Headshot_web_mxqw4vma.png?auto=webp&itok=nSOTSLiN",
+        name: "Bukayo Saka", number: 7, season: "24TS", pos: "RW", stars: 5, ovr: 92, pac: 91, sho: 86, pas: 87, dri: 93, flag: "GB-ENG", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/SAKA_Headshot_web_mxqw4vma.png?auto=webp&itok=nSOTSLiN",
         general: {
             bio: "Bukayo Saka is Arsenal's 'Starboy' and a Hale End academy graduate who has established himself as one of the best wingers in world football. Known for his versatility, intelligence, and clutch performances, he has become the talisman of Mikel Arteta's side.",
             history: "Born in Ealing, London, Saka joined Arsenal's Hale End academy at the age of seven. He progressed rapidly through the youth ranks, making his first-team debut in November 2018 against Vorskla Poltava. Since then, he has become integral to both Arsenal and England, playing in major finals and consistently delivering double-digit goals and assists.",
@@ -340,7 +340,7 @@ const playerData = [
         ]
     },
     {
-        name: "Fabio Vieira", season: "23", pos: "CAM", stars: 3, ovr: 78, pac: 76, sho: 75, pas: 82, dri: 80, flag: "PT", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/VIEIRA_Headshot_web_ttvp4mvt.png?auto=webp&itok=e0RYtimf",
+        name: "Fabio Vieira", number: 21, season: "23", pos: "CAM", stars: 3, ovr: 78, pac: 76, sho: 75, pas: 82, dri: 80, flag: "PT", avatar: "./pic/players/fabio_vieira.png",
         general: {
             bio: "Fabio Vieira is a creative playmaker with a lethal left foot. Known for his vision and final ball, he provides a different dimension to the attack.",
             history: "Vieira broke through at Porto, where he was the top assist provider in the league. He joined Arsenal in 2022 as one of Europe's promising young midfielders.",

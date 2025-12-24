@@ -462,11 +462,21 @@ function openPlayerDetail(index) {
     document.body.style.overflow = 'hidden';
 
     // Populate Header
-    document.getElementById('pd-season').innerText = p.season;
+    // Badge 1: Use Number if available, else Season
+    document.getElementById('pd-season').innerText = p.number ? p.number : p.season;
+    document.getElementById('pd-season').style.background = "#fff"; // Ensure white bg
+    document.getElementById('pd-season').style.color = "#000"; // Ensure black text
+
     document.getElementById('pd-name').innerText = p.name;
     document.getElementById('pd-pos').innerText = p.pos;
     document.getElementById('pd-pos').className = `pd-pos ${p.pos}`; // Apply color class
     document.getElementById('pd-ovr').innerText = p.ovr;
+
+    // Watermark Number
+    const watermark = document.getElementById('pd-watermark');
+    if (watermark) {
+        watermark.innerText = p.number || ""; // Default to empty if no number
+    }
 
     // Country & Flag
     const flagImg = document.getElementById('pd-nation-flag');
