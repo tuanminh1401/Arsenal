@@ -139,15 +139,19 @@
     /* For pseudo-element */
 }
 
-/* Linear Gradient Separator ("Line Near") */
+/* Linear Gradient Separator (Black to Transparent/Reddish blend) - No White Line */
 .pd-header-glass::after {
     content: "";
     position: absolute;
-    top: 15%;
+    top: 5%;
     right: 0;
-    width: 1px;
-    height: 70%;
-    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4), transparent);
+    width: 60px;
+    /* Wider blend area */
+    height: 90%;
+    /* Gradient from left (glass edge) to right (red bg) */
+    background: linear-gradient(to right, rgba(20, 20, 20, 0.8), transparent);
+    /* Soft shadow/fade */
+    filter: blur(10px);
 }
 
 /* Top Row: Badges */
@@ -248,24 +252,29 @@
 .pd-hero-image-wrapper {
     position: relative;
     width: 450px;
+    /* Adjust width to control centering space */
     height: 350px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    /* Center horizontally */
     align-items: flex-end;
     margin-bottom: -40px;
-    margin-right: -20px;
+    margin-right: 0;
+    /* Clear right margin */
     z-index: 6;
+    flex: 1;
+    /* Take remaining space */
 }
 
 #pd-action-img {
-    height: 90%;
-    /* Reduce height to create head space */
+    height: 115%;
+    /* Increase size */
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6)) contrast(1.1) saturate(1.1);
     transform: translateY(20px);
     /* Lower position */
-    transform-origin: bottom right;
+    transform-origin: bottom center;
 }
 
 /* Responsive Adjusments */
@@ -289,6 +298,11 @@
         padding: 20px;
     }
 
+    .pd-header-glass::after {
+        display: none;
+        /* Remove separator on mobile */
+    }
+
     .pd-name {
         font-size: 36px;
     }
@@ -299,6 +313,11 @@
         align-self: center;
         margin-right: 0;
         margin-bottom: 0;
+        justify-content: center;
+    }
+
+    #pd-action-img {
+        height: 100%;
     }
 
     .pd-header-glow {
