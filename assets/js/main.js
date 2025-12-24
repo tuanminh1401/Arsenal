@@ -518,6 +518,18 @@ function closePlayerDetail() {
     document.body.style.overflow = '';
 }
 
+// Add click event to close on overlay click
+document.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('player-detail-overlay');
+    if (overlay) {
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                closePlayerDetail();
+            }
+        });
+    }
+});
+
 // Global variable to store current player for filtering
 let currentPlayer = null;
 

@@ -33,12 +33,20 @@
 
 .close-detail {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: -15px;
+    right: -15px;
     font-size: 30px;
     cursor: pointer;
-    color: #888;
+    color: #fff;
+    background: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
+    border: 2px solid #555;
 }
 
 .close-detail:hover {
