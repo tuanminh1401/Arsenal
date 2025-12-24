@@ -206,7 +206,7 @@ const playerData = [
         ]
     },
     {
-        name: "Jorginho", number: 20, season: "23", pos: "CM", stars: 3, ovr: 83, pac: 60, sho: 70, pas: 88, dri: 82, flag: "IT", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p5682.png",
+        name: "Jorginho", number: 20, season: "23", pos: "CM", stars: 3, ovr: 83, pac: 60, sho: 70, pas: 88, dri: 82, flag: "IT", avatar: "./pic/players/jorginho.png",
         general: {
             bio: "Jorginho is an elite playmaker who controls the tempo of the game with his short passing and positional awareness. A calmness personified on the ball, he brings vast experience to the squad.",
             history: "Brazilian-born but an Italian international, Jorginho made his name at Napoli before winning the Champions League with Chelsea. He joined Arsenal in January 2023 to add winning mentality to the team.",
