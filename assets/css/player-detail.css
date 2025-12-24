@@ -103,6 +103,7 @@
 }
 
 /* Content Container */
+/* Content Container */
 .pd-header-content {
     position: relative;
     z-index: 5;
@@ -111,29 +112,27 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 30px;
+    padding: 30px 20px 30px 0;
+    /* No left padding */
 }
 
 /* --- Glass Container (Left) --- */
 .pd-header-glass {
     flex: 1;
     max-width: 580px;
-    /* Slightly wider */
     background: rgba(30, 30, 35, 0.4);
-    /* Darker, less white */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-    /* More rounded */
+    border-radius: 0 20px 20px 0;
+    /* Flat left edge */
     padding: 30px 40px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    /* Tighter spacing */
-    margin-left: 20px;
-    /* Offset from left edge */
+    margin-left: 0;
+    /* Touch left edge */
 }
 
 /* Top Row: Badges */
@@ -179,7 +178,6 @@
     line-height: 0.9;
     text-transform: uppercase;
     letter-spacing: 0px;
-    /* Tighter letter spacing like image */
     color: #fff;
 }
 
@@ -194,7 +192,6 @@
     font-size: 26px;
     font-weight: 900;
     color: #e61b1b;
-    /* Bright Red */
     text-shadow: none;
 }
 
@@ -203,7 +200,6 @@
     font-weight: 600;
     text-transform: uppercase;
     color: #ddd;
-    /* Lighter grey */
     letter-spacing: 1px;
 }
 
@@ -213,7 +209,6 @@
     gap: 10px;
     font-size: 13px;
     color: #777;
-    /* Darker grey for meta */
     margin-top: 2px;
     font-weight: 500;
 }
@@ -235,33 +230,27 @@
 }
 
 /* --- Hero Image (Right) --- */
-/* --- Hero Image (Right) --- */
 .pd-hero-image-wrapper {
     position: relative;
     width: 450px;
-    /* Slightly wider */
     height: 350px;
-    /* Taller */
     display: flex;
     justify-content: flex-end;
-    /* Align right to edge */
     align-items: flex-end;
-    /* Align bottom */
     margin-bottom: -40px;
-    /* More overlap */
     margin-right: -20px;
     z-index: 6;
-    /* Ensure on top */
 }
 
 #pd-action-img {
-    height: 100%;
+    height: 90%;
+    /* Reduce height to create head space */
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6));
-    /* Masking removed as user provided better image */
-    transform: scale(1.15);
-    /* Make him bigger */
+    transform: translateY(20px) scale(1.05);
+    /* Lower position and slight scale */
+    transform-origin: bottom right;
 }
 
 /* Responsive Adjusments */

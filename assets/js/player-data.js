@@ -37,7 +37,7 @@ const playerData = [
         ]
     },
     {
-        name: "Martin Ødegaard", season: "24TY", pos: "CAM", stars: 5, ovr: 91, pac: 83, sho: 85, pas: 94, dri: 92, flag: "NO", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/ODEGAARD_Headshot_web_z0tram3m.png?auto=webp&itok=F8jOXTSf",
+        name: "Martin Ødegaard", number: 8, season: "24TY", pos: "CAM", stars: 5, ovr: 91, pac: 83, sho: 85, pas: 94, dri: 92, flag: "NO", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/ODEGAARD_Headshot_web_z0tram3m.png?auto=webp&itok=F8jOXTSf",
         general: {
             bio: "Martin Ødegaard is the captain of Arsenal and a midfield maestro known for his exceptional vision, creativity, and work rate. Orchestrating the play from the center, he leads by example with his pressing and technical elegance.",
             history: "A teenage prodigy who made his senior debut at 15 for Strømsgodset, Ødegaard joined Real Madrid in 2015. After successful loan spells at Heerenveen, Vitesse, and Real Sociedad, he joined Arsenal on loan in January 2021 before signing permanently that summer.",
@@ -57,7 +57,7 @@ const playerData = [
         ]
     },
     {
-        name: "Declan Rice", season: "24TS", pos: "CDM", stars: 4, ovr: 90, pac: 80, sho: 78, pas: 89, dri: 85, flag: "GB-ENG", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/RICE_Headshot_web_ml5vq29g.png?auto=webp&itok=3MZ50MMk",
+        name: "Declan Rice", number: 41, season: "24TS", pos: "CDM", stars: 4, ovr: 90, pac: 80, sho: 78, pas: 89, dri: 85, flag: "GB-ENG", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/RICE_Headshot_web_ml5vq29g.png?auto=webp&itok=3MZ50MMk",
         general: {
             bio: "Declan Rice is a powerhouse midfielder who provides defensive stability and driving energy to the Arsenal team. Signed for a club-record fee, his leadership, tackling, and ability to carry the ball make him indispensable.",
             history: "Released by Chelsea's academy at 14, Rice joined West Ham United where he blossomed into one of the league's best midfielders, eventually captaining them to European glory in the UEFA Europa Conference League before joining Arsenal in 2023.",
@@ -76,7 +76,7 @@ const playerData = [
         ]
     },
     {
-        name: "William Saliba", season: "24TS", pos: "CB", stars: 3, ovr: 89, pac: 85, sho: 55, pas: 80, dri: 81, flag: "FR", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/SALIBA_Headshot_web_khl9z1vw.png?auto=webp&itok=fZFYbPqZ",
+        name: "William Saliba", number: 2, season: "24TS", pos: "CB", stars: 3, ovr: 89, pac: 85, sho: 55, pas: 80, dri: 81, flag: "FR", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/SALIBA_Headshot_web_khl9z1vw.png?auto=webp&itok=fZFYbPqZ",
         general: {
             bio: "William Saliba is a composed and dominant center-back, often referred to as a 'Rolls-Royce' defender for his elegance on the ball. His recovery pace, strength, and reading of the game allow Arsenal to play a high defensive line.",
             history: "Signed from Saint-Étienne as a teenager in 2019, Saliba spent three years on loan in Ligue 1 to develop. His breakout season at Marseille earned him the Ligue 1 Young Player of the Year award before he returned to Arsenal to instantly become a starter.",
@@ -95,7 +95,7 @@ const playerData = [
         ]
     },
     {
-        name: "Gabriel Magalhães", season: "24TS", pos: "CB", stars: 3, ovr: 88, pac: 80, sho: 60, pas: 75, dri: 72, flag: "BR", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/MAGALHAES_Headshot_web_uhkgt913.png?auto=webp&itok=UoaaAYnU",
+        name: "Gabriel Magalhães", number: 6, season: "24TS", pos: "CB", stars: 3, ovr: 88, pac: 80, sho: 60, pas: 75, dri: 72, flag: "BR", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/MAGALHAES_Headshot_web_uhkgt913.png?auto=webp&itok=UoaaAYnU",
         general: {
             bio: "Gabriel Magalhães is an aggressive and physically dominant center-back who forms a formidable partnership with Saliba. Excellent in the air and a threat from set-pieces, he is the defensive warrior of the backline.",
             history: "Gabriel developed in Brazil with Avaí before moving to Lille in France. His performances in Ligue 1 caught the eye of Arsenal, who signed him in 2020. He scored on his debut against Fulham.",
@@ -113,7 +113,7 @@ const playerData = [
         ]
     },
     {
-        name: "Gabriel Jesus", season: "23", pos: "ST", stars: 4, ovr: 85, pac: 86, sho: 82, pas: 79, dri: 88, flag: "BR", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/JESUS_Headshot_web_wtybpitx.png?auto=webp&itok=TH4RbWIt",
+        name: "Gabriel Jesus", number: 9, season: "23", pos: "ST", stars: 4, ovr: 85, pac: 86, sho: 82, pas: 79, dri: 88, flag: "BR", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/JESUS_Headshot_web_wtybpitx.png?auto=webp&itok=TH4RbWIt",
         general: {
             bio: "Gabriel Jesus is a dynamic forward known for his relentless pressing, dribbling ability, and link-up play. He brings a winning mentality to the squad, having lifted multiple Premier League titles before joining Arsenal.",
             history: "Rising from the streets of São Paulo, Jesus starred for Palmeiras before Pep Guardiola brought him to Manchester City. After winning 4 Premier League titles, he joined Arsenal in 2022 to be the main striker.",
@@ -131,7 +131,7 @@ const playerData = [
         ]
     },
     {
-        name: "G. Martinelli", season: "24", pos: "LW", stars: 4, ovr: 86, pac: 92, sho: 80, pas: 78, dri: 87, flag: "BR", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/MARTINELLI_Headshot_web_l7r7lao5.png?auto=webp&itok=QK8zQJ7L",
+        name: "G. Martinelli", number: 11, season: "24", pos: "LW", stars: 4, ovr: 86, pac: 92, sho: 80, pas: 78, dri: 87, flag: "BR", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/MARTINELLI_Headshot_web_l7r7lao5.png?auto=webp&itok=QK8zQJ7L",
         general: {
             bio: "Gabriel Martinelli is an electrifying winger with blistering pace and a tireless work ethic. Jurgen Klopp once called him a 'talent of the century'. His direct running and clinical finishing make him a constant threat.",
             history: "Scouted from the Brazilian lower leagues (Ituano), Martinelli joined Arsenal in 2019 as an unknown prospect. He quickly announced himself with goals in the League Cup and Europa League, including a famous solo goal against Chelsea.",
@@ -149,7 +149,7 @@ const playerData = [
         ]
     },
     {
-        name: "Ben White", season: "24", pos: "RB", stars: 3, ovr: 86, pac: 82, sho: 65, pas: 82, dri: 80, flag: "GB-ENG", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/B.WHITE_Headshot_web_xdbqzl78.png?auto=webp&itok=0gg2E5xJ",
+        name: "Ben White", number: 4, season: "24", pos: "RB", stars: 3, ovr: 86, pac: 82, sho: 65, pas: 82, dri: 80, flag: "GB-ENG", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/B.WHITE_Headshot_web_xdbqzl78.png?auto=webp&itok=0gg2E5xJ",
         general: {
             bio: "Ben White is a technically gifted defender who excels at right-back. His overlapping runs, calm distribution, and versatility have made him a key part of Arteta's system.",
             history: "Released by Southampton at 16, White rebuilt his career at Brighton & Hove Albion. After a standout loan at Leeds United that led to promotion, he established himself in the Premier League before Arsenal signed him for £50m in 2021.",
@@ -166,7 +166,7 @@ const playerData = [
         ]
     },
     {
-        name: "Kai Havertz", season: "24TS", pos: "ST", stars: 4, ovr: 87, pac: 84, sho: 83, pas: 84, dri: 85, flag: "DE", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/HAVERTZ_Headshot_web_frc1i8l3.png?auto=webp&itok=JvqDQSL8",
+        name: "Kai Havertz", number: 29, season: "24TS", pos: "ST", stars: 4, ovr: 87, pac: 84, sho: 83, pas: 84, dri: 85, flag: "DE", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/HAVERTZ_Headshot_web_frc1i8l3.png?auto=webp&itok=JvqDQSL8",
         general: {
             bio: "Kai Havertz is a versatile fluid forward who excels at finding space and linking play. Initially a midfielder, he has thrived as a false 9 or striker, using his height and intelligence to disrupt defenses.",
             history: "A prodigious talent at Bayer Leverkusen, Havertz moved to Chelsea in 2020 where he scored the winning goal in the Champions League final. He crossed London to join Arsenal in 2023.",
@@ -184,7 +184,7 @@ const playerData = [
         ]
     },
     {
-        name: "Leandro Trossard", season: "24", pos: "LW", stars: 4, ovr: 84, pac: 83, sho: 84, pas: 82, dri: 86, flag: "BE", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/TROSSARD_Headshot_web_c75bgy21.png?auto=webp&itok=dCCTIY0U",
+        name: "Leandro Trossard", number: 19, season: "24", pos: "LW", stars: 4, ovr: 84, pac: 83, sho: 84, pas: 82, dri: 86, flag: "BE", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/TROSSARD_Headshot_web_c75bgy21.png?auto=webp&itok=dCCTIY0U",
         general: {
             bio: "Leandro Trossard is a two-footed technical attacker who can play anywhere across the front line. Known for his clinical finishing and ability to score crucial goals off the bench.",
             history: "After winning the Belgian league with Genk, Trossard impressed at Brighton with his skill and creativity. Arsenal signed him in January 2023, and he quickly became a fan favorite for his efficiency.",
@@ -201,7 +201,7 @@ const playerData = [
         ]
     },
     {
-        name: "Thomas Partey", season: "23", pos: "CDM", stars: 3, ovr: 84, pac: 75, sho: 78, pas: 84, dri: 83, flag: "GH", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p167199.png",
+        name: "Thomas Partey", number: 5, season: "23", pos: "CDM", stars: 3, ovr: 84, pac: 75, sho: 78, pas: 84, dri: 83, flag: "GH", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p167199.png",
         general: {
             bio: "Thomas Partey is a dynamic box-to-box midfielder who brings power, technique, and tactical intelligence to the engine room. His ability to break lines with his passing is crucial for transition.",
             history: "Partey rose through the ranks at Atlético Madrid, becoming a key player for Diego Simeone. Arsenal triggered his release clause on deadline day in 2020 to bring him to North London.",
@@ -219,7 +219,7 @@ const playerData = [
         ]
     },
     {
-        name: "Jorginho", season: "23", pos: "CM", stars: 3, ovr: 83, pac: 60, sho: 70, pas: 88, dri: 82, flag: "IT", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p85955.png",
+        name: "Jorginho", number: 20, season: "23", pos: "CM", stars: 3, ovr: 83, pac: 60, sho: 70, pas: 88, dri: 82, flag: "IT", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p85955.png",
         general: {
             bio: "Jorginho is an elite playmaker who controls the tempo of the game with his short passing and positional awareness. A calmness personified on the ball, he brings vast experience to the squad.",
             history: "Brazilian-born but an Italian international, Jorginho made his name at Napoli before winning the Champions League with Chelsea. He joined Arsenal in January 2023 to add winning mentality to the team.",
@@ -237,7 +237,7 @@ const playerData = [
         ]
     },
     {
-        name: "Oleksandr Zinchenko", season: "23", pos: "LB", stars: 3, ovr: 83, pac: 78, sho: 72, pas: 86, dri: 85, flag: "UA", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/Zinchenko_Headshot_web_htlbwppj.png?auto=webp&itok=_8IMI2Mj",
+        name: "Oleksandr Zinchenko", number: 17, season: "23", pos: "LB", stars: 3, ovr: 83, pac: 78, sho: 72, pas: 86, dri: 85, flag: "UA", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/Zinchenko_Headshot_web_htlbwppj.png?auto=webp&itok=_8IMI2Mj",
         general: {
             bio: "Oleksandr Zinchenko is a technically gifted inverted full-back who operates as an extra midfielder in possession. His range of passing and tactical understanding are key to Arsenal's buildup.",
             history: "Zinchenko was converted from an attacking midfielder to a left-back by Pep Guardiola at Manchester City. After winning four Premier League titles, he reunited with Arteta at Arsenal in 2022.",
@@ -255,7 +255,7 @@ const playerData = [
         ]
     },
     {
-        name: "Takehiro Tomiyasu", season: "23", pos: "RB", stars: 3, ovr: 81, pac: 79, sho: 55, pas: 74, dri: 73, flag: "JP", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p223723.png",
+        name: "Takehiro Tomiyasu", number: 18, season: "23", pos: "RB", stars: 3, ovr: 81, pac: 79, sho: 55, pas: 74, dri: 73, flag: "JP", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p223723.png",
         general: {
             bio: "Takehiro Tomiyasu is a versatile and ambidextrous defender capable of playing anywhere across the backline. Known for his defensive solidity and aerial ability, he is a reliable presence.",
             history: "Tomiyasu moved to Europe with Sint-Truiden in Belgium before impressing in Serie A with Bologna. Arsenal signed him in 2021, and he quickly adapted to the physicality of the Premier League.",
@@ -272,7 +272,7 @@ const playerData = [
         ]
     },
     {
-        name: "Jurrien Timber", season: "24", pos: "LB", stars: 3, ovr: 82, pac: 84, sho: 60, pas: 80, dri: 82, flag: "NL", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/TIMBER_Headshot_web_by8hrsl6.png?auto=webp&itok=k6XxXs7u",
+        name: "Jurrien Timber", number: 12, season: "24", pos: "LB", stars: 3, ovr: 82, pac: 84, sho: 60, pas: 80, dri: 82, flag: "NL", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/TIMBER_Headshot_web_by8hrsl6.png?auto=webp&itok=k6XxXs7u",
         general: {
             bio: "Jurrien Timber is a modern, ball-playing defender who is comfortable stepping into midfield. His exceptional composure and passing range make him perfectly suited for Arsenal's style.",
             history: "A product of the famed Ajax academy, Timber won two Eredivisie titles before joining Arsenal in 2023. An ACL injury disrupted his debut season, but his talent remains undeniable.",
@@ -289,7 +289,7 @@ const playerData = [
         ]
     },
     {
-        name: "Jakub Kiwior", season: "24", pos: "CB", stars: 2, ovr: 79, pac: 78, sho: 45, pas: 72, dri: 70, flag: "PL", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/KIWIOR_Headshot_web_yxrcq925.png?auto=webp&itok=bFPJ-Yfy",
+        name: "Jakub Kiwior", number: 15, season: "24", pos: "CB", stars: 2, ovr: 79, pac: 78, sho: 45, pas: 72, dri: 70, flag: "PL", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/KIWIOR_Headshot_web_yxrcq925.png?auto=webp&itok=bFPJ-Yfy",
         general: {
             bio: "Jakub Kiwior is a left-footed center-back known for his speed and passing ability. He offers valuable cover and balance to the defense, capable of playing centrally or at left-back.",
             history: "Kiwior developed in Poland and Slovakia before moving to Serie A with Spezia. His composed performances caught Arsenal's attention, and he signed in January 2023.",
@@ -305,7 +305,7 @@ const playerData = [
         ]
     },
     {
-        name: "David Raya", season: "24TS", pos: "GK", stars: 1, ovr: 86, pac: 82, sho: 55, pas: 88, dri: 70, flag: "ES", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/RAYA_Headshot_web_njztl3wr.png?auto=webp&itok=_6peqasx",
+        name: "David Raya", number: 22, season: "24TS", pos: "GK", stars: 1, ovr: 86, pac: 82, sho: 55, pas: 88, dri: 70, flag: "ES", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/RAYA_Headshot_web_njztl3wr.png?auto=webp&itok=_6peqasx",
         general: {
             bio: "David Raya is a modern goalkeeper renowned for his distribution and ability to claim crosses. His comfort with the ball at his feet allows Arsenal to build from the back with confidence.",
             history: "Raya moved to England at 16, coming through Blackburn Rovers' academy. He excelled at Brentford, helping them to promotion and establishing himself as a top Premier League keeper before joining Arsenal.",
