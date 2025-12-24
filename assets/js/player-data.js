@@ -188,7 +188,7 @@ const playerData = [
         ]
     },
     {
-        name: "Thomas Partey", number: 5, season: "23", pos: "CDM", stars: 3, ovr: 84, pac: 75, sho: 78, pas: 84, dri: 83, flag: "GH", avatar: "https://resources.premierleague.com/premierleague/photos/players/500x500/p167199.png",
+        name: "Thomas Partey", number: 5, season: "23", pos: "CDM", stars: 3, ovr: 84, pac: 75, sho: 78, pas: 84, dri: 83, flag: "GH", avatar: "./pic/players/partey.png",
         general: {
             bio: "Thomas Partey is a dynamic box-to-box midfielder who brings power, technique, and tactical intelligence to the engine room. His ability to break lines with his passing is crucial for transition.",
             history: "Partey rose through the ranks at Atlético Madrid, becoming a key player for Diego Simeone. Arsenal triggered his release clause on deadline day in 2020 to bring him to North London.",
