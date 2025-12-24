@@ -305,7 +305,42 @@ function closeVideo(e) {
 // Comprehensive Arsenal Player Database (Current, Legends, Past Stars)
 const playerData = [
     // --- Current Squad ---
-    { name: "Bukayo Saka", season: "24TS", pos: "RW", stars: 5, ovr: 92, pac: 91, sho: 86, pas: 87, dri: 93, flag: "GB-ENG", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/SAKA_Headshot_web_mxqw4vma.png?auto=webp&itok=nSOTSLiN" },
+    {
+        name: "Bukayo Saka", season: "24TS", pos: "RW", stars: 5, ovr: 92, pac: 91, sho: 86, pas: 87, dri: 93, flag: "GB-ENG", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/SAKA_Headshot_web_mxqw4vma.png?auto=webp&itok=nSOTSLiN",
+        general: {
+            bio: "Bukayo Saka is Arsenal's 'Starboy' and a Hale End academy graduate who has established himself as one of the best wingers in world football. Known for his versatility, intelligence, and clutch performances, he has become the talisman of Mikel Arteta's side.",
+            history: "Born in Ealing, London, Saka joined Arsenal's Hale End academy at the age of seven. He progressed rapidly through the youth ranks, making his first-team debut in November 2018 against Vorskla Poltava. Since then, he has become integral to both Arsenal and England, playing in major finals and consistently delivering double-digit goals and assists.",
+            clubs: ["Arsenal (2018 - Present)"]
+        },
+        careerStats: [
+            // 2023/24
+            { season: "2023/24", comp: "Premier League", apps: 35, goals: 16, assists: 9 },
+            { season: "2023/24", comp: "Champions League", apps: 9, goals: 4, assists: 4 },
+            { season: "2023/24", comp: "FA Cup", apps: 1, goals: 0, assists: 0 },
+            // 2022/23
+            { season: "2022/23", comp: "Premier League", apps: 38, goals: 14, assists: 11 },
+            { season: "2022/23", comp: "Europa League", apps: 8, goals: 1, assists: 0 },
+            { season: "2022/23", comp: "FA Cup", apps: 2, goals: 0, assists: 0 },
+            // 2021/22
+            { season: "2021/22", comp: "Premier League", apps: 38, goals: 11, assists: 7 },
+            { season: "2021/22", comp: "Carabao Cup", apps: 2, goals: 0, assists: 1 },
+            // 2020/21
+            { season: "2020/21", comp: "Premier League", apps: 32, goals: 5, assists: 4 },
+            { season: "2020/21", comp: "Europa League", apps: 9, goals: 2, assists: 3 },
+            // 2019/20
+            { season: "2019/20", comp: "Premier League", apps: 26, goals: 1, assists: 5 },
+            { season: "2019/20", comp: "Europa League", apps: 6, goals: 2, assists: 5 },
+            { season: "2019/20", comp: "FA Cup", apps: 4, goals: 1, assists: 1 }
+        ],
+        achievements: [
+            "PFA Young Player of the Year (2022/23)",
+            "England Men's Player of the Year (2021/22, 2022/23)",
+            "Arsenal Player of the Season (2020/21, 2021/22)",
+            "London Football Awards Young Player of the Year (2023)",
+            "Community Shield Winner (2020, 2023)",
+            "FA Cup Winner (2019/20)"
+        ]
+    },
     { name: "Martin Ødegaard", season: "24TY", pos: "CAM", stars: 5, ovr: 91, pac: 83, sho: 85, pas: 94, dri: 92, flag: "NO", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/ODEGAARD_Headshot_web_z0tram3m.png?auto=webp&itok=F8jOXTSf" },
     { name: "Declan Rice", season: "24TS", pos: "CDM", stars: 4, ovr: 90, pac: 80, sho: 78, pas: 89, dri: 85, flag: "GB-ENG", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/RICE_Headshot_web_ml5vq29g.png?auto=webp&itok=3MZ50MMk" },
     { name: "William Saliba", season: "24TS", pos: "CB", stars: 3, ovr: 89, pac: 85, sho: 55, pas: 80, dri: 81, flag: "FR", avatar: "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/SALIBA_Headshot_web_khl9z1vw.png?auto=webp&itok=fZFYbPqZ" },
@@ -448,7 +483,7 @@ function renderPlayerList(data) {
         const avatarUrl = p.avatar ? p.avatar : "./pic/arsenal-fc-logo.png";
 
         const html = `
-            <div class="player-row">
+            <div class="player-row" onclick="openPlayerDetail(${globalPlayerData.indexOf(p)})" style="cursor: pointer;">
                 <!-- Left Colored Bar -->
                 <div class="p-bar ${posClass}">
                     <span class="vertical-pos">${p.pos}</span>
@@ -511,4 +546,298 @@ function filterPlayers() {
     // Let's search ALL data for simplicity as per common UX
     const filtered = playerData.filter(p => p.name.toLowerCase().includes(query));
     renderPlayerList(filtered);
+}
+
+/* ================= PLAYER DETAIL VIEW LOGIC ================= */
+let detailChart = null;
+
+function openPlayerDetail(index) {
+    const p = globalPlayerData[index];
+    if (!p) return;
+
+    const overlay = document.getElementById('player-detail-overlay');
+    overlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+
+    // Populate Header
+    document.getElementById('pd-season').innerText = p.season;
+    document.getElementById('pd-name').innerText = p.name;
+    document.getElementById('pd-pos').innerText = p.pos;
+    document.getElementById('pd-pos').className = `pd-pos ${p.pos}`; // Apply color class
+    document.getElementById('pd-ovr').innerText = p.ovr;
+
+    // Country & Flag
+    const flagImg = document.getElementById('pd-nation-flag');
+    if (p.flag) {
+        flagImg.src = `https://resources.premierleague.com/premierleague/flags/${p.flag}.png`;
+        flagImg.style.display = 'block';
+    } else {
+        flagImg.style.display = 'none';
+    }
+    document.getElementById('pd-nation-name').innerText = p.flag || ""; // Keep strict
+
+    // Action Image (Use Avatar for now, or a better placeholder)
+    document.getElementById('pd-action-img').src = p.avatar;
+
+    // Generate Detailed Stats
+    const stats = generateDetailedStats(p);
+
+    // Render Stats Row
+    renderMainStatsRow(stats);
+
+    // Render Attributes Grid
+    renderAttributesGrid(stats);
+
+    // Render Traits
+    renderTraits(p);
+
+    // Render Bio, Tabs, Achievements
+    renderTabsAndContent(p);
+
+    // Render Radar Chart
+    setTimeout(() => {
+        renderRadarChart(stats);
+    }, 100);
+}
+
+function closePlayerDetail() {
+    const overlay = document.getElementById('player-detail-overlay');
+    overlay.classList.add('hidden');
+    document.body.style.overflow = '';
+}
+
+// Global variable to store current player for filtering
+let currentPlayer = null;
+
+function renderTabsAndContent(p) {
+    currentPlayer = p;
+
+    // Reset Tab to General
+    switchTab('general');
+
+    // 1. General Tab
+    const general = p.general || {};
+    document.getElementById('pd-bio-text').innerText = general.bio || "No biography available.";
+    document.getElementById('pd-history-text').innerText = general.history || "No history available.";
+
+    // Clubs List
+    const clubsList = document.getElementById('pd-clubs-list');
+    clubsList.innerHTML = (general.clubs || []).map(c => `<li>${c}</li>`).join('');
+
+    // 2. Contribution Tab
+    initContributionFilters(p);
+    filterStats(); // Initial render of all stats
+
+    // 3. Achievement Tab
+    const achList = document.getElementById('pd-achievements-list');
+    achList.innerHTML = (p.achievements || []).map(a => `<li>${a}</li>`).join('');
+    if (!p.achievements || p.achievements.length === 0) {
+        achList.innerHTML = `<li style="border:none; color:#666; background:none; padding-left:0;">No tracked achievements.</li>`;
+    }
+}
+
+function switchTab(tabName) {
+    // Update Buttons
+    document.querySelectorAll('.pd-tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('onclick').includes(tabName));
+    });
+
+    // Update Content
+    document.querySelectorAll('.pd-tab-content').forEach(content => {
+        content.classList.remove('active');
+    });
+    document.getElementById(`tab-${tabName}`).classList.add('active');
+}
+
+function initContributionFilters(p) {
+    const stats = p.careerStats || [];
+    const seasonSelect = document.getElementById('filter-season');
+    const compSelect = document.getElementById('filter-comp');
+
+    // Extract unique Seasons and Comps
+    const seasons = [...new Set(stats.map(s => s.season))];
+    const comps = [...new Set(stats.map(s => s.comp))];
+
+    // Populate Season Dropdown
+    seasonSelect.innerHTML = `<option value="all">All Seasons</option>` +
+        seasons.map(s => `<option value="${s}">${s}</option>`).join('');
+
+    // Populate Comp Dropdown
+    compSelect.innerHTML = `<option value="all">All Competitions</option>` +
+        comps.map(c => `<option value="${c}">${c}</option>`).join('');
+}
+
+function filterStats() {
+    if (!currentPlayer || !currentPlayer.careerStats) return;
+
+    const seasonFilter = document.getElementById('filter-season').value;
+    const compFilter = document.getElementById('filter-comp').value;
+
+    let filtered = currentPlayer.careerStats;
+
+    if (seasonFilter !== 'all') {
+        filtered = filtered.filter(s => s.season === seasonFilter);
+    }
+    if (compFilter !== 'all') {
+        filtered = filtered.filter(s => s.comp === compFilter);
+    }
+
+    renderStatsTable(filtered);
+}
+
+function renderStatsTable(stats) {
+    const tbody = document.getElementById('pd-stats-body');
+    if (stats.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:#666;">No stats found for selection.</td></tr>`;
+        return;
+    }
+
+    tbody.innerHTML = stats.map(s => `
+        <tr>
+            <td>${s.season}</td>
+            <td>${s.comp}</td>
+            <td>${s.apps}</td>
+            <td>${s.goals}</td>
+            <td>${s.assists}</td>
+        </tr>
+    `).join('');
+}
+
+// Generate mocked detailed stats based on base stats + position
+function generateDetailedStats(p) {
+    // Base stats: pac, sho, pas, dri. Infer Def/Phy of unknown.
+    // If not in p, default based on pos:
+    let baseDef = p.def;
+    let basePhy = p.phy;
+
+    // Simple heuristic if missing (likely are)
+    if (!baseDef) {
+        if (['CB', 'LB', 'RB', 'LWB', 'RWB', 'CDM'].includes(p.pos)) baseDef = 85;
+        else if (['GK'].includes(p.pos)) baseDef = 50;
+        else baseDef = 45;
+    }
+    if (!basePhy) basePhy = 75;
+
+    // Randomize slightly for variety
+    const varStat = (base) => parseInt(base) + Math.floor(Math.random() * 10) - 2;
+
+    return {
+        // Main 6
+        PAC: p.pac, SHO: p.sho, PAS: p.pas, DRI: p.dri, DEF: baseDef, PHY: basePhy,
+
+        // Detailed (Mapped)
+        Acceleration: varStat(p.pac),
+        SprintSpeed: varStat(p.pac),
+        Positioning: varStat(p.sho),
+        Finishing: varStat(p.sho),
+        ShotPower: varStat(p.sho),
+        LongShots: varStat(p.sho),
+        Volleys: varStat(p.sho - 10),
+        Penalties: varStat(p.sho - 5),
+        Vision: varStat(p.pas),
+        Crossing: varStat(p.pas),
+        FreeKick: varStat(p.pas),
+        ShortPass: varStat(p.pas),
+        LongPass: varStat(p.pas),
+        Curve: varStat(p.pas - 5),
+        Agility: varStat(p.dri),
+        Balance: varStat(p.dri - 10),
+        Reactions: varStat(p.dri),
+        BallControl: varStat(p.dri),
+        Dribbling: varStat(p.dri),
+        Composure: varStat(p.dri),
+        Interceptions: varStat(baseDef),
+        Heading: varStat(baseDef),
+        Marking: varStat(baseDef),
+        StandTackle: varStat(baseDef),
+        SlideTackle: varStat(baseDef - 5),
+        Jumping: varStat(basePhy),
+        Stamina: varStat(basePhy),
+        Strength: varStat(basePhy),
+        Aggression: varStat(basePhy)
+    };
+}
+
+function renderMainStatsRow(s) {
+    const container = document.querySelector('.pd-main-stats-row');
+    const items = [
+        { label: 'Speed', val: s.PAC },
+        { label: 'Shot', val: s.SHO },
+        { label: 'Pass', val: s.PAS },
+        { label: 'Dribble', val: s.DRI },
+        { label: 'Defense', val: s.DEF },
+        { label: 'Physical', val: s.PHY }
+    ];
+
+    container.innerHTML = items.map(i => `
+        <div class="pd-stat-item">
+            <span class="pd-stat-label">${i.label}</span>
+            <span class="pd-stat-val ${i.val >= 90 ? 'high' : ''}">${i.val}</span>
+        </div>
+    `).join('');
+}
+
+function renderAttributesGrid(s) {
+    const table = document.getElementById('pd-attributes-table');
+    // Filter out the main 6 from the details logic for the grid
+    const ignored = ['PAC', 'SHO', 'PAS', 'DRI', 'DEF', 'PHY'];
+    const keys = Object.keys(s).filter(k => !ignored.includes(k));
+
+    table.innerHTML = keys.map(k => `
+        <div class="pd-attr-row">
+            <span class="pd-attr-name">${k.replace(/([A-Z])/g, ' $1').trim()}</span>
+            <span class="pd-attr-val ${s[k] >= 90 ? 'high' : ''}">${s[k]}</span>
+        </div>
+    `).join('');
+}
+
+function renderTraits(p) {
+    // Mock traits
+    const mockTraits = ["Finesse Shot", "Speed Dribbler (AI)", "Technical Dribbler (AI)", "Playmaker (AI)", "Outside Foot Shot"];
+    const list = document.getElementById('pd-traits-list');
+    list.innerHTML = mockTraits.map(t => `<li>${t}</li>`).join('');
+}
+
+function renderRadarChart(s) {
+    const ctx = document.getElementById('pd-radar-chart').getContext('2d');
+
+    if (detailChart) detailChart.destroy();
+
+    detailChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['PAC', 'SHO', 'PAS', 'DRI', 'DEF', 'PHY'],
+            datasets: [{
+                label: 'Stats',
+                data: [s.PAC, s.SHO, s.PAS, s.DRI, s.DEF, s.PHY],
+                backgroundColor: 'rgba(230, 27, 27, 0.2)', // Red tint
+                borderColor: '#e61b1b',
+                borderWidth: 2,
+                pointBackgroundColor: '#fff',
+                pointBorderColor: '#e61b1b',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#e61b1b'
+            }]
+        },
+        options: {
+            scales: {
+                r: {
+                    angleLines: { color: '#444' },
+                    grid: { color: '#444' },
+                    pointLabels: {
+                        color: '#ddd',
+                        font: { size: 12, weight: '700' }
+                    },
+                    ticks: { display: false, backdropColor: 'transparent' },
+                    suggestedMin: 40,
+                    suggestedMax: 110
+                }
+            },
+
+            plugins: {
+                legend: { display: false }
+            },
+            maintainAspectRatio: false
+        }
+    });
 }

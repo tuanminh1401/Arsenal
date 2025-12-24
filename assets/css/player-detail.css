@@ -1,0 +1,448 @@
+/* ================= PLAYER DETAIL VIEW (FIFA STYLE) ================= */
+#player-detail-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.p-detail-container {
+    width: 90%;
+    max-width: 1100px;
+    background: #1a1a1e;
+    /* Dark slate */
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 30px;
+    position: relative;
+    color: #eee;
+    font-family: "Outfit", sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close-detail {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #888;
+    z-index: 10;
+}
+
+.close-detail:hover {
+    color: #fff;
+}
+
+/* --- Header --- */
+.pd-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.pd-header-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.pd-season-badge {
+    background: linear-gradient(135deg, #ddd, #fff);
+    color: #111;
+    font-weight: 800;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.pd-name-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.pd-name {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ddd;
+    /* Example: Silver/White */
+}
+
+.pd-sub-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.pd-pos {
+    font-size: 24px;
+    font-weight: 800;
+    color: #e61b1b;
+    /* Default red, JS can override */
+}
+
+.pd-ovr {
+    font-size: 24px;
+    font-weight: 800;
+    background: #333;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.pd-club-country {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 8px;
+}
+
+.pd-club {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pd-nation {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pd-nation img {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.pd-header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#pd-club-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.pd-action-img-container {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    /* Create a fade out effect at bottom if needed */
+    margin-bottom: -40px;
+    /* Overlap with header border */
+}
+
+#pd-action-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+/* --- Main Stats Row --- */
+.pd-main-stats-row {
+    display: flex;
+    justify-content: space-around;
+    background: #222;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #333;
+}
+
+.pd-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.pd-stat-label {
+    font-size: 13px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.pd-stat-val {
+    font-size: 24px;
+    font-weight: 700;
+    color: #d1d1d1;
+}
+
+.pd-stat-val.high {
+    color: #d633ff;
+    /* Pink/Purple for high stats */
+    text-shadow: 0 0 5px #d633ff;
+}
+
+/* --- Content Grid --- */
+.pd-content-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.pd-attributes-table {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 Columns of attributes */
+    gap: 10px 40px;
+    background: #111;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.pd-attr-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+    padding: 4px 0;
+}
+
+.pd-attr-name {
+    color: #aaa;
+}
+
+.pd-attr-val {
+    font-weight: 700;
+    color: #eee;
+}
+
+.pd-attr-val.high {
+    color: #d633ff;
+}
+
+/* --- Tabs System --- */
+.pd-tabs-menu {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.pd-tab-btn {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.pd-tab-btn:hover {
+    color: #ccc;
+}
+
+.pd-tab-btn.active {
+    color: #e61b1b;
+    border-bottom: 3px solid #e61b1b;
+    margin-bottom: -7px;
+    /* Overlap border */
+}
+
+.pd-tab-content {
+    display: none;
+    padding-top: 20px;
+    animation: fadeIn 0.3s ease;
+}
+
+.pd-tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- General Content --- */
+.pd-bio-box h3 {
+    margin-top: 20px;
+}
+
+.pd-bio-box h3:first-child {
+    margin-top: 0;
+}
+
+#pd-clubs-list {
+    list-style: none;
+    padding: 0;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* --- Contribution Content (filters) --- */
+.pd-filters {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.pd-filters select {
+    background: #222;
+    color: #ddd;
+    border: 1px solid #444;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* --- Achievement Content --- */
+.pd-achievements-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pd-achievements-box li {
+    background: rgba(255, 215, 0, 0.1);
+    border-left: 4px solid #ffd700;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    color: #ffd700;
+    font-weight: 600;
+}
+
+/* --- Bio & Career Stats Section --- */
+.pd-bio-stats-section {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.pd-bio-box {
+    flex: 1;
+}
+
+.pd-bio-box h3,
+.pd-stats-box h3 {
+    font-size: 18px;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.pd-bio-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+    font-weight: 300;
+}
+
+.pd-stats-box {
+    flex: 1.5;
+}
+
+.pd-stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    color: #ddd;
+}
+
+.pd-stats-table th,
+.pd-stats-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.pd-stats-table th {
+    background: #222;
+    color: #aaa;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pd-stats-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.pd-stats-table td:nth-child(n+3) {
+    /* Align numbers */
+    text-align: center;
+}
+
+.pd-stats-table th:nth-child(n+3) {
+    text-align: center;
+}
+
+.pd-sidebar-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pd-radar-container {
+    background: #111;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #333;
+}
+
+.pd-traits-box h3 {
+    font-size: 16px;
+    color: #ffd700;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.pd-traits-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pd-traits-box li {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pd-traits-box li::before {
+    content: "◆";
+    color: #666;
+    font-size: 10px;
+}

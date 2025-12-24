@@ -12,9 +12,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Roboto:ital,wght@0,300;1,300&family=Sen&display=swap"
     rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./pic/arsenal-fc-logo.png">
   <!-- style -->
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Arsenal</title>
+  <link rel="stylesheet" href="./assets/css/player-detail.css" />
+  <title>Arsenal FC - Official Site</title>
 </head>
 
 <body>
@@ -664,6 +666,8 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
 
@@ -1136,6 +1140,126 @@
     </div>
   </div>
 
+  <!-- Player Detail View (FIFA Style Overlay) -->
+  <div id="player-detail-overlay" class="modal hidden" style="background: rgba(0,0,0,0.9);">
+    <div class="p-detail-container">
+      <span class="close-detail" onclick="closePlayerDetail()">&times;</span>
+
+      <!-- Header: Name, Club, Flag -->
+      <div class="pd-header">
+        <div class="pd-header-left">
+          <div class="pd-season-badge" id="pd-season">25TS</div>
+          <div class="pd-name-block">
+            <h1 class="pd-name" id="pd-name">Bukayo Saka</h1>
+            <div class="pd-sub-info">
+              <span class="pd-pos" id="pd-pos">RW</span>
+              <span class="pd-ovr" id="pd-ovr">119</span>
+            </div>
+            <div class="pd-club-country">
+              <span class="pd-club">ARSENAL</span>
+              <div class="pd-nation">
+                <span id="pd-nation-name" style="text-transform: uppercase;">England</span>
+                <img id="pd-nation-flag" src="" alt="Flag">
+              </div>
+              <span class="pd-dob" id="pd-dob">5.9.2001 (23)</span>
+            </div>
+          </div>
+        </div>
+        <div class="pd-header-right">
+          <img id="pd-club-logo" src="./pic/arsenal-fc-logo.png" alt="Club">
+          <div class="pd-action-img-container">
+            <img id="pd-action-img" src="" alt="Action" onerror="this.src='./pic/arsenal-fc-logo.png'">
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Stats Row (Speed, Shot, Pass...) -->
+      <div class="pd-main-stats-row">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- Content Grid: Attribute Table + Radar + Traits -->
+      <div class="pd-content-grid">
+        <!-- Left: Attributes Table -->
+        <div class="pd-attributes-table" id="pd-attributes-table">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Right: Radar & Info -->
+        <div class="pd-sidebar-right">
+          <div class="pd-radar-container">
+            <canvas id="pd-radar-chart"></canvas>
+          </div>
+          <div class="pd-traits-box">
+            <h3>Hidden Traits</h3>
+            <ul id="pd-traits-list">
+              <!-- Populated by JS -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Menu -->
+      <div class="pd-tabs-menu">
+        <button class="pd-tab-btn active" onclick="switchTab('general')">General</button>
+        <button class="pd-tab-btn" onclick="switchTab('contribution')">Contribution</button>
+        <button class="pd-tab-btn" onclick="switchTab('achievement')">Achievement</button>
+      </div>
+
+      <!-- Tab Content Containers -->
+      <div class="pd-tab-content active" id="tab-general">
+        <div class="pd-bio-box">
+          <h3>Biography</h3>
+          <p id="pd-bio-text">No biography available.</p>
+          <h3>History</h3>
+          <p id="pd-history-text"></p>
+          <h3>Clubs</h3>
+          <ul id="pd-clubs-list"></ul>
+        </div>
+      </div>
+
+      <div class="pd-tab-content" id="tab-contribution">
+        <div class="pd-filters">
+          <select id="filter-season" onchange="filterStats()">
+            <option value="all">All Seasons</option>
+            <!-- Populated by JS -->
+          </select>
+          <select id="filter-comp" onchange="filterStats()">
+            <option value="all">All Competitions</option>
+            <!-- Populated by JS -->
+          </select>
+        </div>
+        <div class="pd-stats-box">
+          <table class="pd-stats-table">
+            <thead>
+              <tr>
+                <th>Season</th>
+                <th>Competition</th>
+                <th>Apps</th>
+                <th>Goals</th>
+                <th>Assists</th>
+              </tr>
+            </thead>
+            <tbody id="pd-stats-body">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="pd-tab-content" id="tab-achievement">
+        <div class="pd-achievements-box">
+          <ul id="pd-achievements-list">
+            <!-- Populated by JS -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for Radar -->
   <script src="./assets/js/main.js"></script>
 </body>
 
