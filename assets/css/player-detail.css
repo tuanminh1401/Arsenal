@@ -139,19 +139,21 @@
     /* For pseudo-element */
 }
 
-/* Linear Gradient Separator (Black to Transparent/Reddish blend) - No White Line */
+/* Linear Gradient Separator (Black to Transparent/Reddish blend) - Smoothest */
 .pd-header-glass::after {
     content: "";
     position: absolute;
-    top: 5%;
-    right: 0;
-    width: 60px;
-    /* Wider blend area */
-    height: 90%;
-    /* Gradient from left (glass edge) to right (red bg) */
-    background: linear-gradient(to right, rgba(20, 20, 20, 0.8), transparent);
-    /* Soft shadow/fade */
-    filter: blur(10px);
+    top: 0;
+    /* Cover full height relative to container */
+    right: -100px;
+    /* Extend out to the right */
+    width: 100px;
+    /* Wide blend area */
+    height: 100%;
+    /* Gradient from strict glass color to transparent */
+    background: linear-gradient(to right, rgba(30, 30, 35, 0.6) 0%, rgba(30, 30, 35, 0) 100%);
+    pointer-events: none;
+    /* Let clicks pass through */
 }
 
 /* Top Row: Badges */
@@ -267,8 +269,8 @@
 }
 
 #pd-action-img {
-    height: 115%;
-    /* Increase size */
+    height: 100%;
+    /* Restore to 100% for sharpness/no crop */
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6)) contrast(1.1) saturate(1.1);
