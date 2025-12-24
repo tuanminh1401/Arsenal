@@ -132,9 +132,7 @@
     border: none;
     box-shadow: inset -100px 0 100px -50px #000;
     /* Darkens the right side */
-    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    /* seamless fade */
+    /* Removed mask-image to prevent text fading */
     border-radius: 0 20px 20px 0;
     /* Flat left edge */
     padding: 30px 40px;
