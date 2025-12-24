@@ -383,6 +383,8 @@ hr {
   width: 100%;
   height: auto;
   object-fit: cover;
+  object-position: top;
+  /* Align top to show hair */
   border-radius: 20px;
 }
 
@@ -2231,6 +2233,8 @@ footer {
   height: 65px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top;
+  /* Show hair */
   border: 2px solid #444;
 }
 
