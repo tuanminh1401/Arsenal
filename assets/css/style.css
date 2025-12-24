@@ -2233,8 +2233,8 @@ footer {
   height: 65px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top;
-  /* Show hair */
+  object-position: center 8px;
+  /* Shift down to show top of hair */
   border: 2px solid #444;
 }
 
