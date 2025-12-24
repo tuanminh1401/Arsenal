@@ -203,6 +203,40 @@
     text-shadow: none;
 }
 
+/* Position Colors Logic */
+/* Attackers: Red (Default) */
+.pd-pos.ST,
+.pd-pos.RW,
+.pd-pos.LW,
+.pd-pos.CF,
+.pd-pos.RF,
+.pd-pos.LF {
+    color: #e61b1b;
+}
+
+/* Midfielders: Green */
+.pd-pos.CAM,
+.pd-pos.CM,
+.pd-pos.CDM,
+.pd-pos.LM,
+.pd-pos.RM {
+    color: #2ecc71;
+}
+
+/* Defenders: Blue */
+.pd-pos.CB,
+.pd-pos.LB,
+.pd-pos.RB,
+.pd-pos.LWB,
+.pd-pos.RWB {
+    color: #3498db;
+}
+
+/* Goalkeepers: Yellow */
+.pd-pos.GK {
+    color: #ffd700;
+}
+
 .pd-club {
     font-size: 15px;
     font-weight: 600;
