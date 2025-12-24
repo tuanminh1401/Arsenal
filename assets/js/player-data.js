@@ -345,7 +345,7 @@ const playerData = [
         ]
     },
     {
-        name: "Eddie Nketiah", season: "23", pos: "ST", stars: 3, ovr: 77, pac: 84, sho: 78, pas: 68, dri: 80, flag: "GB-ENG", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p205533.png",
+        name: "Eddie Nketiah", season: "23", pos: "ST", stars: 3, ovr: 77, pac: 84, sho: 78, pas: 68, dri: 80, flag: "GB-ENG", avatar: "./pic/players/nketiah.png",
         general: {
             bio: "Eddie Nketiah is a predatory striker who comes alive in the penalty box. Another graduate of the Hale End academy, he is England U21's all-time record goalscorer.",
             history: "Available after leaving Chelsea as a youngster, Nketiah joined Arsenal and scored twice on his home debut. He has developed into a reliable goalscorer for the first team.",
@@ -365,7 +365,7 @@ const playerData = [
 
     // --- Legends (Invincibles & Icons) ---
     {
-        name: "Thierry Henry", season: "ICON", pos: "ST", stars: 5, ovr: 96, pac: 98, sho: 96, pas: 90, dri: 95, flag: "FR", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1619.png",
+        name: "Thierry Henry", season: "ICON", pos: "ST", stars: 5, ovr: 96, pac: 98, sho: 96, pas: 90, dri: 95, flag: "FR", avatar: "./pic/players/henry.png",
         general: {
             bio: "Thierry Henry is arguably the greatest player in Arsenal's history. A striker of unparalleled elegance, pace, and finishing ability, he redefined the role. He is the club's all-time record goalscorer.",
             history: "Signed from Juventus as a winger, Wenger converted him into a striker. He went on to win 4 Golden Boots and lead the Invincibles. His statue stands outside the Emirates Stadium.",
@@ -386,7 +386,7 @@ const playerData = [
         ]
     },
     {
-        name: "Dennis Bergkamp", season: "ICON", pos: "CF", stars: 5, ovr: 94, pac: 85, sho: 94, pas: 95, dri: 96, flag: "NL", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p1608.png",
+        name: "Dennis Bergkamp", season: "ICON", pos: "CF", stars: 5, ovr: 94, pac: 85, sho: 94, pas: 95, dri: 96, flag: "NL", avatar: "./pic/players/bergkamp.png",
         general: {
             bio: "Dennis Bergkamp, the 'Non-Flying Dutchman', was a technician of the highest order. His touch, vision, and executed goals bordered on the impossible. He was the creative fulcrum of three title-winning sides.",
             history: "A product of Ajax's total football, Bergkamp joined after a difficult spell at Inter. His arrival signaled Arsenal's transformation into a modern, attractive football team.",
