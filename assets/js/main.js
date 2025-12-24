@@ -528,6 +528,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Add click event to close Player Database overlay
+    const dbView = document.getElementById('player-database-view');
+    if (dbView) {
+        dbView.addEventListener('click', (e) => {
+            if (e.target === dbView) {
+                closePlayerDatabase();
+            }
+        });
+    }
 });
 
 // Global variable to store current player for filtering
