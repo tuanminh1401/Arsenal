@@ -157,7 +157,7 @@
     margin-bottom: 5px;
 }
 
-/* Number/Season Badge (White) */
+/* Badge 1: Reputation (White bg, Black text) */
 .pd-season-badge {
     background: #fff;
     color: #000;
@@ -169,17 +169,18 @@
     border: none;
     min-width: 40px;
     text-align: center;
+    text-transform: uppercase;
 }
 
-/* OVR Badge (Black) */
+/* Badge 2: Number (Red bg, Black text) */
 .pd-ovr-badge {
-    background: #000;
-    color: #fff;
+    background: #e61b1b;
+    color: #000;
     font-size: 18px;
     font-weight: 900;
     padding: 4px 10px;
     border-radius: 6px;
-    border: 1px solid #333;
+    border: none;
     min-width: 40px;
     text-align: center;
 }

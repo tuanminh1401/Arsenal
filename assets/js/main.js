@@ -462,20 +462,36 @@ function openPlayerDetail(index) {
     document.body.style.overflow = 'hidden';
 
     // Populate Header
-    // Badge 1: Use Number if available, else Season
-    document.getElementById('pd-season').innerText = p.number ? p.number : p.season;
-    document.getElementById('pd-season').style.background = "#fff"; // Ensure white bg
-    document.getElementById('pd-season').style.color = "#000"; // Ensure black text
+    // Badge 1: Reputation (LEGEND, ICON, STAR, etc.)
+    let reputation = "STAR"; // Default
+    if (p.season === "LEG") reputation = "LEGEND";
+    else if (p.season === "ICON") reputation = "ICON";
+    else if (p.number && p.ovr >= 90) reputation = "WORLD CLASS";
+    else if (p.number && p.ovr <= 80) reputation = "YOUNG";
+
+    // Override logic based on exact user request examples
+    document.getElementById('pd-season').innerText = reputation;
+    document.getElementById('pd-season').style.background = "#fff";
+    document.getElementById('pd-season').style.color = "#000";
 
     document.getElementById('pd-name').innerText = p.name;
     document.getElementById('pd-pos').innerText = p.pos;
-    document.getElementById('pd-pos').className = `pd-pos ${p.pos}`; // Apply color class
-    document.getElementById('pd-ovr').innerText = p.ovr;
+    document.getElementById('pd-pos').className = `pd-pos ${p.pos}`; // Apply color class (which is now white in CSS)
+
+    // Badge 2: Number (Red bg, Black text)
+    // If no number (e.g. some legends currently), show OVR or a placeholder? 
+    // User requested Number. I will show Number. If null, maybe empty or specific legend number if I had data.
+    // For now, if undefined, show OVR as fallback or "--"?
+    // Let's fallback to OVR if number is missing to keep layout, or blank. 
+    // Actually user explicitly asked "box 2 for number". I will use number.
+    document.getElementById('pd-ovr').innerText = p.number ? p.number : "";
+    document.getElementById('pd-ovr').className = "pd-ovr-badge"; // Ensure class
+    // Styles are in CSS (Red bg)
 
     // Watermark Number
     const watermark = document.getElementById('pd-watermark');
     if (watermark) {
-        watermark.innerText = p.number || ""; // Default to empty if no number
+        watermark.innerText = p.number || "";
     }
 
     // Country & Flag
