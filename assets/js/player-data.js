@@ -1,7 +1,7 @@
 const playerData = [
     // --- Current Squad ---
     {
-        name: "Bukayo Saka", number: 7, season: "24TS", pos: "RW", stars: 5, ovr: 92, pac: 91, sho: 86, pas: 87, dri: 93, flag: "GB-ENG", avatar: "https://resources.premierleague.com/premierleague/photos/players/500x500/p223340.png",
+        name: "Bukayo Saka", number: 7, season: "24TS", pos: "RW", stars: 5, ovr: 92, pac: 91, sho: 86, pas: 87, dri: 93, flag: "GB-ENG", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p223340.png",
         general: {
             bio: "Bukayo Saka is Arsenal's 'Starboy' and a Hale End academy graduate who has established himself as one of the best wingers in world football. Known for his versatility, intelligence, and clutch performances, he has become the talisman of Mikel Arteta's side.",
             history: "Born in Ealing, London, Saka joined Arsenal's Hale End academy at the age of seven. He progressed rapidly through the youth ranks, making his first-team debut in November 2018 against Vorskla Poltava. Since then, he has become integral to both Arsenal and England, playing in major finals and consistently delivering double-digit goals and assists.",
@@ -188,7 +188,7 @@ const playerData = [
         ]
     },
     {
-        name: "Thomas Partey", number: 5, season: "23", pos: "CDM", stars: 3, ovr: 84, pac: 75, sho: 78, pas: 84, dri: 83, flag: "GH", avatar: "https://resources.premierleague.com/premierleague/photos/players/500x500/p167199.png",
+        name: "Thomas Partey", number: 5, season: "23", pos: "CDM", stars: 3, ovr: 84, pac: 75, sho: 78, pas: 84, dri: 83, flag: "GH", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p167199.png",
         general: {
             bio: "Thomas Partey is a dynamic box-to-box midfielder who brings power, technique, and tactical intelligence to the engine room. His ability to break lines with his passing is crucial for transition.",
             history: "Partey rose through the ranks at Atlético Madrid, becoming a key player for Diego Simeone. Arsenal triggered his release clause on deadline day in 2020 to bring him to North London.",
