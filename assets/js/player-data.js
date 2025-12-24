@@ -553,7 +553,7 @@ const playerData = [
         ]
     },
     {
-        name: "Emmanuel Petit", season: "ICON", pos: "CDM", stars: 3, ovr: 88, pac: 82, sho: 75, pas: 86, dri: 80, flag: "FR", avatar: "./pic/players/petit.jpg",
+        name: "Emmanuel Petit", season: "ICON", pos: "CDM", stars: 3, ovr: 88, pac: 82, sho: 75, pas: 86, dri: 80, flag: "FR", avatar: "./pic/players/petit.png",
         general: {
             bio: "Emmanuel Petit formed a perfect midfield partnership with Patrick Vieira. His energy, passing range, and ponytail made him instantly recognizable.",
             history: "Reunited with Wenger from their Monaco days, Petit was instrumental in the 1997/98 Double winning season. He scored in the World Cup final that same year.",
