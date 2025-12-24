@@ -405,7 +405,7 @@ const playerData = [
         ]
     },
     {
-        name: "Patrick Vieira", season: "ICON", pos: "CM", stars: 4, ovr: 93, pac: 86, sho: 82, pas: 89, dri: 87, flag: "FR", avatar: "./pic/players/vieira.jpg",
+        name: "Patrick Vieira", season: "ICON", pos: "CM", stars: 4, ovr: 93, pac: 86, sho: 82, pas: 89, dri: 87, flag: "FR", avatar: "./pic/players/vieira.png",
         general: {
             bio: "Patrick Vieira was the ultimate captain and midfield warrior. Combining immense physical power with sublime technique, he dominated midfields for a decade and captained the Invincibles.",
             history: "Wenger's first signing, Vieira arrived as an unknown teenager and left as a legend. His rivalry with Roy Keane defined an era of the Premier League.",
@@ -424,7 +424,7 @@ const playerData = [
         ]
     },
     {
-        name: "Robert Pires", season: "ICON", pos: "LM", stars: 4, ovr: 91, pac: 88, sho: 85, pas: 90, dri: 92, flag: "FR", avatar: "./pic/players/pires.jpg",
+        name: "Robert Pires", season: "ICON", pos: "LM", stars: 4, ovr: 91, pac: 88, sho: 85, pas: 90, dri: 92, flag: "FR", avatar: "./pic/players/pires.png",
         general: {
             bio: "Robert Pires brought a unique flair and creativity to the left wing. His telepathic understanding with Thierry Henry made Arsenal's left flank unstoppable during the early 2000s.",
             history: "Signed to replace Marc Overmars, Pires initially struggled with the physicality but soon adapted to become the FWA Footballer of the Year. He scored many spectacular goals.",
@@ -461,7 +461,7 @@ const playerData = [
         ]
     },
     {
-        name: "Ashley Cole", season: "ICON", pos: "LB", stars: 3, ovr: 89, pac: 92, sho: 65, pas: 84, dri: 85, flag: "GB-ENG", avatar: "./pic/players/cole.jpg",
+        name: "Ashley Cole", season: "ICON", pos: "LB", stars: 3, ovr: 89, pac: 92, sho: 65, pas: 84, dri: 85, flag: "GB-ENG", avatar: "./pic/players/cole.png",
         general: {
             bio: "Ashley Cole is widely considered the best left-back in Premier League history. energetic, defensively sound, and dangerous going forward, he was an integral part of the Invincibles.",
             history: "An Arsenal academy graduate, Cole broke into the team as a teenager and made the left-back spot his own. He formed a lethal partnership with Pires/Henry.",
@@ -479,7 +479,7 @@ const playerData = [
         ]
     },
     {
-        name: "Freddie Ljungberg", season: "ICON", pos: "RM", stars: 4, ovr: 88, pac: 90, sho: 82, pas: 84, dri: 88, flag: "SE", avatar: "./pic/players/ljungberg.jpg",
+        name: "Freddie Ljungberg", season: "ICON", pos: "RM", stars: 4, ovr: 88, pac: 90, sho: 82, pas: 84, dri: 88, flag: "SE", avatar: "./pic/players/ljungberg.png",
         general: {
             bio: "Freddie Ljungberg was a dynamic midfielder known for his late runs into the box and propensity for scoring in big games. His red hair and tireless energy made him an icon.",
             history: "Signed from Halmstad after Wenger watched him on TV, Ljungberg scored on his debut against Man Utd. He was the Player of the Season in the 2001/02 Double winning campaign.",
@@ -497,7 +497,7 @@ const playerData = [
         ]
     },
     {
-        name: "Ian Wright", season: "ICON", pos: "ST", stars: 4, ovr: 90, pac: 91, sho: 92, pas: 78, dri: 86, flag: "GB-ENG", avatar: "./pic/players/wright.jpg",
+        name: "Ian Wright", season: "ICON", pos: "ST", stars: 4, ovr: 90, pac: 91, sho: 92, pas: 78, dri: 86, flag: "GB-ENG", avatar: "./pic/players/wright.png",
         general: {
             bio: "Ian Wright was Arsenal's all-time record goalscorer before Henry. A charismatic and explosive striker, he scored goals of all types and was loved for his passion.",
             history: "A late bloomer, Wrighty joined from Crystal Palace and instantly became a hero. He scored 185 goals for the club, winning the league and domestic cups.",
