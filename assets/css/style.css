@@ -2351,6 +2351,16 @@ footer {
   width: 30px;
 }
 
+.p-flag-icon {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+  /* Alignment fix */
+}
+
 .stat-val {
   font-size: 18px;
   font-weight: 700;
