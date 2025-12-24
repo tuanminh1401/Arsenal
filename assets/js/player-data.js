@@ -309,7 +309,7 @@ const playerData = [
         ]
     },
     {
-        name: "Aaron Ramsdale", season: "23", pos: "GK", stars: 1, ovr: 82, pac: 80, sho: 60, pas: 85, dri: 65, flag: "GB-ENG", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p225321.png",
+        name: "Aaron Ramsdale", season: "23", pos: "GK", stars: 1, ovr: 82, pac: 80, sho: 60, pas: 85, dri: 65, flag: "GB-ENG", avatar: "./pic/players/ramsdale.png",
         general: {
             bio: "Aaron Ramsdale is a passionate and shot-stopping goalkeeper who quickly endeared himself to the Emirates crowd. His reflexive saves and leadership were pivotal in Arsenal's return to Champions League football.",
             history: "Despite setbacks early in his career with relegations at Bournemouth and Sheffield United, Ramsdale's talent was evident. Arsenal signed him in 2021, and he proved doubters wrong with spectacular performances.",
@@ -907,7 +907,7 @@ const playerData = [
         ]
     },
     {
-        name: "Lukas Podolski", season: "LEG", pos: "LM", stars: 3, ovr: 84, pac: 85, sho: 90, pas: 78, dri: 80, flag: "DE", avatar: "./pic/players/podolski.jpg",
+        name: "Lukas Podolski", season: "LEG", pos: "LM", stars: 3, ovr: 84, pac: 85, sho: 90, pas: 78, dri: 80, flag: "DE", avatar: "./pic/players/podolski.png",
         general: {
             bio: "Lukas Podolski possessed a hammer of a left foot. efficient and clinical, he was a fan favorite for his positive attitude and powerful finishing.",
             history: "Signed from Cologne, Podolski scored on his debut. He was part of the team that ended the trophy drought in 2014.",
@@ -924,7 +924,7 @@ const playerData = [
         ]
     },
     {
-        name: "Per Mertesacker", season: "LEG", pos: "CB", stars: 2, ovr: 84, pac: 35, sho: 40, pas: 65, dri: 50, flag: "DE", avatar: "./pic/players/mertesacker.jpg",
+        name: "Per Mertesacker", season: "LEG", pos: "CB", stars: 2, ovr: 84, pac: 35, sho: 40, pas: 65, dri: 50, flag: "DE", avatar: "./pic/players/mertesacker.png",
         general: {
             bio: "Per Mertesacker, the 'BFG', compensated for a lack of pace with incredible reading of the game and positioning. A towering leader who is now the Academy Manager.",
             history: "Signed on D-Day 2011 after the 8-2 loss, Mertesacker stabilized the defense. His performance in the 2017 FA Cup Final vs Chelsea was legendary.",
@@ -958,7 +958,7 @@ const playerData = [
         ]
     },
     {
-        name: "Pierre-Emerick Aubameyang", season: "LEG", pos: "ST", stars: 4, ovr: 89, pac: 96, sho: 88, pas: 75, dri: 84, flag: "GA", avatar: "./pic/players/aubameyang.jpg",
+        name: "Pierre-Emerick Aubameyang", season: "LEG", pos: "ST", stars: 4, ovr: 89, pac: 96, sho: 88, pas: 75, dri: 84, flag: "GA", avatar: "./pic/players/aubameyang.png",
         general: {
             bio: "Pierre-Emerick Aubameyang was a world-class goalscorer. His blistering pace and instinctive finishing brought him the Golden Boot and FA Cup glory.",
             history: "Signed from Dortmund, Auba had an incredible start to his Arsenal career. He single-handedly won the 2020 FA Cup with braces in the semi-final and final.",
@@ -1010,7 +1010,7 @@ const playerData = [
         ]
     },
     {
-        name: "Emile Smith Rowe", season: "23", pos: "CAM", stars: 4, ovr: 80, pac: 82, sho: 75, pas: 82, dri: 85, flag: "GB-ENG", avatar: "./pic/players/smith_rowe.jpg",
+        name: "Emile Smith Rowe", season: "23", pos: "CAM", stars: 4, ovr: 80, pac: 82, sho: 75, pas: 82, dri: 85, flag: "GB-ENG", avatar: "./pic/players/smith_rowe.png",
         general: {
             bio: "Emile Smith Rowe, the 'Croydon De Bruyne', is a Hale End graduate known for his intelligent movement and ability to carry the ball. He and Saka represent the new Arsenal generation.",
             history: "Bursting onto the scene in late 2020, Smith Rowe's introduction helped turn Arsenal's season around. He scored 10 league goals in 2021/22.",
