@@ -263,11 +263,9 @@
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6)) contrast(1.1) saturate(1.1);
-    transform: translateY(20px) scale(1.05);
-    /* Lower position and slight scale */
+    transform: translateY(20px);
+    /* Lower position */
     transform-origin: bottom right;
-    image-rendering: -webkit-optimize-contrast;
-    /* Sharpen */
 }
 
 /* Responsive Adjusments */
