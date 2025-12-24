@@ -839,7 +839,7 @@ const playerData = [
         ]
     },
     {
-        name: "Samir Nasri", season: "LEG", pos: "CAM", stars: 4, ovr: 86, pac: 84, sho: 80, pas: 87, dri: 89, flag: "FR", avatar: "./pic/players/nasri.jpg",
+        name: "Samir Nasri", season: "LEG", pos: "CAM", stars: 4, ovr: 86, pac: 84, sho: 80, pas: 87, dri: 89, flag: "FR", avatar: "./pic/players/nasri.png",
         general: {
             bio: "Samir Nasri was a gifted technician with excellent close control and dribbling skills. A creative force who could unlock tight defenses.",
             history: "Nasri joined from Marseille and had a standout season in 2010/11, earning a PFA nomination. His departure to Man City was controversial.",
@@ -855,7 +855,7 @@ const playerData = [
         ]
     },
     {
-        name: "Gael Clichy", season: "LEG", pos: "LB", stars: 3, ovr: 84, pac: 90, sho: 60, pas: 78, dri: 82, flag: "FR", avatar: "./pic/players/clichy.jpg",
+        name: "Gael Clichy", season: "LEG", pos: "LB", stars: 3, ovr: 84, pac: 90, sho: 60, pas: 78, dri: 82, flag: "FR", avatar: "./pic/players/clichy.png",
         general: {
             bio: "Gael Clichy was a lightning-fast left-back who learned his trade as Ashley Cole's understudy before making the position his own.",
             history: "The youngest member of the Invincibles squad, Clichy developed into a consistent performer known for his recovery pace.",
@@ -873,7 +873,7 @@ const playerData = [
         ]
     },
     {
-        name: "Bacary Sagna", season: "LEG", pos: "RB", stars: 3, ovr: 84, pac: 84, sho: 60, pas: 78, dri: 76, flag: "FR", avatar: "./pic/players/sagna.jpg",
+        name: "Bacary Sagna", season: "LEG", pos: "RB", stars: 3, ovr: 84, pac: 84, sho: 60, pas: 78, dri: 76, flag: "FR", avatar: "./pic/players/sagna.png",
         general: {
             bio: "Bacary Sagna was 'Mr. Reliable'. A defensively astute right-back who was rarely beaten in one-on-one situations and provided consistent deliveries.",
             history: "Signed from Auxerre, Sagna became a fixture in the team for seven years. He recovered from two broken legs to win the FA Cup in his final game.",
@@ -890,7 +890,7 @@ const playerData = [
         ]
     },
     {
-        name: "Wojciech Szczesny", season: "LEG", pos: "GK", stars: 1, ovr: 85, pac: 80, sho: 50, pas: 80, dri: 72, flag: "PL", avatar: "./pic/players/szczesny.jpg",
+        name: "Wojciech Szczesny", season: "LEG", pos: "GK", stars: 1, ovr: 85, pac: 80, sho: 50, pas: 80, dri: 72, flag: "PL", avatar: "./pic/players/szczesny.png",
         general: {
             bio: "Wojciech Szczesny was a confident and talented goalkeeper who came through the academy. A big personality, he established himself as No. 1 at a young age.",
             history: "Szczesny won the Premier League Golden Glove in 2013/14. He left for Juventus to become Buffon's successor.",
