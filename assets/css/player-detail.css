@@ -267,6 +267,15 @@
     border-radius: 2px;
 }
 
+#pd-nation-name {
+    display: none;
+}
+
+.pd-dob {
+    font-weight: 700;
+    color: #eee;
+}
+
 .pd-separator {
     color: #444;
 }
