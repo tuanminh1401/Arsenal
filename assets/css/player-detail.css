@@ -405,10 +405,10 @@
 }
 
 .pd-stat-val.high {
-    color: #ffffff;
-    /* Brighter white */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    /* Glow for high stats */
+    color: #d633ff;
+    /* Purple for high stats */
+    text-shadow: 0 0 10px rgba(214, 51, 255, 0.8);
+    /* Purple Glow */
 }
 
 .pd-attr-row {
