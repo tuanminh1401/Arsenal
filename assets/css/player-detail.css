@@ -123,10 +123,12 @@
     background: rgba(30, 30, 35, 0.4);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    /* border: 1px solid rgba(255, 255, 255, 0.08); REMOVED BORDER */
     border: none;
-    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); REMOVED SHADOW */
-    box-shadow: none;
+    box-shadow: inset -100px 0 100px -50px #000;
+    /* Darkens the right side */
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    /* seamless fade */
     border-radius: 0 20px 20px 0;
     /* Flat left edge */
     padding: 30px 40px;
@@ -139,22 +141,7 @@
     /* For pseudo-element */
 }
 
-/* Linear Gradient Separator (Black to Transparent/Reddish blend) - Smoothest */
-.pd-header-glass::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    /* Cover full height relative to container */
-    right: -100px;
-    /* Extend out to the right */
-    width: 100px;
-    /* Wide blend area */
-    height: 100%;
-    /* Gradient from strict glass color to transparent */
-    background: linear-gradient(to right, rgba(30, 30, 35, 0.6) 0%, rgba(30, 30, 35, 0) 100%);
-    pointer-events: none;
-    /* Let clicks pass through */
-}
+/* DELETED ::after pseudo-element to remove artifact line */
 
 /* Top Row: Badges */
 .pd-top-row {
@@ -269,8 +256,8 @@
 }
 
 #pd-action-img {
-    height: 100%;
-    /* Restore to 100% for sharpness/no crop */
+    height: 108%;
+    /* Increase size slightly */
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6)) contrast(1.1) saturate(1.1);
