@@ -516,7 +516,7 @@ const playerData = [
         ]
     },
     {
-        name: "David Seaman", season: "ICON", pos: "GK", stars: 1, ovr: 89, pac: 80, sho: 50, pas: 82, dri: 75, flag: "GB-ENG", avatar: "./pic/players/seaman.jpg",
+        name: "David Seaman", season: "ICON", pos: "GK", stars: 1, ovr: 89, pac: 80, sho: 50, pas: 82, dri: 75, flag: "GB-ENG", avatar: "./pic/players/seaman.png",
         general: {
             bio: "David Seaman, 'Safe Hands', is Arsenal's greatest ever goalkeeper. Renowned for his ponytail and incredible reaction saves, he was the backbone of George Graham and Wenger's defenses.",
             history: "Signed from QPR, Seaman spent 13 years at Arsenal. His save against Sheffield United in the FA Cup semi-final is legendary.",
@@ -534,7 +534,7 @@ const playerData = [
         ]
     },
     {
-        name: "Tony Adams", season: "ICON", pos: "CB", stars: 2, ovr: 91, pac: 78, sho: 55, pas: 75, dri: 70, flag: "GB-ENG", avatar: "./pic/players/adams.jpg",
+        name: "Tony Adams", season: "ICON", pos: "CB", stars: 2, ovr: 91, pac: 78, sho: 55, pas: 75, dri: 70, flag: "GB-ENG", avatar: "./pic/players/adams.png",
         general: {
             bio: "Tony Adams, 'Mr. Arsenal', is the ultimate one-club man. A captain who led the club to league titles in three different decades. A commanding leader and warrior.",
             history: "Joining as a schoolboy, Adams made his debut at 17 and became captain at 21. His goal against Everton to seal the 1998 title is iconic.",
@@ -571,7 +571,7 @@ const playerData = [
         ]
     },
     {
-        name: "Lauren", season: "ICON", pos: "RB", stars: 3, ovr: 86, pac: 85, sho: 65, pas: 80, dri: 82, flag: "CM", avatar: "./pic/players/lauren.jpg",
+        name: "Lauren", season: "ICON", pos: "RB", stars: 3, ovr: 86, pac: 85, sho: 65, pas: 80, dri: 82, flag: "CM", avatar: "./pic/players/lauren.png",
         general: {
             bio: "Lauren was an unsung hero of the Invincibles. Converted from a midfielder to a right-back, his strength, technique, and coolness under pressure (penalty prowess) were vital.",
             history: "Signed from Mallorca, Lauren replaced Lee Dixon. He played almost every game of the unbeaten season and was known for his competitive streak.",
@@ -589,7 +589,7 @@ const playerData = [
         ]
     },
     {
-        name: "Gilberto Silva", season: "ICON", pos: "CDM", stars: 3, ovr: 87, pac: 78, sho: 68, pas: 84, dri: 79, flag: "BR", avatar: "./pic/players/gilberto.jpg",
+        name: "Gilberto Silva", season: "ICON", pos: "CDM", stars: 3, ovr: 87, pac: 78, sho: 68, pas: 84, dri: 79, flag: "BR", avatar: "./pic/players/gilberto.png",
         general: {
             bio: "Gilberto Silva, the 'Invisible Wall', provided the balance to Arsenal's attacking flair. His positional sense and interception stats were world-class.",
             history: "Signed after winning the World Cup with Brazil in 2002, Gilberto scored the fastest Champions League goal (at the time) on his debut. He was a silent guardian of the Invincibles.",
@@ -608,7 +608,7 @@ const playerData = [
         ]
     },
     {
-        name: "Kolo Toure", season: "ICON", pos: "CB", stars: 3, ovr: 86, pac: 83, sho: 55, pas: 72, dri: 75, flag: "CI", avatar: "./pic/players/toure.jpg",
+        name: "Kolo Toure", season: "ICON", pos: "CB", stars: 3, ovr: 86, pac: 83, sho: 55, pas: 72, dri: 75, flag: "CI", avatar: "./pic/players/toure.png",
         general: {
             bio: "Kolo Touré was a bundle of energy and athleticism. Forming a rock-solid partnership with Campbell, he was versatile, quick, and tenacious.",
             history: "Signed for just £150k from ASEC Mimosas, Toure famously tackled Wenger in his trial. He developed into one of the best defenders in the league.",
