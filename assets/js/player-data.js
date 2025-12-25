@@ -345,7 +345,7 @@ const playerData = [
         ]
     },
     {
-        name: "Eddie Nketiah", season: "23", pos: "ST", stars: 3, ovr: 77, pac: 84, sho: 78, pas: 68, dri: 80, flag: "GB-ENG", avatar: "./pic/players/nketiah.png",
+        name: "Eddie Nketiah", number: 14, season: "23", pos: "ST", stars: 3, ovr: 77, pac: 84, sho: 78, pas: 68, dri: 80, flag: "GB-ENG", avatar: "./pic/players/nketiah.png",
         general: {
             bio: "Eddie Nketiah is a predatory striker who comes alive in the penalty box. Another graduate of the Hale End academy, he is England U21's all-time record goalscorer.",
             history: "Available after leaving Chelsea as a youngster, Nketiah joined Arsenal and scored twice on his home debut. He has developed into a reliable goalscorer for the first team.",
@@ -993,7 +993,7 @@ const playerData = [
         ]
     },
     {
-        name: "Kieran Tierney", season: "23", pos: "LB", stars: 3, ovr: 81, pac: 86, sho: 65, pas: 78, dri: 80, flag: "GB-SCT", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p192895.png",
+        name: "Kieran Tierney", number: 3, season: "23", pos: "LB", stars: 3, ovr: 81, pac: 86, sho: 65, pas: 78, dri: 80, flag: "GB-SCT", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p192895.png",
         general: {
             bio: "Kieran Tierney is an old-school defender with a modern attacking threat. Known for his commitment (wearing short sleeves in snow), he quickly became a fan favorite.",
             history: "Tierney joined from Celtic and made an immediate impact with his overlapping runs and crossing. Injuries have hindered his progress recently.",
@@ -1010,7 +1010,7 @@ const playerData = [
         ]
     },
     {
-        name: "Emile Smith Rowe", season: "23", pos: "CAM", stars: 4, ovr: 80, pac: 82, sho: 75, pas: 82, dri: 85, flag: "GB-ENG", avatar: "./pic/players/smith_rowe.png",
+        name: "Emile Smith Rowe", number: 10, season: "23", pos: "CAM", stars: 4, ovr: 80, pac: 82, sho: 75, pas: 82, dri: 85, flag: "GB-ENG", avatar: "./pic/players/smith_rowe.png",
         general: {
             bio: "Emile Smith Rowe, the 'Croydon De Bruyne', is a Hale End graduate known for his intelligent movement and ability to carry the ball. He and Saka represent the new Arsenal generation.",
             history: "Bursting onto the scene in late 2020, Smith Rowe's introduction helped turn Arsenal's season around. He scored 10 league goals in 2021/22.",
