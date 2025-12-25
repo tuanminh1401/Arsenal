@@ -384,6 +384,14 @@ function renderPlayerList(data) {
         // Use Placeholder if no avatar
         const avatarUrl = p.avatar ? p.avatar : "./pic/arsenal-fc-logo.png";
 
+        // Info Block (Name, Season/Reputation, OVR, Pos) 
+        // Determine Reputation text for list view (matching detail view logic)
+        let reputation = "STAR"; // Default
+        if (p.season === "LEG") reputation = "LEGEND";
+        else if (p.season === "ICON") reputation = "ICON";
+        else if (p.number && p.ovr >= 90) reputation = "WORLD CLASS";
+        else if (p.number && p.ovr <= 80) reputation = "YOUNG";
+
         const html = `
             <div class="player-row" onclick="openPlayerDetail(${globalPlayerData.indexOf(p)})" style="cursor: pointer;">
                 <!-- Left Colored Bar -->
@@ -396,10 +404,10 @@ function renderPlayerList(data) {
                     <img src="${avatarUrl}" alt="${p.name}" class="p-avatar-img" onerror="this.src='./pic/arsenal-fc-logo.png'">
                 </div>
 
-                <!-- Info Block (Name, Season, OVR, Pos) -->
+                <!-- Info Block -->
                 <div class="p-main-info">
                     <div class="p-top-row">
-                        <span class="p-season-badge">${p.season}</span>
+                        <span class="p-season-badge">${reputation}</span>
                         <span class="p-name">${p.name}</span>
                     </div>
                     <div class="p-bottom-row">
