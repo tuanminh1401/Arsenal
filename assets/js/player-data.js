@@ -1,7 +1,7 @@
 const playerData = [
     // --- Current Squad ---
     {
-        name: "Bukayo Saka", number: 7, season: "24TS", pos: "RW", stars: 5, ovr: 92, pac: 91, sho: 86, pas: 87, dri: 93, flag: "GB-ENG", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p223340.png",
+        name: "Bukayo Saka", highlight: "6iznZkvOTao", number: 7, season: "24TS", pos: "RW", stars: 5, ovr: 92, pac: 91, sho: 86, pas: 87, dri: 93, flag: "GB-ENG", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p223340.png",
         general: {
             bio: "Bukayo Saka is Arsenal's 'Starboy' and a Hale End academy graduate who has established himself as one of the best wingers in world football. Known for his versatility, intelligence, and clutch performances, he has become the talisman of Mikel Arteta's side.",
             history: "Born in Ealing, London, Saka joined Arsenal's Hale End academy at the age of seven. He progressed rapidly through the youth ranks, making his first-team debut in November 2018 against Vorskla Poltava. Since then, he has become integral to both Arsenal and England, playing in major finals and consistently delivering double-digit goals and assists.",
@@ -24,7 +24,7 @@ const playerData = [
         ]
     },
     {
-        name: "Martin Ødegaard", number: 8, season: "24TY", pos: "CAM", stars: 5, ovr: 91, pac: 83, sho: 85, pas: 94, dri: 92, flag: "NO", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p184029.png",
+        name: "Martin Ødegaard", highlight: "F-bhrAxadLs", number: 8, season: "24TY", pos: "CAM", stars: 5, ovr: 91, pac: 83, sho: 85, pas: 94, dri: 92, flag: "NO", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p184029.png",
         general: {
             bio: "Martin Ødegaard is the captain of Arsenal and a midfield maestro known for his exceptional vision, creativity, and work rate. Orchestrating the play from the center, he leads by example with his pressing and technical elegance.",
             history: "A teenage prodigy who made his senior debut at 15 for Strømsgodset, Ødegaard joined Real Madrid in 2015. After successful loan spells at Heerenveen, Vitesse, and Real Sociedad, he joined Arsenal on loan in January 2021 before signing permanently that summer.",
@@ -365,7 +365,7 @@ const playerData = [
 
     // --- Legends (Invincibles & Icons) ---
     {
-        name: "Thierry Henry", number: 14, season: "ICON", pos: "ST", stars: 5, ovr: 96, pac: 98, sho: 96, pas: 90, dri: 95, flag: "FR", avatar: "./pic/players/henry.png",
+        name: "Thierry Henry", highlight: "AGzGx7uPJbg", number: 14, season: "ICON", pos: "ST", stars: 5, ovr: 96, pac: 98, sho: 96, pas: 90, dri: 95, flag: "FR", avatar: "./pic/players/henry.png",
         general: {
             bio: "Thierry Henry is arguably the greatest player in Arsenal's history. A striker of unparalleled elegance, pace, and finishing ability, he redefined the role. He is the club's all-time record goalscorer.",
             history: "Signed from Juventus as a winger, Wenger converted him into a striker. He went on to win 4 Golden Boots and lead the Invincibles. His statue stands outside the Emirates Stadium.",

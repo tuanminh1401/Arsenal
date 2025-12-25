@@ -1217,6 +1217,7 @@
         <button class="pd-tab-btn active" onclick="switchTab('general')">General</button>
         <button class="pd-tab-btn" onclick="switchTab('contribution')">Contribution</button>
         <button class="pd-tab-btn" onclick="switchTab('achievement')">Achievement</button>
+        <button class="pd-tab-btn" onclick="switchTab('highlight')">Highlight</button>
       </div>
 
       <!-- Tab Content Containers -->
@@ -1265,6 +1266,20 @@
           <ul id="pd-achievements-list">
             <!-- Populated by JS -->
           </ul>
+        </div>
+      </div>
+
+      <div class="pd-tab-content" id="tab-highlight">
+        <div class="pd-video-box" style="padding: 20px; text-align: center;">
+          <div id="pd-highlight-wrapper"
+            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+            <iframe id="pd-highlight-iframe" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+              src="" title="Player Highlight" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <p id="pd-no-highlight" style="color: #ccc; margin-top: 10px; display: none;">No highlight video available.
+          </p>
         </div>
       </div>
     </div>

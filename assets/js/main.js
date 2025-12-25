@@ -540,6 +540,12 @@ function closePlayerDetail() {
     const overlay = document.getElementById('player-detail-overlay');
     overlay.classList.add('hidden');
     document.body.style.overflow = '';
+
+    // Stop Video Playback
+    const iframe = document.getElementById('pd-highlight-iframe');
+    if (iframe) {
+        iframe.src = "";
+    }
 }
 
 // Add click event to close on overlay click
@@ -591,6 +597,25 @@ function renderTabsAndContent(p) {
     achList.innerHTML = (p.achievements || []).map(a => `<li>${a}</li>`).join('');
     if (!p.achievements || p.achievements.length === 0) {
         achList.innerHTML = `<li style="border:none; color:#666; background:none; padding-left:0;">No tracked achievements.</li>`;
+    }
+
+    // 4. Highlight Tab
+    const highlightWrapper = document.getElementById('pd-highlight-wrapper');
+    const highlightIframe = document.getElementById('pd-highlight-iframe');
+    const noHighlightMsg = document.getElementById('pd-no-highlight');
+
+    // Reset state
+    highlightIframe.src = "";
+
+    if (p.highlight) {
+        // Embed Youtube video
+        // Use 'embed' URL format: https://www.youtube.com/embed/VIDEO_ID
+        highlightIframe.src = `https://www.youtube.com/embed/${p.highlight}?rel=0&modestbranding=1`;
+        highlightWrapper.style.display = 'block';
+        noHighlightMsg.style.display = 'none';
+    } else {
+        highlightWrapper.style.display = 'none';
+        noHighlightMsg.style.display = 'block';
     }
 }
 
