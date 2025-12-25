@@ -365,7 +365,7 @@ const playerData = [
 
     // --- Legends (Invincibles & Icons) ---
     {
-        name: "Thierry Henry", season: "ICON", pos: "ST", stars: 5, ovr: 96, pac: 98, sho: 96, pas: 90, dri: 95, flag: "FR", avatar: "./pic/players/henry.png",
+        name: "Thierry Henry", number: 14, season: "ICON", pos: "ST", stars: 5, ovr: 96, pac: 98, sho: 96, pas: 90, dri: 95, flag: "FR", avatar: "./pic/players/henry.png",
         general: {
             bio: "Thierry Henry is arguably the greatest player in Arsenal's history. A striker of unparalleled elegance, pace, and finishing ability, he redefined the role. He is the club's all-time record goalscorer.",
             history: "Signed from Juventus as a winger, Wenger converted him into a striker. He went on to win 4 Golden Boots and lead the Invincibles. His statue stands outside the Emirates Stadium.",
@@ -386,7 +386,7 @@ const playerData = [
         ]
     },
     {
-        name: "Dennis Bergkamp", season: "ICON", pos: "CF", stars: 5, ovr: 94, pac: 85, sho: 94, pas: 95, dri: 96, flag: "NL", avatar: "./pic/players/bergkamp.png",
+        name: "Dennis Bergkamp", number: 10, season: "ICON", pos: "CF", stars: 5, ovr: 94, pac: 85, sho: 94, pas: 95, dri: 96, flag: "NL", avatar: "./pic/players/bergkamp.png",
         general: {
             bio: "Dennis Bergkamp, the 'Non-Flying Dutchman', was a technician of the highest order. His touch, vision, and executed goals bordered on the impossible. He was the creative fulcrum of three title-winning sides.",
             history: "A product of Ajax's total football, Bergkamp joined after a difficult spell at Inter. His arrival signaled Arsenal's transformation into a modern, attractive football team.",
@@ -405,7 +405,7 @@ const playerData = [
         ]
     },
     {
-        name: "Patrick Vieira", season: "ICON", pos: "CM", stars: 4, ovr: 93, pac: 86, sho: 82, pas: 89, dri: 87, flag: "FR", avatar: "./pic/players/vieira.png",
+        name: "Patrick Vieira", number: 4, season: "ICON", pos: "CM", stars: 4, ovr: 93, pac: 86, sho: 82, pas: 89, dri: 87, flag: "FR", avatar: "./pic/players/vieira.png",
         general: {
             bio: "Patrick Vieira was the ultimate captain and midfield warrior. Combining immense physical power with sublime technique, he dominated midfields for a decade and captained the Invincibles.",
             history: "Wenger's first signing, Vieira arrived as an unknown teenager and left as a legend. His rivalry with Roy Keane defined an era of the Premier League.",
@@ -424,7 +424,7 @@ const playerData = [
         ]
     },
     {
-        name: "Robert Pires", season: "ICON", pos: "LM", stars: 4, ovr: 91, pac: 88, sho: 85, pas: 90, dri: 92, flag: "FR", avatar: "./pic/players/pires.png",
+        name: "Robert Pires", number: 7, season: "ICON", pos: "LM", stars: 4, ovr: 91, pac: 88, sho: 85, pas: 90, dri: 92, flag: "FR", avatar: "./pic/players/pires.png",
         general: {
             bio: "Robert Pires brought a unique flair and creativity to the left wing. His telepathic understanding with Thierry Henry made Arsenal's left flank unstoppable during the early 2000s.",
             history: "Signed to replace Marc Overmars, Pires initially struggled with the physicality but soon adapted to become the FWA Footballer of the Year. He scored many spectacular goals.",
@@ -443,7 +443,7 @@ const playerData = [
         ]
     },
     {
-        name: "Sol Campbell", season: "ICON", pos: "CB", stars: 3, ovr: 90, pac: 84, sho: 45, pas: 70, dri: 72, flag: "GB-ENG", avatar: "./pic/players/campbell.png",
+        name: "Sol Campbell", number: 23, season: "ICON", pos: "CB", stars: 3, ovr: 90, pac: 84, sho: 45, pas: 70, dri: 72, flag: "GB-ENG", avatar: "./pic/players/campbell.png",
         general: {
             bio: "Sol Campbell was a colossus in defense. His controversial move across North London resulted in unprecedented success, providing the rock-solid foundation for the Invincibles.",
             history: "Captain of Tottenham, Campbell let his contract run down to join Arsenal on a free transfer in search of trophies. He won the Double in his first season.",
@@ -461,7 +461,7 @@ const playerData = [
         ]
     },
     {
-        name: "Ashley Cole", season: "ICON", pos: "LB", stars: 3, ovr: 89, pac: 92, sho: 65, pas: 84, dri: 85, flag: "GB-ENG", avatar: "./pic/players/cole.png",
+        name: "Ashley Cole", number: 3, season: "ICON", pos: "LB", stars: 3, ovr: 89, pac: 92, sho: 65, pas: 84, dri: 85, flag: "GB-ENG", avatar: "./pic/players/cole.png",
         general: {
             bio: "Ashley Cole is widely considered the best left-back in Premier League history. energetic, defensively sound, and dangerous going forward, he was an integral part of the Invincibles.",
             history: "An Arsenal academy graduate, Cole broke into the team as a teenager and made the left-back spot his own. He formed a lethal partnership with Pires/Henry.",
@@ -479,7 +479,7 @@ const playerData = [
         ]
     },
     {
-        name: "Freddie Ljungberg", season: "ICON", pos: "RM", stars: 4, ovr: 88, pac: 90, sho: 82, pas: 84, dri: 88, flag: "SE", avatar: "./pic/players/ljungberg.png",
+        name: "Freddie Ljungberg", number: 8, season: "ICON", pos: "RM", stars: 4, ovr: 88, pac: 90, sho: 82, pas: 84, dri: 88, flag: "SE", avatar: "./pic/players/ljungberg.png",
         general: {
             bio: "Freddie Ljungberg was a dynamic midfielder known for his late runs into the box and propensity for scoring in big games. His red hair and tireless energy made him an icon.",
             history: "Signed from Halmstad after Wenger watched him on TV, Ljungberg scored on his debut against Man Utd. He was the Player of the Season in the 2001/02 Double winning campaign.",
@@ -497,7 +497,7 @@ const playerData = [
         ]
     },
     {
-        name: "Ian Wright", season: "ICON", pos: "ST", stars: 4, ovr: 90, pac: 91, sho: 92, pas: 78, dri: 86, flag: "GB-ENG", avatar: "./pic/players/wright.png",
+        name: "Ian Wright", number: 8, season: "ICON", pos: "ST", stars: 4, ovr: 90, pac: 91, sho: 92, pas: 78, dri: 86, flag: "GB-ENG", avatar: "./pic/players/wright.png",
         general: {
             bio: "Ian Wright was Arsenal's all-time record goalscorer before Henry. A charismatic and explosive striker, he scored goals of all types and was loved for his passion.",
             history: "A late bloomer, Wrighty joined from Crystal Palace and instantly became a hero. He scored 185 goals for the club, winning the league and domestic cups.",
@@ -516,7 +516,7 @@ const playerData = [
         ]
     },
     {
-        name: "David Seaman", season: "ICON", pos: "GK", stars: 1, ovr: 89, pac: 80, sho: 50, pas: 82, dri: 75, flag: "GB-ENG", avatar: "./pic/players/seaman.png",
+        name: "David Seaman", number: 1, season: "ICON", pos: "GK", stars: 1, ovr: 89, pac: 80, sho: 50, pas: 82, dri: 75, flag: "GB-ENG", avatar: "./pic/players/seaman.png",
         general: {
             bio: "David Seaman, 'Safe Hands', is Arsenal's greatest ever goalkeeper. Renowned for his ponytail and incredible reaction saves, he was the backbone of George Graham and Wenger's defenses.",
             history: "Signed from QPR, Seaman spent 13 years at Arsenal. His save against Sheffield United in the FA Cup semi-final is legendary.",
@@ -534,7 +534,7 @@ const playerData = [
         ]
     },
     {
-        name: "Tony Adams", season: "ICON", pos: "CB", stars: 2, ovr: 91, pac: 78, sho: 55, pas: 75, dri: 70, flag: "GB-ENG", avatar: "./pic/players/adams.png",
+        name: "Tony Adams", number: 6, season: "ICON", pos: "CB", stars: 2, ovr: 91, pac: 78, sho: 55, pas: 75, dri: 70, flag: "GB-ENG", avatar: "./pic/players/adams.png",
         general: {
             bio: "Tony Adams, 'Mr. Arsenal', is the ultimate one-club man. A captain who led the club to league titles in three different decades. A commanding leader and warrior.",
             history: "Joining as a schoolboy, Adams made his debut at 17 and became captain at 21. His goal against Everton to seal the 1998 title is iconic.",
@@ -553,7 +553,7 @@ const playerData = [
         ]
     },
     {
-        name: "Emmanuel Petit", season: "ICON", pos: "CDM", stars: 3, ovr: 88, pac: 82, sho: 75, pas: 86, dri: 80, flag: "FR", avatar: "./pic/players/petit.png",
+        name: "Emmanuel Petit", number: 17, season: "ICON", pos: "CDM", stars: 3, ovr: 88, pac: 82, sho: 75, pas: 86, dri: 80, flag: "FR", avatar: "./pic/players/petit.png",
         general: {
             bio: "Emmanuel Petit formed a perfect midfield partnership with Patrick Vieira. His energy, passing range, and ponytail made him instantly recognizable.",
             history: "Reunited with Wenger from their Monaco days, Petit was instrumental in the 1997/98 Double winning season. He scored in the World Cup final that same year.",
@@ -571,7 +571,7 @@ const playerData = [
         ]
     },
     {
-        name: "Lauren", season: "ICON", pos: "RB", stars: 3, ovr: 86, pac: 85, sho: 65, pas: 80, dri: 82, flag: "CM", avatar: "./pic/players/lauren.png",
+        name: "Lauren", number: 12, season: "ICON", pos: "RB", stars: 3, ovr: 86, pac: 85, sho: 65, pas: 80, dri: 82, flag: "CM", avatar: "./pic/players/lauren.png",
         general: {
             bio: "Lauren was an unsung hero of the Invincibles. Converted from a midfielder to a right-back, his strength, technique, and coolness under pressure (penalty prowess) were vital.",
             history: "Signed from Mallorca, Lauren replaced Lee Dixon. He played almost every game of the unbeaten season and was known for his competitive streak.",
@@ -589,7 +589,7 @@ const playerData = [
         ]
     },
     {
-        name: "Gilberto Silva", season: "ICON", pos: "CDM", stars: 3, ovr: 87, pac: 78, sho: 68, pas: 84, dri: 79, flag: "BR", avatar: "./pic/players/gilberto.png",
+        name: "Gilberto Silva", number: 19, season: "ICON", pos: "CDM", stars: 3, ovr: 87, pac: 78, sho: 68, pas: 84, dri: 79, flag: "BR", avatar: "./pic/players/gilberto.png",
         general: {
             bio: "Gilberto Silva, the 'Invisible Wall', provided the balance to Arsenal's attacking flair. His positional sense and interception stats were world-class.",
             history: "Signed after winning the World Cup with Brazil in 2002, Gilberto scored the fastest Champions League goal (at the time) on his debut. He was a silent guardian of the Invincibles.",
@@ -806,7 +806,7 @@ const playerData = [
         ]
     },
     {
-        name: "Laurent Koscielny", season: "LEG", pos: "CB", stars: 3, ovr: 86, pac: 82, sho: 50, pas: 75, dri: 74, flag: "FR", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p51507.png",
+        name: "Laurent Koscielny", number: 6, season: "LEG", pos: "CB", stars: 3, ovr: 86, pac: 82, sho: 50, pas: 75, dri: 74, flag: "FR", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p51507.png",
         general: {
             bio: "Laurent Koscielny grew from an unknown signing into one of the league's best defenders. Fast, aggressive on the interception, and a leader at the back.",
             history: "Signed from Lorient, Koscielny overcame a difficult debut to become a mainstay. He scored the goal that ended the trophy drought in the 2014 FA Cup final.",
@@ -823,7 +823,7 @@ const playerData = [
         ]
     },
     {
-        name: "Tomas Rosicky", season: "LEG", pos: "CAM", stars: 4, ovr: 85, pac: 80, sho: 80, pas: 88, dri: 87, flag: "CZ", avatar: "./pic/players/rosicky.png",
+        name: "Tomas Rosicky", number: 7, season: "LEG", pos: "CAM", stars: 4, ovr: 85, pac: 80, sho: 80, pas: 88, dri: 87, flag: "CZ", avatar: "./pic/players/rosicky.png",
         general: {
             bio: "Tomas Rosicky, the 'Little Mozart', was a player of exquisite technique and vision. When fit, he orchestrated the midfield with his trademark outside-of-the-boot passes.",
             history: "Signed from Dortmund, Rosicky's Arsenal career was plagued by injuries, but his quality was never in doubt. He loved scoring against Tottenham.",
@@ -839,7 +839,7 @@ const playerData = [
         ]
     },
     {
-        name: "Samir Nasri", season: "LEG", pos: "CAM", stars: 4, ovr: 86, pac: 84, sho: 80, pas: 87, dri: 89, flag: "FR", avatar: "./pic/players/nasri.png",
+        name: "Samir Nasri", number: 8, season: "LEG", pos: "CAM", stars: 4, ovr: 86, pac: 84, sho: 80, pas: 87, dri: 89, flag: "FR", avatar: "./pic/players/nasri.png",
         general: {
             bio: "Samir Nasri was a gifted technician with excellent close control and dribbling skills. A creative force who could unlock tight defenses.",
             history: "Nasri joined from Marseille and had a standout season in 2010/11, earning a PFA nomination. His departure to Man City was controversial.",
@@ -855,7 +855,7 @@ const playerData = [
         ]
     },
     {
-        name: "Gael Clichy", season: "LEG", pos: "LB", stars: 3, ovr: 84, pac: 90, sho: 60, pas: 78, dri: 82, flag: "FR", avatar: "./pic/players/clichy.png",
+        name: "Gael Clichy", number: 22, season: "LEG", pos: "LB", stars: 3, ovr: 84, pac: 90, sho: 60, pas: 78, dri: 82, flag: "FR", avatar: "./pic/players/clichy.png",
         general: {
             bio: "Gael Clichy was a lightning-fast left-back who learned his trade as Ashley Cole's understudy before making the position his own.",
             history: "The youngest member of the Invincibles squad, Clichy developed into a consistent performer known for his recovery pace.",
@@ -873,7 +873,7 @@ const playerData = [
         ]
     },
     {
-        name: "Bacary Sagna", season: "LEG", pos: "RB", stars: 3, ovr: 84, pac: 84, sho: 60, pas: 78, dri: 76, flag: "FR", avatar: "./pic/players/sagna.png",
+        name: "Bacary Sagna", number: 3, season: "LEG", pos: "RB", stars: 3, ovr: 84, pac: 84, sho: 60, pas: 78, dri: 76, flag: "FR", avatar: "./pic/players/sagna.png",
         general: {
             bio: "Bacary Sagna was 'Mr. Reliable'. A defensively astute right-back who was rarely beaten in one-on-one situations and provided consistent deliveries.",
             history: "Signed from Auxerre, Sagna became a fixture in the team for seven years. He recovered from two broken legs to win the FA Cup in his final game.",
@@ -890,7 +890,7 @@ const playerData = [
         ]
     },
     {
-        name: "Wojciech Szczesny", season: "LEG", pos: "GK", stars: 1, ovr: 85, pac: 80, sho: 50, pas: 80, dri: 72, flag: "PL", avatar: "./pic/players/szczesny.png",
+        name: "Wojciech Szczesny", number: 1, season: "LEG", pos: "GK", stars: 1, ovr: 85, pac: 80, sho: 50, pas: 80, dri: 72, flag: "PL", avatar: "./pic/players/szczesny.png",
         general: {
             bio: "Wojciech Szczesny was a confident and talented goalkeeper who came through the academy. A big personality, he established himself as No. 1 at a young age.",
             history: "Szczesny won the Premier League Golden Glove in 2013/14. He left for Juventus to become Buffon's successor.",
@@ -907,7 +907,7 @@ const playerData = [
         ]
     },
     {
-        name: "Lukas Podolski", season: "LEG", pos: "LM", stars: 3, ovr: 84, pac: 85, sho: 90, pas: 78, dri: 80, flag: "DE", avatar: "./pic/players/podolski.png",
+        name: "Lukas Podolski", number: 9, season: "LEG", pos: "LM", stars: 3, ovr: 84, pac: 85, sho: 90, pas: 78, dri: 80, flag: "DE", avatar: "./pic/players/podolski.png",
         general: {
             bio: "Lukas Podolski possessed a hammer of a left foot. efficient and clinical, he was a fan favorite for his positive attitude and powerful finishing.",
             history: "Signed from Cologne, Podolski scored on his debut. He was part of the team that ended the trophy drought in 2014.",
@@ -924,7 +924,7 @@ const playerData = [
         ]
     },
     {
-        name: "Per Mertesacker", season: "LEG", pos: "CB", stars: 2, ovr: 84, pac: 35, sho: 40, pas: 65, dri: 50, flag: "DE", avatar: "./pic/players/mertesacker.png",
+        name: "Per Mertesacker", number: 4, season: "LEG", pos: "CB", stars: 2, ovr: 84, pac: 35, sho: 40, pas: 65, dri: 50, flag: "DE", avatar: "./pic/players/mertesacker.png",
         general: {
             bio: "Per Mertesacker, the 'BFG', compensated for a lack of pace with incredible reading of the game and positioning. A towering leader who is now the Academy Manager.",
             history: "Signed on D-Day 2011 after the 8-2 loss, Mertesacker stabilized the defense. His performance in the 2017 FA Cup Final vs Chelsea was legendary.",
@@ -941,7 +941,7 @@ const playerData = [
         ]
     },
     {
-        name: "Alex Lacazette", season: "LEG", pos: "ST", stars: 4, ovr: 85, pac: 84, sho: 85, pas: 78, dri: 85, flag: "FR", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p59966.png",
+        name: "Alex Lacazette", number: 9, season: "LEG", pos: "ST", stars: 4, ovr: 85, pac: 84, sho: 85, pas: 78, dri: 85, flag: "FR", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p59966.png",
         general: {
             bio: "Alexandre Lacazette was a clinical finisher and intelligent link-up player. His bromance with Aubameyang and fighting spirit endeared him to fans.",
             history: "Signed from Lyon for a club record, Lacazette scored quickly in the Premier League. He was named Player of the Season in 2019.",
@@ -958,7 +958,7 @@ const playerData = [
         ]
     },
     {
-        name: "Pierre\u2011Emerick Aubameyang", season: "LEG", pos: "ST", stars: 4, ovr: 89, pac: 96, sho: 88, pas: 75, dri: 84, flag: "GA", avatar: "./pic/players/aubameyang.png",
+        name: "Pierre\u2011Emerick Aubameyang", number: 14, season: "LEG", pos: "ST", stars: 4, ovr: 89, pac: 96, sho: 88, pas: 75, dri: 84, flag: "GA", avatar: "./pic/players/aubameyang.png",
         general: {
             bio: "Pierre-Emerick Aubameyang was a world-class goalscorer. His blistering pace and instinctive finishing brought him the Golden Boot and FA Cup glory.",
             history: "Signed from Dortmund, Auba had an incredible start to his Arsenal career. He single-handedly won the 2020 FA Cup with braces in the semi-final and final.",
@@ -976,7 +976,7 @@ const playerData = [
         ]
     },
     {
-        name: "Granit Xhaka", season: "LEG", pos: "CDM", stars: 3, ovr: 84, pac: 60, sho: 75, pas: 86, dri: 78, flag: "CH", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p84450.png",
+        name: "Granit Xhaka", number: 34, season: "LEG", pos: "CDM", stars: 3, ovr: 84, pac: 60, sho: 75, pas: 86, dri: 78, flag: "CH", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p84450.png",
         general: {
             bio: "Granit Xhaka was a midfield general with a rocket of a left foot. His Arsenal career was a rollercoaster, but he left as a cult hero after a superb final season.",
             history: "Signed from Gladbach, Xhaka was a polarizing figure. His redemption arc saw him become a key leader under Arteta before moving to Leverkusen to win the league.",
