@@ -608,7 +608,7 @@ const playerData = [
         ]
     },
     {
-        name: "Kolo Toure", season: "ICON", pos: "CB", stars: 3, ovr: 86, pac: 83, sho: 55, pas: 72, dri: 75, flag: "CI", avatar: "./pic/players/toure.png",
+        name: "Kolo Toure", number: 28, season: "ICON", pos: "CB", stars: 3, ovr: 86, pac: 83, sho: 55, pas: 72, dri: 75, flag: "CI", avatar: "./pic/players/toure.png",
         general: {
             bio: "Kolo Touré was a bundle of energy and athleticism. Forming a rock-solid partnership with Campbell, he was versatile, quick, and tenacious.",
             history: "Signed for just £150k from ASEC Mimosas, Toure famously tackled Wenger in his trial. He developed into one of the best defenders in the league.",
@@ -626,7 +626,7 @@ const playerData = [
         ]
     },
     {
-        name: "Jens Lehmann", season: "ICON", pos: "GK", stars: 1, ovr: 87, pac: 78, sho: 50, pas: 85, dri: 72, flag: "DE", avatar: "./pic/players/lehmann.png",
+        name: "Jens Lehmann", number: 1, season: "ICON", pos: "GK", stars: 1, ovr: 87, pac: 78, sho: 50, pas: 85, dri: 72, flag: "DE", avatar: "./pic/players/lehmann.png",
         general: {
             bio: "Jens Lehmann was a charismatic and commanding goalkeeper. His presence and communication (often loud!) organized the Invincibles' defense.",
             history: "Signed to replace Seaman, Lehmann played every single league match of the unbeaten season. He holds the record for most consecutive clean sheets in the Champions League.",
@@ -646,7 +646,7 @@ const playerData = [
 
     // --- Past Stars ---
     {
-        name: "Cesc Fabregas", season: "LEG", pos: "CM", stars: 4, ovr: 90, pac: 78, sho: 84, pas: 95, dri: 88, flag: "ES", avatar: "./pic/players/fabregas.png",
+        name: "Cesc Fabregas", number: 4, season: "LEG", pos: "CM", stars: 4, ovr: 90, pac: 78, sho: 84, pas: 95, dri: 88, flag: "ES", avatar: "./pic/players/fabregas.png",
         general: {
             bio: "Cesc Fàbregas was the heartbeat of Arsenal's midfield for nearly a decade. Endowed with incredible vision and passing range, he became one of the club's youngest ever captains.",
             history: "Poached from Barcelona's academy at 16, Fàbregas broke into the invincible era team. He evolved into a goalscoring midfielder and the team's talisman before returning to Barcelona.",
@@ -664,7 +664,7 @@ const playerData = [
         ]
     },
     {
-        name: "Robin van Persie", season: "LEG", pos: "ST", stars: 4, ovr: 91, pac: 87, sho: 93, pas: 84, dri: 89, flag: "NL", avatar: "./pic/players/van_persie.png",
+        name: "Robin van Persie", number: 10, season: "LEG", pos: "ST", stars: 4, ovr: 91, pac: 87, sho: 93, pas: 84, dri: 89, flag: "NL", avatar: "./pic/players/van_persie.png",
         general: {
             bio: "Robin van Persie evolved from a volatile winger into one of the most complete strikers in the world. His technique, volleying ability, and movement were world-class.",
             history: "Signed from Feyenoord, injuries hampered his early years. His final season at Arsenal was a masterpiece, winning the Golden Boot and PFA Player of the Year.",
@@ -682,7 +682,7 @@ const playerData = [
         ]
     },
     {
-        name: "Alexis Sanchez", season: "LEG", pos: "LW", stars: 4, ovr: 90, pac: 90, sho: 87, pas: 85, dri: 92, flag: "CL", avatar: "./pic/players/sanchez.png",
+        name: "Alexis Sanchez", number: 7, season: "LEG", pos: "LW", stars: 4, ovr: 90, pac: 90, sho: 87, pas: 85, dri: 92, flag: "CL", avatar: "./pic/players/sanchez.png",
         general: {
             bio: "Alexis Sánchez was a whirlwind of energy and skill. A relentless presser and match-winner, he carried the team at times with his goals and assists.",
             history: "Signed from Barcelona in 2014, Alexis hit the ground running. He scored stunning goals in two FA Cup finals and was unstoppable in his prime.",
@@ -700,7 +700,7 @@ const playerData = [
         ]
     },
     {
-        name: "Mesut Özil", season: "LEG", pos: "CAM", stars: 5, ovr: 90, pac: 78, sho: 76, pas: 96, dri: 90, flag: "DE", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p37605.png",
+        name: "Mesut Özil", number: 10, season: "LEG", pos: "CAM", stars: 5, ovr: 90, pac: 78, sho: 76, pas: 96, dri: 90, flag: "DE", avatar: "https://resources.premierleague.com/premierleague/photos/players/250x250/p37605.png",
         general: {
             bio: "Mesut Özil was a playmaker of rare vision and touch. The 'Assist King', he could find passes that no one else saw. His arrival signaled the end of the austerity years.",
             history: "Arsenal smashed their transfer record to sign Özil from Real Madrid on deadline day 2013. He helped the club end a 9-year trophy drought in his first season.",
@@ -718,7 +718,7 @@ const playerData = [
         ]
     },
     {
-        name: "Santi Cazorla", season: "LEG", pos: "CM", stars: 5, ovr: 88, pac: 80, sho: 82, pas: 90, dri: 91, flag: "ES", avatar: "./pic/players/cazorla.png",
+        name: "Santi Cazorla", number: 19, season: "LEG", pos: "CM", stars: 5, ovr: 88, pac: 80, sho: 82, pas: 90, dri: 91, flag: "ES", avatar: "./pic/players/cazorla.png",
         general: {
             bio: "Santi Cazorla is one of the most technically gifted players to ever play for Arsenal. Two-footed, diminutive, and always smiling, he could dictate play from deep or weave magic in the final third.",
             history: "Signed from Malaga, Cazorla became an instant hit. His free-kick in the 2014 FA Cup final sparked the comeback that saved Arsenal's season.",
@@ -736,7 +736,7 @@ const playerData = [
         ]
     },
     {
-        name: "Aaron Ramsey", season: "LEG", pos: "CM", stars: 3, ovr: 86, pac: 82, sho: 80, pas: 85, dri: 84, flag: "GB-WLS", avatar: "./pic/players/ramsey.png",
+        name: "Aaron Ramsey", number: 16, season: "LEG", pos: "CM", stars: 3, ovr: 86, pac: 82, sho: 80, pas: 85, dri: 84, flag: "GB-WLS", avatar: "./pic/players/ramsey.png",
         general: {
             bio: "Aaron Ramsey developed into a dynamic box-to-box midfielder with a knack for scoring crucial goals. He will forever be remembered for his FA Cup final winners.",
             history: "Joining from Cardiff as a teenager, Ramsey overcame a horrific leg break to become a key player. He scored the winning goals in the 2014 and 2017 FA Cup finals.",
@@ -753,7 +753,7 @@ const playerData = [
         ]
     },
     {
-        name: "Jack Wilshere", season: "LEG", pos: "CM", stars: 4, ovr: 85, pac: 80, sho: 75, pas: 86, dri: 88, flag: "GB-ENG", avatar: "./pic/players/wilshere.png",
+        name: "Jack Wilshere", number: 10, season: "LEG", pos: "CM", stars: 4, ovr: 85, pac: 80, sho: 75, pas: 86, dri: 88, flag: "GB-ENG", avatar: "./pic/players/wilshere.png",
         general: {
             bio: "Jack Wilshere was a Hale End academy graduate who burst onto the scene with a fearless style of play. His performance against Barcelona at age 19 is legendary.",
             history: "Arsenal's youngest ever league debutant at the time. Injuries blighted his career, but his talent and connection with the fans were undeniable.",
@@ -771,7 +771,7 @@ const playerData = [
         ]
     },
     {
-        name: "Theo Walcott", season: "LEG", pos: "RW", stars: 3, ovr: 84, pac: 96, sho: 80, pas: 75, dri: 83, flag: "GB-ENG", avatar: "./pic/players/walcott.png",
+        name: "Theo Walcott", number: 14, season: "LEG", pos: "RW", stars: 3, ovr: 84, pac: 96, sho: 80, pas: 75, dri: 83, flag: "GB-ENG", avatar: "./pic/players/walcott.png",
         general: {
             bio: "Theo Walcott was a speedster who spent 12 years at the club. Often used on the wing or as a striker, he joined the exclusive 100-goal club.",
             history: "Signed from Southampton at 16, he went to the 2006 World Cup without playing a Premier League game. He scored many memorable goals, including a hat-trick against Newcastle.",
@@ -788,7 +788,7 @@ const playerData = [
         ]
     },
     {
-        name: "Olivier Giroud", season: "LEG", pos: "ST", stars: 3, ovr: 85, pac: 60, sho: 86, pas: 78, dri: 75, flag: "FR", avatar: "./pic/players/giroud.png",
+        name: "Olivier Giroud", number: 12, season: "LEG", pos: "ST", stars: 3, ovr: 85, pac: 60, sho: 86, pas: 78, dri: 75, flag: "FR", avatar: "./pic/players/giroud.png",
         general: {
             bio: "Olivier Giroud was the ideal target man. Handsome and effective, his link-up play allowed midfielders to flourish, and he scored some spectacular goals, including the Scorpion King.",
             history: "Signed from Montpellier, Giroud was a consistent scorer. He won the Puskas Award for his scorpion kick goal against Crystal Palace.",
